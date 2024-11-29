@@ -1,0 +1,53 @@
+.narrative {
+  max-width: 40rem;
+}
+
+.answer.active {
+  font-size: 2.5rem;
+}
+
+.duration {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+[data-show="setup"] {
+  #setup-page {
+    display: block;
+  }
+  #results-page {
+    display: none;
+  }
+  #answers-page {
+    display: none;
+  }
+}
+[data-show="results"] {
+  #setup-page {
+    display: none;
+  }
+  #results-page {
+    display: block;
+  }
+  #answers-page {
+    display: none;
+  }
+}
+[data-show="answers"] {
+  #setup-page {
+    display: none;
+  }
+  #results-page {
+    display: none;
+  }
+  #answers-page {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  #youtube-player-container {
+    position: static !important;
+    transform: none !important;
+  }
+}
