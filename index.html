@@ -39,6 +39,8 @@
       <h1 class="display-1 my-4 text-center">Video Chat</h1>
       <h2 class="display-6 text-center">Transform Video into Strategic Knowledge Assets</h2>
       <div class="mx-auto my-3 narrative">
+        <div class="text-center my-3"><a id="login" href="https://llmfoundry.straive.com/login" class="btn btn-danger d-none">Log into LLM Foundry</a></div>
+
         <p>In lengthy YouTube videos, <strong>extracting specific information</strong> can be challenging. For example, a viewer might want to focus on topics such as</p>
         <ol>
           <li>Key concepts from a lecture</li>
@@ -67,16 +69,18 @@
     </div>
 
     <div id="answers-page">
-      <button type="button" class="btn-close d-block ms-auto mt-3" aria-label="Close"></button>
       <div class="mx-auto row position-relative">
         <div class="col-md-4 mb-3" id="answers"></div>
         <div class="col-md-8 position-fixed end-0 top-50 translate-middle-y d-none" id="youtube-player-container">
+          <button type="button" class="btn-close d-block ms-auto mb-3" aria-label="Close"></button>
           <div class="ratio ratio-16x9">
             <div id="youtube-player"></div>
           </div>
         </div>
       </div>
     </div>
+
+    <audio id="tts-audio" class="d-none"></audio>
 
     <footer class="my-5 vh-100 d-flex align-items-center justify-content-center">
       <h1 class="display-4">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>

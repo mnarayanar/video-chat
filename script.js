@@ -7,20 +7,29 @@ import { gemini } from "https://cdn.jsdelivr.net/npm/asyncllm@2/dist/gemini.js";
 import { parse } from "https://cdn.jsdelivr.net/npm/partial-json@0.1.7/+esm";
 import { marked } from "https://cdn.jsdelivr.net/npm/marked@13/+esm";
 
+const $login = document.getElementById("login");
 const $transcriptForm = document.getElementById("transcript-form");
 const $resultsPage = document.getElementById("results-page");
 const $results = document.getElementById("results");
 const $answersPage = document.getElementById("answers-page");
 const $answers = document.getElementById("answers");
 const $youtubePlayerContainer = document.getElementById("youtube-player-container");
+const $ttsAudio = document.getElementById("tts-audio");
 const transcripts = {};
 let player;
 let playlist;
 
-const loading = (message) => html`<div class="d-flex justify-content-center align-items-center my-5">
-  <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
-  <div class="ms-3 h4">${message}</div>
-</div>`;
+const { token } = await fetch("https://llmfoundry.straive.com/token", { credentials: "include" }).then((r) => r.json());
+if (!token) {
+  $login.href = "https://llmfoundry.straive.com/login?" + new URLSearchParams({ next: window.location.href });
+  $login.classList.remove("d-none");
+}
+
+const loading = (message) =>
+  html`<div class="d-flex justify-content-center align-items-center my-5">
+    <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+    <div class="ms-3 h4">${message}</div>
+  </div>`;
 
 /**
  * Extracts YouTube video ID from filename
@@ -123,8 +132,7 @@ async function renderOverview() {
 
   for await (const { content } of asyncLLM(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    credentials: "include",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}:videochat` },
     body: JSON.stringify(
       gemini({
         model: "gemini-1.5-flash-latest",
@@ -164,15 +172,20 @@ Pick from different parts of the video.
         ${overview ? html`<blockquote class="blockquote">${unsafeHTML(marked.parse(overview))}</blockquote>` : null}
 
         <form class="my-3" @submit=${answerQuestion}>
-          <div class="input-group">
-            <input
-              type="text"
-              name="question"
-              class="form-control"
-              placeholder="Ask a question about the video"
-              required
-            />
-            <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
+          <div class="d-flex gap-2">
+            <div class="input-group">
+              <input
+                type="text"
+                name="question"
+                class="form-control"
+                placeholder="Ask a question about the video"
+                required
+              />
+              <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
+            </div>
+            <button id="original-audio" class="btn btn-outline-primary flex-shrink-0" data-bs-toggle="button">
+              Original audio
+            </button>
           </div>
         </form>
 
@@ -196,6 +209,34 @@ Pick from different parts of the video.
   }
 }
 
+const prompts = {
+  originalAudio: `Answer the user question with engaging insights from these transcripts.
+Frame the answer as logically sequenced sentences with video citations.
+Each sentence should make full sense if read independently.
+Cite the associated video ID, start and end times ONLY in the JSON fields, not in the answer. Convert start and end times to HH:MM:SS format.
+Answer very crisply. Keep each video clip to less than 4 lines (30 seconds).
+`,
+  summaryAudio: `Answer the user question with engaging insights from these transcripts.
+Answer as a series of very crisp sentences.
+Cite the associated video ID, start and end times ONLY in the JSON fields, not in the answer. Convert start and end times to HH:MM:SS format.
+Keep it to 3-5 sentences unless shorter or longer answers will be more appropriate.
+Your sentences will be read out. Keep the tone simple and conversational. You MUST add "uh..."s and "um..."s to be realistic.
+`,
+};
+
+const startingText = ["Let me check...", "I'll take a look...", "I'm on it..."];
+const pollingText = ["A few more seconds...", "Almost there...", "Just a moment..."];
+
+/**
+ * Returns true if the original audio button is active
+ * @returns {boolean}
+ */
+const useOriginalAudio = () => {
+  const result = $results.querySelector("#original-audio")?.matches?.(".active");
+  console.log("useOriginalAudio", result);
+  return result;
+};
+
 /**
  * Handles question submission and response
  * @param {string|Event} questionOrEvent - Question text or form submit event
@@ -216,11 +257,20 @@ const answerQuestion = async (questionOrEvent) => {
   showPage("answers");
   render(loading("Analyzing the videos..."), $answers);
 
+  // Play TTS audio while we're loading
+  currentIndex = -1;
+  playlist = [];
+  let startedPlaying = false;
+  playAudio(startingText[Math.floor(Math.random() * startingText.length)]);
+  let polling = setInterval(() => {
+    if (startedPlaying) return clearInterval(polling);
+    if ($ttsAudio.ended) playAudio(pollingText[Math.floor(Math.random() * pollingText.length)]);
+  }, 3000);
+
   const url = "https://llmfoundry.straive.com/gemini/v1beta/models/gemini-1.5-flash:streamGenerateContent?alt=sse";
   for await (const { content } of asyncLLM(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    credentials: "include",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}:videochat` },
     body: JSON.stringify(
       gemini({
         model: "gemini-1.5-flash-latest",
@@ -228,10 +278,7 @@ const answerQuestion = async (questionOrEvent) => {
         messages: [
           {
             role: "system",
-            content: `Answer the user question from these transcripts as a set of logically sequenced sentences with video citations.
-Answer very crisply. Keep each video clip to less than 4 lines (30 seconds).
-Each answer should make sense as an independently understandable sentence.
-`,
+            content: useOriginalAudio() ? prompts.originalAudio : prompts.summaryAudio,
           },
           { role: "user", content: allTranscriptText() },
           { role: "user", content: question },
@@ -272,12 +319,24 @@ Each answer should make sense as an independently understandable sentence.
       const duration = answer.endSeconds - answer.startSeconds;
       if (!isNaN(duration)) answer.duration = duration;
     });
-    // Filter out answers that are too short or too long
-    playlist = answers.filter(({ duration }) => duration > 0 && duration < 600);
+
+    playlist = answers;
+    // Filter out answers that are too short or too long if we're using original audio
+    if (useOriginalAudio()) playlist = playlist.filter(({ duration }) => duration > 0 && duration < 600);
     renderAnswers(question, true);
+
+    // Start playing once the first video is complete and the second one has started - only if the TTS audio has ended
+    if (!startedPlaying && playlist.length > 1) {
+      startedPlaying = true;
+      playVideo(0);
+    }
   }
   renderAnswers(question, false);
-  if (playlist.length) playVideo(0);
+  // If the answer has only 1 video, we wouldn't have started playing. So ...
+  // Set startedPlaying (if it still hasn't started) to stop the polling
+  startedPlaying = true;
+  // Play any video if it exists
+  if (!startedPlaying && playlist.length > 0) playVideo(0);
 };
 
 /**
@@ -303,14 +362,15 @@ function renderAnswers(question, isLoading) {
       </h1>
       <div class="list-group">
         ${playlist.map(
-          ({ answer, startSeconds, endSeconds }, index) =>
+          ({ answer, videoId, start, startSeconds, endSeconds }, index) =>
             html`<button
               type="button"
               data-index="${index}"
               class="answer list-group-item list-group-item-action fw-light h4 mb-0 py-3"
               @click="${() => playVideo(index)}"
             >
-              ${answer} <small class="duration">${Math.round(endSeconds - startSeconds, 0)}s</small>
+              ${answer}
+              <small class="duration">${videoId} ${start} +${Math.round(endSeconds - startSeconds, 0)}s</small>
             </button>`
         )}
         ${isLoading ? html`<div class="list-group-item">${loading("Creating videos...")}</div>` : null}
@@ -334,12 +394,29 @@ window.onYouTubeIframeAPIReady = function () {
     videoId: "",
     playerVars: { autoplay: 0, controls: 1, rel: 0 },
     events: {
-      onReady: (event) => event.target.playVideo(),
+      onReady: (event) => {
+        event.target.playVideo();
+      },
       onStateChange: (event) => {
-        if (event.data == YT.PlayerState.PLAYING) nextVideoQueued = false;
-        if (event.data === YT.PlayerState.ENDED && !nextVideoQueued) {
-          nextVideoQueued = true;
-          playNextVideo();
+        // If we're using the original video's audio
+        if (useOriginalAudio()) {
+          // Unmute the video's audio
+          event.target.unMute();
+          // If the last video ended, play the next one (unless we already queued it)
+          if (event.data === YT.PlayerState.ENDED && !nextVideoQueued) {
+            nextVideoQueued = true;
+            playNextVideo();
+          }
+          // Now that the video has started playing, clear the queued flag
+          if (event.data == YT.PlayerState.PLAYING) nextVideoQueued = false;
+        }
+        // If we're not using original video's audio
+        else {
+          // Mute the video
+          event.target.mute();
+          // Use the YouTube player controls to control the TTS audio
+          if (event.data === YT.PlayerState.PAUSED) $ttsAudio.pause();
+          if (event.data === YT.PlayerState.PLAYING) $ttsAudio.play();
         }
       },
     },
@@ -364,14 +441,27 @@ function playVideo(index) {
   }
 
   // Play the video
-  const { videoId, startSeconds, endSeconds } = playlist[index];
+  const { answer, videoId, startSeconds, endSeconds } = playlist[index];
   player.loadVideoById({ videoId, startSeconds, endSeconds });
+  // Play TTS audio if the original audio is not active
+  if (!useOriginalAudio()) playAudio(answer);
+
   currentIndex = index;
 }
 
+function playAudio(text) {
+  const params = new URLSearchParams({ model: "tts-1", voice: "onyx", format: "mp3", input: text });
+  $ttsAudio.src = `https://llmfoundry.straive.com/openai/v1/audio/speech?${params.toString()}`;
+  $ttsAudio.play();
+}
+
+$ttsAudio.addEventListener("ended", () => {
+  if (!useOriginalAudio() && playlist.length > 0) playNextVideo();
+});
+
 function playNextVideo() {
   if (currentIndex < playlist.length - 1) playVideo(currentIndex + 1);
-  else console.log("All videos played.");
+  else setTimeout(() => $answersPage.querySelector(".btn-close").click(), 2000);
 }
 
 /**
@@ -387,7 +477,9 @@ function showPage(page) {
 $resultsPage.querySelector(".btn-close").addEventListener("click", () => showPage("setup"));
 $answersPage.querySelector(".btn-close").addEventListener("click", () => {
   showPage("results");
+  $ttsAudio.pause();
   player.stopVideo();
+  $results.querySelector("input[name=question]").focus();
 });
 
 // Initial render
