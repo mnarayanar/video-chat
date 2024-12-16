@@ -1,0 +1,2689 @@
+WEBVTT
+
+0
+00:00:00.000 --> 00:00:06.880
+Welcome to Course One, Technical Support Fundamentals.
+
+1
+00:00:06.880 --> 00:00:10.720
+My name is Kevin Limehouse, and I work as a support specialist for platforms building
+
+2
+00:00:10.720 --> 00:00:12.560
+double-click at Google.
+
+3
+00:00:12.560 --> 00:00:16.560
+Looking back, I can trace where my passion for IT began to an actual moment when I was eight years
+
+4
+00:00:16.560 --> 00:00:17.560
+old.
+
+5
+00:00:17.560 --> 00:00:20.480
+My parents were about to throw out our old, bust the computer, but I managed to convince my
+
+6
+00:00:20.480 --> 00:00:22.600
+mom to let me keep it.
+
+7
+00:00:22.600 --> 00:00:26.040
+I remember the moment when I slowly started disassembling it.
+
+8
+00:00:26.040 --> 00:00:29.980
+Kept digging deeper and deeper, unscrewing every little piece I can get my hands on.
+
+9
+00:00:30.000 --> 00:00:31.380
+and I was hooked.
+
+10
+00:00:31.380 --> 00:00:33.060
+By the time I was 12 or 13 years old,
+
+11
+00:00:33.060 --> 00:00:37.120
+I became the de facto IT support for my entire family,
+
+12
+00:00:37.120 --> 00:00:40.320
+and that's no small feat, considering I have 11 aunts and uncles
+
+13
+00:00:40.320 --> 00:00:41.700
+and over 35 cousins.
+
+14
+00:00:41.700 --> 00:00:44.000
+My parents both grew up in very small rural towns
+
+15
+00:00:44.000 --> 00:00:45.260
+in South Carolina.
+
+16
+00:00:45.260 --> 00:00:48.180
+Growing up in the Jimco South through the mid-1950s
+
+17
+00:00:48.180 --> 00:00:50.480
+and 1960s, they were taught at an early age
+
+18
+00:00:50.480 --> 00:00:52.240
+that one of the better methods to get ahead
+
+19
+00:00:52.240 --> 00:00:53.680
+was through education.
+
+20
+00:00:53.680 --> 00:00:55.980
+This lesson was instilled in me and my sister,
+
+21
+00:00:55.980 --> 00:00:57.520
+and I ended up going to university
+
+22
+00:00:57.520 --> 00:00:59.340
+to study computer science.
+
+23
+00:00:59.340 --> 00:01:03.620
+I graduated school right at the end of the 2007 and 2009 recession,
+
+24
+00:01:03.620 --> 00:01:07.080
+but thankfully, I secured a job at Google and IT support,
+
+25
+00:01:07.080 --> 00:01:09.440
+where I work with users solving their issues
+
+26
+00:01:09.440 --> 00:01:11.200
+and supporting the IT inventory.
+
+27
+00:01:11.200 --> 00:01:13.680
+And now I've been working at IT for seven years.
+
+28
+00:01:13.680 --> 00:01:15.640
+In my current role as a support specialist,
+
+29
+00:01:15.640 --> 00:01:17.640
+I provide technical and billing support
+
+30
+00:01:17.640 --> 00:01:20.280
+to Google sales teams, which involves everything
+
+31
+00:01:20.280 --> 00:01:22.260
+from troubleshooting to creating forms
+
+32
+00:01:22.260 --> 00:01:24.460
+or editing automation scripts.
+
+33
+00:01:24.460 --> 00:01:25.960
+And now you know a little bit about me.
+
+34
+00:01:25.960 --> 00:01:27.840
+Let's start from the beginning.
+
+35
+00:01:27.840 --> 00:01:29.100
+What is information technology?
+
+36
+00:01:29.340 --> 00:01:34.060
+Information technology has completely transformed your life in ways that you may not even realize.
+
+37
+00:01:34.700 --> 00:01:40.780
+Thanks to IT, we can communicate massive amounts of information to people and organizations across the world and the blink of an eye.
+
+38
+00:01:41.220 --> 00:01:48.620
+Computers power everything from calculators to medical equipment, complex satellite systems, and the trading desk of Wall Street.
+
+39
+00:01:49.120 --> 00:01:53.940
+They're powerful and invaluable tools to help people get their work done and enable us to connect with one another.
+
+40
+00:01:54.220 --> 00:01:56.100
+So what exactly is information technology?
+
+41
+00:01:56.100 --> 00:02:03.360
+IT is essentially the use of digital technology like computers on the internet to store and process data into useful information.
+
+42
+00:02:04.060 --> 00:02:10.419
+The IT industry refers to the entire scope of all the jobs and resources that are related to computing technologies within society.
+
+43
+00:02:11.080 --> 00:02:17.380
+And there are a lot of different types of jobs in this field, from network engineers who ensure computers can communicate with each other,
+
+44
+00:02:17.780 --> 00:02:24.960
+to hardware technicians who replace and repair components, to desktop support personnel who make sure that end users can use their software properly.
+
+45
+00:02:24.960 --> 00:02:27.960
+But IT isn't just about building computers and using the internet.
+
+46
+00:02:27.960 --> 00:02:29.960
+It's really about the people.
+
+47
+00:02:29.960 --> 00:02:32.460
+That's the heart and soul of IT support work.
+
+48
+00:02:32.460 --> 00:02:37.960
+What good is technology or information if people can't use technology or make sense of the information?
+
+49
+00:02:37.960 --> 00:02:41.460
+IT helps people solve meaningful problems by using technology,
+
+50
+00:02:41.460 --> 00:02:46.460
+which is why you'll see its influences in education, medicine, journalism,
+
+51
+00:02:46.460 --> 00:02:51.460
+construction, transportation, entertainment, or really any industry on the planet.
+
+52
+00:02:51.460 --> 00:02:54.860
+IT is about changing the world through the ways we collaborate, share, and
+
+53
+00:02:54.960 --> 00:03:00.000
+create together. IT has become such a vital tool in modern society that people and organizations
+
+54
+00:03:00.000 --> 00:03:05.520
+who don't have access to IT are at a disadvantage. IT skills are becoming necessary for day-to-day
+
+55
+00:03:05.520 --> 00:03:10.240
+living, like finding a job, getting an education, and looking up your health information. Maybe
+
+56
+00:03:10.240 --> 00:03:15.280
+you're from a community where there wasn't any internet or you couldn't afford a super-fast computer
+
+57
+00:03:15.280 --> 00:03:19.760
+and had to use one at your school or library instead. There are many social and economic reasons
+
+58
+00:03:19.760 --> 00:03:24.800
+why some people have digital literacy skills and other people do not. This growing skills gap
+
+59
+00:03:24.800 --> 00:03:27.500
+is known as the digital divide.
+
+60
+00:03:27.500 --> 00:03:30.480
+People without digital literacy skills are falling behind.
+
+61
+00:03:30.480 --> 00:03:32.180
+But people like you are the real solution
+
+62
+00:03:32.180 --> 00:03:34.040
+to bridging that digital divide.
+
+63
+00:03:34.040 --> 00:03:36.560
+Overcoming the digital divide not only involves
+
+64
+00:03:36.560 --> 00:03:38.660
+confronting and understanding the combination
+
+65
+00:03:38.660 --> 00:03:42.020
+of socioeconomic factors that shape our experience,
+
+66
+00:03:42.020 --> 00:03:45.300
+but also helping others confront and understand those experiences.
+
+67
+00:03:45.300 --> 00:03:48.920
+By getting into IT, you'll help serve those in your communities or organizations
+
+68
+00:03:48.920 --> 00:03:52.800
+and maybe even inspire a new generation of IT pioneers.
+
+69
+00:03:52.800 --> 00:03:54.620
+When I think about solving the digital divide,
+
+70
+00:03:54.620 --> 00:03:58.140
+I can't help but think of all the opportunities and breakthroughs that folks from diverse
+
+71
+00:03:58.140 --> 00:04:03.740
+backgrounds and perspectives in the industry can bring. By bringing more people of color, more women,
+
+72
+00:04:03.740 --> 00:04:09.020
+more ethnically diverse people into the IT field, we're bound to see unique, new ideas and
+
+73
+00:04:09.020 --> 00:04:15.020
+products that we haven't even begun to imagine. That benefits everybody.
+
+74
+00:04:18.940 --> 00:04:24.540
+So what's the day-to-day work of someone in IT support like? Well, it varies a ton based on whether you're
+
+75
+00:04:24.620 --> 00:04:29.220
+doing in-person or remote support and at a small business or a large enterprise company.
+
+76
+00:04:29.220 --> 00:04:34.860
+And there's really no such thing as day-to-day work, since the puzzles and challenges are always new and interesting.
+
+77
+00:04:34.860 --> 00:04:40.860
+But in general, an IT support specialist makes sure that an organization's technological equipment is running smoothly.
+
+78
+00:04:40.860 --> 00:04:47.020
+This includes managing, installing, maintaining, troubleshooting, and configuring office and computing equipment.
+
+79
+00:04:47.020 --> 00:04:51.660
+This program is designed to prepare you for an entry-level role in IT help desk support.
+
+80
+00:04:51.660 --> 00:04:54.460
+You'll learn how to set up a user's desktop or workstation.
+
+81
+00:04:54.460 --> 00:04:58.220
+how to install the computer applications that people use the most.
+
+82
+00:04:58.220 --> 00:05:01.820
+You'll learn how to fix a problem or troubleshoot when something goes wrong,
+
+83
+00:05:01.820 --> 00:05:05.780
+and how to put practices in place to prevent similar problems from happening again.
+
+84
+00:05:05.780 --> 00:05:09.460
+Not only will you learn the technical aspects of troubleshooting a problem,
+
+85
+00:05:09.460 --> 00:05:14.460
+you'll also learn how to communicate with users in order to best the system.
+
+86
+00:05:14.460 --> 00:05:19.500
+We'll also show you how to set up a network from scratch to connect to the internet,
+
+87
+00:05:19.500 --> 00:05:22.300
+teach you a thing or two about automation and scripting,
+
+88
+00:05:22.300 --> 00:05:24.020
+and teach you about how to implement security,
+
+89
+00:05:24.020 --> 00:05:28.360
+security to make sure your systems are safe from hackers and other risks.
+
+90
+00:05:28.360 --> 00:05:32.400
+For me, my favorite part of IT support is the problem-solving aspect.
+
+91
+00:05:32.400 --> 00:05:37.700
+I love to exercise my creativity to spin up a solution to a user's issue.
+
+92
+00:05:37.700 --> 00:05:42.340
+Being an IT generalist also gave me the flexibility to learn and practice so many different
+
+93
+00:05:42.340 --> 00:05:45.520
+skills and eventually determine where I want to focus my career.
+
+94
+00:05:45.520 --> 00:05:49.900
+Plus, when things go wrong or you fail at something in IT, you can take the feedback
+
+95
+00:05:49.900 --> 00:05:53.900
+from those mistakes and be better equipped to tackle them the next time around, using
+
+96
+00:05:53.900 --> 00:05:58.700
+Failure as a feedback is an important skill, both in IT and in life.
+
+97
+00:05:58.700 --> 00:06:02.380
+For me, that's why I was so attracted to the IT field.
+
+98
+00:06:02.380 --> 00:06:07.180
+I love the process of problem solving and constantly stretching myself to learn and grow.
+
+99
+00:06:07.180 --> 00:06:11.740
+There's also never been more opportunity to get into the IT industry than now.
+
+100
+00:06:11.740 --> 00:06:16.700
+Not only is the field of IT incredibly diverse, but job prospects are also booming.
+
+101
+00:06:16.700 --> 00:06:21.500
+It's projected that IT jobs in the US alone will grow 12% in the next decade.
+
+102
+00:06:21.500 --> 00:06:23.740
+That's higher than the average for all other occupations.
+
+103
+00:06:23.900 --> 00:06:25.400
+So what does this all mean?
+
+104
+00:06:25.400 --> 00:06:30.720
+There are thousands of companies around the world searching for IT professionals like you.
+
+105
+00:06:30.720 --> 00:06:35.780
+So the main gist is that IT is totally awesome and full of opportunity, and we're so excited that
+
+106
+00:06:35.780 --> 00:06:36.580
+you're here.
+
+107
+00:06:36.580 --> 00:06:38.900
+So let's dive right in.
+
+108
+00:06:38.900 --> 00:06:48.560
+On July 20, 1969, one of the most phenomenal events made its way into the history books,
+
+109
+00:06:48.560 --> 00:06:52.440
+when the Apollo 11 completed its historic mission to the moon.
+
+110
+00:06:52.440 --> 00:06:58.680
+With the most brilliant minds helped to make sure that the eagle had landed, computers also played a significant role.
+
+111
+00:06:58.680 --> 00:07:03.800
+The guidance system that navigated the spacecraft was one of the earliest forms of modern computing.
+
+112
+00:07:03.800 --> 00:07:16.200
+That same computer, the one that helped America's lunar dreams become a reality, took up the space of an entire room and had one 10,000th, the computing power of the thing that almost every one of you carry in your pockets today, a smartphone.
+
+113
+00:07:16.200 --> 00:07:22.420
+Computer hardware and software have had such a dramatic evolution that what was once only used to power
+
+114
+00:07:22.440 --> 00:07:25.840
+rockets now shapes the entire way our world functions.
+
+115
+00:07:25.840 --> 00:07:26.860
+Think about your day.
+
+116
+00:07:26.860 --> 00:07:29.280
+Did you grab a snack, turn on your TV,
+
+117
+00:07:29.280 --> 00:07:30.780
+take a drive in your car?
+
+118
+00:07:30.780 --> 00:07:33.180
+Computers were along for the ride, literally.
+
+119
+00:07:33.180 --> 00:07:34.900
+Computers are everywhere.
+
+120
+00:07:34.900 --> 00:07:36.220
+So here's the rundown.
+
+121
+00:07:36.220 --> 00:07:37.820
+By the end of this course, you'll understand
+
+122
+00:07:37.820 --> 00:07:41.680
+how computers work and get a grasp of the building blocks of IT.
+
+123
+00:07:41.680 --> 00:07:43.840
+We're going to cover the basics of how computer hardware
+
+124
+00:07:43.840 --> 00:07:45.900
+performs calculations, and we're going to actually
+
+125
+00:07:45.900 --> 00:07:48.200
+build a computer from the ground up.
+
+126
+00:07:48.200 --> 00:07:50.480
+We'll look at how operating systems control
+
+127
+00:07:50.480 --> 00:07:52.240
+and interact with hardware.
+
+128
+00:07:52.240 --> 00:07:57.160
+We'll take a look at the internet and get a better understanding of how computers talk to each other.
+
+129
+00:07:57.160 --> 00:08:04.320
+We'll also spend time learning about how applications and programs tie all of this together and let humans interact with these systems.
+
+130
+00:08:04.320 --> 00:08:13.520
+Finally, we'll cover important lessons on problem solving with computers and cover the communication skills that are so critical when interacting with others in IT.
+
+131
+00:08:13.520 --> 00:08:22.220
+Whether you're looking for a job in the IT industry or you just want to learn how your laptop connects to the internet, understanding how computers work at every level can help you
+
+132
+00:08:22.240 --> 00:08:25.000
+you in your day-to-day life and in the workplace.
+
+133
+00:08:25.000 --> 00:08:27.500
+But first, let's take a step way, way back,
+
+134
+00:08:27.500 --> 00:08:30.920
+back to where it all began, even before the Apollo 11
+
+135
+00:08:30.920 --> 00:08:32.480
+mission touchdown.
+
+136
+00:08:32.480 --> 00:08:36.240
+So you can understand how and why we use computers today.
+
+137
+00:08:41.520 --> 00:08:42.900
+When you hear the word computer,
+
+138
+00:08:42.900 --> 00:08:45.580
+maybe you think of something like a beefy gaming desktop
+
+139
+00:08:45.580 --> 00:08:49.180
+with flashing lights, or maybe you think of a slim and sleek laptop.
+
+140
+00:08:49.180 --> 00:08:52.220
+These fancy devices aren't what people had in mind when computers
+
+141
+00:08:52.240 --> 00:08:53.680
+were first created.
+
+142
+00:08:53.680 --> 00:08:56.420
+To put it simply, a computer is a device that stores
+
+143
+00:08:56.420 --> 00:08:59.360
+and processes data by performing calculations.
+
+144
+00:08:59.360 --> 00:09:01.520
+Before we had actual computer devices,
+
+145
+00:09:01.520 --> 00:09:04.220
+the term computer was used to refer to someone
+
+146
+00:09:04.220 --> 00:09:06.220
+who actually did the calculation.
+
+147
+00:09:06.220 --> 00:09:08.380
+You're probably thinking, that's crazy talk.
+
+148
+00:09:08.380 --> 00:09:10.500
+My computer lets me check social media,
+
+149
+00:09:10.500 --> 00:09:12.940
+browse the internet, design graphics.
+
+150
+00:09:12.940 --> 00:09:15.560
+How can it possibly just perform calculations?
+
+151
+00:09:15.560 --> 00:09:17.840
+Well, friends, in this course, we'll be learning
+
+152
+00:09:17.840 --> 00:09:20.980
+how computer calculations are baked into applications,
+
+153
+00:09:20.980 --> 00:09:24.860
+social media, games, et cetera, all the things that you use every day.
+
+154
+00:09:24.860 --> 00:09:29.080
+But to kick things off, we'll learn about the journey computers took from the earliest known
+
+155
+00:09:29.080 --> 00:09:32.360
+forms of computing into the devices that you know and love today.
+
+156
+00:09:32.660 --> 00:09:36.440
+In the world of technology, and if I'm getting really philosophical in life,
+
+157
+00:09:37.100 --> 00:09:42.040
+it is important to know where we've been in order to understand where we are and where we are going.
+
+158
+00:09:42.680 --> 00:09:46.560
+Historical context can help you understand why things work the way they do today.
+
+159
+00:09:47.240 --> 00:09:50.640
+Have you ever wondered why the alphabet isn't laid out in order on your keyboard?
+
+160
+00:09:50.980 --> 00:10:01.500
+The keyboard layout that most of the world uses today is the Q-W-E-R-T and Y keys in the top row of the keyboard.
+
+161
+00:10:02.000 --> 00:10:06.740
+The most common letters that you type aren't found on the home row where your fingers hit the most, but why?
+
+162
+00:10:07.660 --> 00:10:09.700
+There are many stories that claim to answer this question.
+
+163
+00:10:10.060 --> 00:10:29.055
+Some say it was developed to slow down typist so they wouldn jam old mechanical typewriters Others claim it was meant to resolve problem for telegraph operators One thing is for sure the keyboard layout that millions of people use today isn the most effective one Different keyboard layouts have even been created to try and make typing more
+
+164
+00:10:29.055 --> 00:10:34.214
+efficient. Now that we're starting to live in a mobile-centric world with our smartphones,
+
+165
+00:10:34.214 --> 00:10:38.814
+the landscape for keyboards may change completely by typing fingers crossed.
+
+166
+00:10:38.814 --> 00:10:43.915
+In the technology industry, having a little context can go a long way to making sense of the concepts
+
+167
+00:10:43.915 --> 00:10:48.475
+you'll encounter. By the end of this lesson, you'll be able to identify some of the most
+
+168
+00:10:48.475 --> 00:10:54.314
+major advances in the early history of computers. Do you know what an abacus is? It looks like a
+
+169
+00:10:54.314 --> 00:10:58.454
+wooden toy that a child would play with, but it's actually one of the earliest known computers.
+
+170
+00:10:59.074 --> 00:11:04.214
+It was invented in 500 BC to count large numbers. While we have calculators like the old,
+
+171
+00:11:04.214 --> 00:11:09.295
+reliable, Ti-89's, or the ones in our computers, the abacus is actually still used today.
+
+172
+00:11:09.295 --> 00:11:16.694
+Over the centuries, humans built more advanced counting tools, but they still required a human to manually perform the calculations.
+
+173
+00:11:17.194 --> 00:11:23.074
+The first major step forward was the invention of the mechanical calculator in the 17th century by Blaze Pascal.
+
+174
+00:11:23.795 --> 00:11:28.394
+This device used a series of gears and levers to perform calculations for the user automatically.
+
+175
+00:11:29.295 --> 00:11:37.334
+While it was limited to addition, subtraction, multiplication, and division for pretty small numbers, it paved the way for more complex machines.
+
+176
+00:11:37.334 --> 00:11:43.574
+The fundamental operations of the mechanical calculator were later applied to the textile industry.
+
+177
+00:11:43.574 --> 00:11:48.574
+Before we had streamlined manufacturing, looms were used to weave yarn into fabric.
+
+178
+00:11:48.574 --> 00:11:53.574
+If you wanted design patterns on your fabric, that took an incredible amount of manual work.
+
+179
+00:11:53.574 --> 00:11:58.795
+In the 1800s, a man by the name of Joseph Descartes invented a programmable loom.
+
+180
+00:11:58.795 --> 00:12:01.814
+These looms took a sequence of cards with holes in them.
+
+181
+00:12:01.814 --> 00:12:05.134
+When the loom encountered a hole, it would hook the thread underneath it.
+
+182
+00:12:05.134 --> 00:12:08.795
+If it didn't encounter a hole, the hook wouldn't thread anything.
+
+183
+00:12:08.795 --> 00:12:12.574
+Eventually, this spun up a design pattern on the fabric.
+
+184
+00:12:12.574 --> 00:12:14.755
+These cards were known as punch cards.
+
+185
+00:12:14.755 --> 00:12:19.634
+And while Mr. Jakard reinvented the textile industry, he probably didn't realize that his
+
+186
+00:12:19.634 --> 00:12:24.514
+invention would shape the world of computing and the world itself today.
+
+187
+00:12:24.514 --> 00:12:26.014
+Pretty epic, Mr. Jakart.
+
+188
+00:12:26.014 --> 00:12:27.634
+Pretty epic.
+
+189
+00:12:27.634 --> 00:12:32.555
+Let's fast forward a few decades and meet a man by the name of Charles Babbage.
+
+190
+00:12:32.555 --> 00:12:36.875
+Babbage was a gifted engineer who developed a series of machines that are now known as the
+
+191
+00:12:36.875 --> 00:12:40.115
+greatest breakthrough on our way to the modern computer.
+
+192
+00:12:40.115 --> 00:12:42.735
+He built what was called a difference engine.
+
+193
+00:12:42.735 --> 00:12:46.995
+It was a very sophisticated version of some of the mechanical calculators we were just talking
+
+194
+00:12:46.995 --> 00:12:48.074
+about.
+
+195
+00:12:48.074 --> 00:12:53.235
+It could perform fairly complicated mathematical operations, but not much else.
+
+196
+00:12:53.235 --> 00:12:58.475
+Babbage's follow-up to the difference engine was a machine he called the analytical engine.
+
+197
+00:12:58.475 --> 00:13:02.535
+He was inspired by Jakarad's use of punch cards to automatically perform calculations
+
+198
+00:13:02.555 --> 00:13:04.814
+instead of manually entering them by hand.
+
+199
+00:13:05.714 --> 00:13:07.995
+Babbage used punch cards and his analytical engine
+
+200
+00:13:07.995 --> 00:13:11.074
+to allow people to pre-define a series of calculations
+
+201
+00:13:11.074 --> 00:13:12.115
+they wanted to perform.
+
+202
+00:13:12.434 --> 00:13:14.535
+As impressive as this achievement was,
+
+203
+00:13:14.894 --> 00:13:18.514
+the analytical engine was still just a very advanced mechanical calculator.
+
+204
+00:13:18.875 --> 00:13:22.014
+It took the powerful insights of a mathematician named Ada Lovelace
+
+205
+00:13:22.014 --> 00:13:25.355
+to realize the true potential of the analytical engine.
+
+206
+00:13:26.074 --> 00:13:27.634
+She was the first person to recognize
+
+207
+00:13:27.634 --> 00:13:30.475
+that the machine could be used for more than pure calculations.
+
+208
+00:13:31.175 --> 00:13:32.535
+She developed the first algorithm,
+
+209
+00:13:32.555 --> 00:13:33.555
+for the engine.
+
+210
+00:13:33.555 --> 00:13:37.735
+It was the very first example of computer programming.
+
+211
+00:13:37.735 --> 00:13:42.634
+An algorithm is just a series of steps that solve specific problems.
+
+212
+00:13:42.634 --> 00:13:46.814
+Because of Lovelace's discovery, the algorithms could be programmed into the analytical
+
+213
+00:13:46.814 --> 00:13:52.694
+engine, it became the very first general purpose computing machine in history.
+
+214
+00:13:52.694 --> 00:13:57.615
+And a great example that women have had some of the most valuable minds and technology since
+
+215
+00:13:57.615 --> 00:13:58.615
+the 1800s.
+
+216
+00:13:58.615 --> 00:14:02.535
+We've covered a lot of ground already, learning about how primitive counting devices like
+
+217
+00:14:02.555 --> 00:14:07.675
+like the abacists evolve into huge complex devices like the analytical engine, proof that there
+
+218
+00:14:07.675 --> 00:14:09.035
+was life before social media.
+
+219
+00:14:13.035 --> 00:14:16.954
+The development of computing has been steadily growing since the invention of the analytical
+
+220
+00:14:16.954 --> 00:14:22.154
+engine, but didn't make a huge leap forward until World War II. Back then, research into computing
+
+221
+00:14:22.154 --> 00:14:27.194
+was super expensive, electronic components were large, and you needed lots of them to compute anything
+
+222
+00:14:27.194 --> 00:14:32.314
+of value. This also meant that computers took up a ton of space, and many efforts were underfunded and
+
+223
+00:14:32.314 --> 00:14:37.194
+unable to make headway. When the war broke out, government started pouring money and resources
+
+224
+00:14:37.194 --> 00:14:41.755
+into computing research. They wanted to help develop technologies that would give them advantages
+
+225
+00:14:41.755 --> 00:14:46.314
+over other countries. Lots of efforts were spun up and advancements were made in fields like
+
+226
+00:14:46.314 --> 00:14:52.235
+cryptography. Cryptography is the art of writing and solving codes. During the war, computers were
+
+227
+00:14:52.235 --> 00:14:57.434
+used to process secret messages from enemies faster than a human could ever hope to do. Today,
+
+228
+00:14:57.434 --> 00:15:02.295
+the role cryptography plays in secure communication is a critical part of computer
+
+229
+00:15:02.314 --> 00:15:05.515
+security which I'll learn more about in a later course.
+
+230
+00:15:05.515 --> 00:15:10.074
+For now, let's look at how computers started to make a dramatic impact on society.
+
+231
+00:15:10.074 --> 00:15:15.115
+First up is Alan Turing, an English mathematician and now famous computer scientist.
+
+232
+00:15:15.115 --> 00:15:19.755
+He helped develop the top secret Enigma machine, which helped ally forces decode access
+
+233
+00:15:19.755 --> 00:15:24.635
+messages during World War II. The Enigma Machine is just one of the examples of how
+
+234
+00:15:24.635 --> 00:15:30.235
+government started to recognize the potential of computation. After the war, companies like IBM,
+
+235
+00:15:30.235 --> 00:15:32.235
+Hewlett-Packard, and others were advancing the
+
+236
+00:15:32.314 --> 00:15:36.394
+technologies into the academic business and government realms.
+
+237
+00:15:36.394 --> 00:15:41.074
+Lots of technological advancements in computing were made in the 20th century, thanks to direct
+
+238
+00:15:41.074 --> 00:15:45.355
+interest from governments, scientists, and companies left over from World War II.
+
+239
+00:15:45.355 --> 00:15:50.334
+These organizations invented new methods to store data and computers, which fuel the growth
+
+240
+00:15:50.334 --> 00:15:52.074
+of computational power.
+
+241
+00:15:52.074 --> 00:15:57.314
+Consider this until the 1950s punch cards were a popular way to store data.
+
+242
+00:15:57.314 --> 00:16:01.774
+Operators would have decks of ordered punch cards that were used for data processing.
+
+243
+00:16:01.774 --> 00:16:05.674
+If they dropped the deck by accident and the cards got out of order, it was almost impossible
+
+244
+00:16:05.674 --> 00:16:07.035
+to get them sorted again.
+
+245
+00:16:07.035 --> 00:16:12.214
+There were obviously some limitations to punch cards, but thanks to new technological innovations
+
+246
+00:16:12.214 --> 00:16:17.894
+like magnetic tape and its counterparts, people began to store more data on more reliable media.
+
+247
+00:16:17.894 --> 00:16:21.755
+A magnetic tape worked by magnetizing data onto a tape.
+
+248
+00:16:21.755 --> 00:16:27.495
+Back in the 1970s and 80s, people used to listen to music on vinyl records or cassette tapes.
+
+249
+00:16:27.495 --> 00:16:31.755
+These relics are examples of how magnetic tapes can store information and run the
+
+250
+00:16:31.774 --> 00:16:34.074
+that information from a machine.
+
+251
+00:16:34.074 --> 00:16:37.115
+This left stacks and stacks of punch cards to collect dust
+
+252
+00:16:37.115 --> 00:16:39.015
+or their new magnetic tape counterparts
+
+253
+00:16:39.015 --> 00:16:41.834
+began to revolutionize the industry.
+
+254
+00:16:41.834 --> 00:16:43.714
+I wasn't joking when I said early computers
+
+255
+00:16:43.714 --> 00:16:45.095
+took up a lot of space.
+
+256
+00:16:45.095 --> 00:16:47.714
+They had huge machines to read data and racks
+
+257
+00:16:47.714 --> 00:16:50.615
+of vacuum tubes that helped move that data.
+
+258
+00:16:50.615 --> 00:16:53.135
+Vacuum tubes controlled the electricity voltages
+
+259
+00:16:53.135 --> 00:16:55.174
+and all sorts of electronic equipment
+
+260
+00:16:55.174 --> 00:16:58.694
+like televisions and radios, but these specific vacuum
+
+261
+00:16:58.694 --> 00:17:01.115
+tubes were bulky and broke all the time.
+
+262
+00:17:01.115 --> 00:17:01.755
+Imagine what the same.
+
+263
+00:17:01.774 --> 00:17:06.194
+the work of an IT support specialist was like in those early days of computing.
+
+264
+00:17:06.194 --> 00:17:10.934
+The job description might have included crawling around inside huge machines filled with dust
+
+265
+00:17:10.934 --> 00:17:15.974
+and creepy crawly things, while replacing vacuum tubes and swapping out those punch cards.
+
+266
+00:17:15.974 --> 00:17:20.595
+In those days, doing some debugging might have taken on a more literal meaning.
+
+267
+00:17:20.595 --> 00:17:25.615
+Renowned computer scientist Admiral Grace Hopper had a favorite story involving some engineers
+
+268
+00:17:25.615 --> 00:17:28.174
+working on the Harvard Mark II computer.
+
+269
+00:17:28.174 --> 00:17:31.755
+They were trying to figure out the source of the problems in a relay.
+
+270
+00:17:31.774 --> 00:17:36.095
+doing some investigating, they discovered the source of their trouble was a moth, a literal
+
+271
+00:17:36.095 --> 00:17:42.335
+bug in the computer. The ENIAC was one of the earliest forms of general purpose computers. It was
+
+272
+00:17:42.335 --> 00:17:49.215
+a wall-to-wall convolution of massive electronic components and wires, had 17,000 vacuum tubes,
+
+273
+00:17:49.215 --> 00:17:54.655
+and took up about 1,800 square feet of floor space. Imagine if you had to work with that scale
+
+274
+00:17:54.655 --> 00:18:00.655
+of equipment today. I wouldn't want to share an office with 1,800 square feet of machinery. Eventually, the
+
+275
+00:18:00.655 --> 00:18:04.674
+The industry started using transistors to control electricity voltages.
+
+276
+00:18:04.674 --> 00:18:09.075
+This is now a fundamental component of all electronic devices.
+
+277
+00:18:09.075 --> 00:18:13.155
+Transistors perform almost the same functions as vacuum tubes, but they are more compact and
+
+278
+00:18:13.155 --> 00:18:14.235
+more efficient.
+
+279
+00:18:14.235 --> 00:18:18.375
+You can easily have billions of transistors in a small computer chip today.
+
+280
+00:18:18.375 --> 00:18:21.155
+Throughout the decades, more and more advancements were made.
+
+281
+00:18:21.155 --> 00:18:25.075
+The very first compiler was invented by Admiral Graze Hopper.
+
+282
+00:18:25.075 --> 00:18:29.995
+Compilers made it possible to translate human language via a programming language into machine
+
+283
+00:18:29.995 --> 00:18:30.995
+code.
+
+284
+00:18:30.995 --> 00:18:36.455
+In case you didn't totally catch that, we'll talk more about compilers later in this course.
+
+285
+00:18:36.455 --> 00:18:41.235
+The big takeaway is that this advancement was a huge milestone in computing that led to
+
+286
+00:18:41.235 --> 00:18:42.615
+where we are today.
+
+287
+00:18:42.615 --> 00:18:47.815
+Now learning programming languages is accessible for almost anyone anywhere.
+
+288
+00:18:47.815 --> 00:18:51.514
+We no longer have to learn how to write machine code in ones and zeros.
+
+289
+00:18:51.514 --> 00:18:55.675
+You'll get to see these languages in action in future lessons while you'll write some code
+
+290
+00:18:55.675 --> 00:18:56.675
+yourself.
+
+291
+00:18:56.675 --> 00:18:59.935
+Side note, if the thought of that scares you, don't worry.
+
+292
+00:18:59.995 --> 00:19:01.615
+help you every step of the way.
+
+293
+00:19:01.615 --> 00:19:04.835
+But for now, let's get back to the evolution of computers.
+
+294
+00:19:04.835 --> 00:19:07.715
+Eventually, the industry gave way to the first hard disk drives
+
+295
+00:19:07.715 --> 00:19:09.835
+and microprocessors.
+
+296
+00:19:09.835 --> 00:19:12.095
+Then, programming language started becoming
+
+297
+00:19:12.095 --> 00:19:13.815
+the predominant way for engineers
+
+298
+00:19:13.815 --> 00:19:15.395
+to develop computer software.
+
+299
+00:19:15.395 --> 00:19:17.554
+Computers were getting smaller and smaller,
+
+300
+00:19:17.554 --> 00:19:19.975
+thanks to advancements and electronic components.
+
+301
+00:19:19.975 --> 00:19:22.534
+Instead of filling up entire rooms like ENIAC,
+
+302
+00:19:22.534 --> 00:19:25.235
+they were getting small enough to fit on tabletops.
+
+303
+00:19:25.235 --> 00:19:27.274
+The Xerox Alto was the first computer
+
+304
+00:19:27.274 --> 00:19:29.495
+that resembled the computers were familiar with now.
+
+305
+00:19:29.495 --> 00:19:34.294
+It was also the first computer to implement a graphical user interface that use icons,
+
+306
+00:19:34.294 --> 00:19:35.955
+a mouse, and a window.
+
+307
+00:19:35.955 --> 00:19:40.274
+Some of you may remember that the sheer size and cost of historical computers made it almost
+
+308
+00:19:40.274 --> 00:19:43.054
+impossible for an average family to own one.
+
+309
+00:19:43.054 --> 00:19:47.595
+Instead, they were usually found in military and university research facilities.
+
+310
+00:19:47.595 --> 00:19:51.815
+When companies like Xerox started building machines at a relatively affordable price and at
+
+311
+00:19:51.815 --> 00:19:55.875
+a smaller form factor, the consumer age of computing began.
+
+312
+00:19:55.875 --> 00:20:01.735
+Even in the 1970s, a young engineer named Steve Wozniak invented the Apple One, a single-board
+
+313
+00:20:01.735 --> 00:20:03.935
+computer meant for hobbyists.
+
+314
+00:20:03.935 --> 00:20:08.215
+With his friend Steve Jobs, they curated a company called Apple Computer.
+
+315
+00:20:08.215 --> 00:20:13.635
+Their follow-up to the Apple One, the Apple II, was ready for the average consumer to use.
+
+316
+00:20:13.635 --> 00:20:18.675
+The Apple II was a phenomenal success, selling for nearly two decades and giving a new generation
+
+317
+00:20:18.675 --> 00:20:21.395
+of people access to personal computers.
+
+318
+00:20:21.395 --> 00:20:25.855
+For the first time, computers became affordable for the middle class and helped bring computing
+
+319
+00:20:25.875 --> 00:20:29.014
+technology into both the home and office.
+
+320
+00:20:29.014 --> 00:20:32.375
+In the 1980s, IBM introduced its personal computer.
+
+321
+00:20:32.375 --> 00:20:45.210
+It was released with a primitive version of an operating system called MS DOS or Microsoft Disc operating system Side note modern operating systems don just have text anymore They have beautiful icons words
+
+322
+00:20:45.210 --> 00:20:47.730
+and images like what we see on our smartphones.
+
+323
+00:20:47.730 --> 00:20:49.149
+And it's incredible how far we've come
+
+324
+00:20:49.149 --> 00:20:51.070
+from the first operating system
+
+325
+00:20:51.070 --> 00:20:54.090
+to the operating systems we use today.
+
+326
+00:20:54.090 --> 00:20:55.750
+Back to IBM's PC.
+
+327
+00:20:55.750 --> 00:20:59.190
+It was widely adopted and made more accessible to consumers
+
+328
+00:20:59.190 --> 00:21:01.490
+thanks to a partnership with Microsoft.
+
+329
+00:21:01.490 --> 00:21:03.169
+Microsoft, founded by Bill Gates,
+
+330
+00:21:03.190 --> 00:21:06.090
+eventually created Microsoft Windows.
+
+331
+00:21:06.090 --> 00:21:11.029
+For decades, it was the preferred operating system in the workplace and dominated the computing industry
+
+332
+00:21:11.029 --> 00:21:14.070
+because it could be run on any compatible hardware.
+
+333
+00:21:14.070 --> 00:21:21.710
+With more computers in the workplace, the dependence on IT rose, and so did the demand for skilled workers who could support that technology.
+
+334
+00:21:21.710 --> 00:21:27.149
+Not only were personal computers entering the household for the first time, but a new type of computing was emerging.
+
+335
+00:21:27.149 --> 00:21:33.169
+Video games. During the 1970s and 80s, coin-operated entertainment machine called arcades became
+
+336
+00:21:33.190 --> 00:21:38.230
+more and more popular. A company called Atari developed one of the first coin-operated
+
+337
+00:21:38.230 --> 00:21:44.629
+arcade games in 1972 called Pong. Pong was such a sensation that people were standing in
+
+338
+00:21:44.629 --> 00:21:50.309
+lines at bars and rec centers for hours at a time to play. Entertainment computers like Pong
+
+339
+00:21:50.309 --> 00:21:55.509
+launched the video game era. Eventually, Atari went on to launch the video computer system,
+
+340
+00:21:55.509 --> 00:22:01.110
+which helped bring personal video consoles into the home. Video games have contributed to the
+
+341
+00:22:01.110 --> 00:22:03.909
+evolution of computers in a very real way.
+
+342
+00:22:03.909 --> 00:22:06.590
+Tell that to the next person who dismisses them as a toy.
+
+343
+00:22:06.590 --> 00:22:11.629
+Video games show people that computers didn't always have to be all work and no play.
+
+344
+00:22:11.629 --> 00:22:14.649
+They were a great source of entertainment too.
+
+345
+00:22:14.649 --> 00:22:17.269
+This was an important milestone for the computing industry.
+
+346
+00:22:17.269 --> 00:22:23.789
+Since at that time, computers were primarily used in the workplace or at research institutions.
+
+347
+00:22:23.789 --> 00:22:31.090
+With huge players in the market like Apple, Macintosh, and Microsoft Windows taking over the operating system space, a program
+
+348
+00:22:31.110 --> 00:22:36.710
+by the name of Richard Stallman started developing a free Unix-like operating system.
+
+349
+00:22:36.710 --> 00:22:41.990
+Unix was an operating system developed by Ken Thompson and Dennis Richie, but it wasn't cheap
+
+350
+00:22:41.990 --> 00:22:47.830
+and wasn't available to everyone. Stallman created an OS that he called Gnu. It was meant to be
+
+351
+00:22:47.830 --> 00:22:54.230
+free to use with similar functionality to Unix. Unlike Windows or Macintosh, Ganoo wasn't owned by a
+
+352
+00:22:54.230 --> 00:22:59.429
+single company. Its code was open source, which meant that anyone could modify and share it.
+
+353
+00:22:59.429 --> 00:23:02.269
+Ganoo didn't evolve into a full operating system,
+
+354
+00:23:02.269 --> 00:23:04.610
+but it set a foundation for the formation
+
+355
+00:23:04.610 --> 00:23:07.490
+of one of the largest open source operating system,
+
+356
+00:23:07.490 --> 00:23:10.369
+Linux, which was created by Linus Torvalds.
+
+357
+00:23:10.369 --> 00:23:13.869
+We'll get into the technical details of Linux later in this course,
+
+358
+00:23:13.869 --> 00:23:17.830
+but just know that it's a major player in today's operating systems.
+
+359
+00:23:17.830 --> 00:23:20.490
+As an IT support specialist, it is very likely
+
+360
+00:23:20.490 --> 00:23:22.669
+that you'll work with an open source software.
+
+361
+00:23:22.669 --> 00:23:24.190
+You might already be using one,
+
+362
+00:23:24.190 --> 00:23:27.110
+like the internet browser, Mozilla Firefox.
+
+363
+00:23:27.110 --> 00:23:29.269
+By the early 90s, computer started getting
+
+364
+00:23:29.269 --> 00:23:30.869
+even smaller.
+
+365
+00:23:30.869 --> 00:23:33.409
+Then a real game changer made its way into the scene.
+
+366
+00:23:33.409 --> 00:23:36.210
+PDAs or personal digital assistance,
+
+367
+00:23:36.210 --> 00:23:38.549
+which allows computing to go mobile.
+
+368
+00:23:38.549 --> 00:23:41.450
+These mobile devices included portable media players,
+
+369
+00:23:41.450 --> 00:23:44.990
+word processors, email clients, internet browsers,
+
+370
+00:23:44.990 --> 00:23:48.129
+and more all in one handy handheld device.
+
+371
+00:23:48.129 --> 00:23:51.210
+In the late 1990s, Nokia introduced a PDA
+
+372
+00:23:51.210 --> 00:23:53.090
+with mobile phone functionality.
+
+373
+00:23:53.090 --> 00:23:56.070
+This ignited an industry of pocketable computers,
+
+374
+00:23:56.070 --> 00:23:58.350
+or as we know them today, smartphones.
+
+375
+00:23:58.350 --> 00:24:01.889
+In mere decades, we went from having computers that weigh tons
+
+376
+00:24:01.889 --> 00:24:04.590
+and took up entire rooms to having powerful computers
+
+377
+00:24:04.590 --> 00:24:05.909
+that fit in our pockets.
+
+378
+00:24:05.909 --> 00:24:07.990
+It's almost unbelievable.
+
+379
+00:24:07.990 --> 00:24:09.429
+And it's just the beginning.
+
+380
+00:24:09.429 --> 00:24:11.409
+If you're stepping into the IT industry,
+
+381
+00:24:11.409 --> 00:24:13.570
+it's essential that you understand how
+
+382
+00:24:13.570 --> 00:24:16.769
+to support the growing need of this ever-changing technology.
+
+383
+00:24:16.769 --> 00:24:18.869
+Computer support 50 years ago consisted
+
+384
+00:24:18.869 --> 00:24:22.169
+of changing vacuum tubes and stacking punch cards,
+
+385
+00:24:22.169 --> 00:24:25.230
+things that no longer exist in today's IT world.
+
+386
+00:24:25.230 --> 00:24:28.330
+While computers evolved in both complexity and prevalence,
+
+387
+00:24:28.350 --> 00:24:31.389
+so did knowledge required to support and maintain them.
+
+388
+00:24:31.389 --> 00:24:34.110
+In 10 years, IT support could require
+
+389
+00:24:34.110 --> 00:24:36.070
+working through virtual reality lenses.
+
+390
+00:24:36.070 --> 00:24:37.070
+You never know.
+
+391
+00:24:37.070 --> 00:24:38.789
+Who knows what the future holds?
+
+392
+00:24:38.789 --> 00:24:40.950
+But right now, it is an exciting time
+
+393
+00:24:40.950 --> 00:24:43.190
+to be at the forefront of this industry.
+
+394
+00:24:43.190 --> 00:24:45.250
+Now that we've run down where computers came from
+
+395
+00:24:45.250 --> 00:24:47.470
+and how they've evolved over the decades,
+
+396
+00:24:47.470 --> 00:24:50.350
+let's get a better grasp on how computers actually work.
+
+397
+00:24:55.309 --> 00:24:58.070
+Remember when I said that a computer is a device that stores
+
+398
+00:24:58.070 --> 00:25:02.830
+processes data by performing calculations, whether you're creating an artificial intelligence
+
+399
+00:25:02.830 --> 00:25:06.990
+that can be humans at chess, or something more simple like running a video game.
+
+400
+00:25:06.990 --> 00:25:10.889
+The more computing power you have access to, the more you can accomplish.
+
+401
+00:25:10.889 --> 00:25:15.269
+By the end of this lesson, you'll understand what a computer calculates and how.
+
+402
+00:25:15.269 --> 00:25:17.070
+Let's look at this simple math problem.
+
+403
+00:25:17.070 --> 00:25:19.049
+0 plus 1 equals what?
+
+404
+00:25:19.049 --> 00:25:23.070
+It only takes a moment to come up with the answer 1, but imagine that you need you to do
+
+405
+00:25:23.070 --> 00:25:25.309
+100 calculations that were this simple.
+
+406
+00:25:25.309 --> 00:25:28.049
+You could do it, and if you were careful, you might not make any mistakes.
+
+407
+00:25:28.070 --> 00:25:31.510
+But what if you needed to do a thousand of these calculations?
+
+408
+00:25:31.510 --> 00:25:32.710
+How about a million?
+
+409
+00:25:32.710 --> 00:25:34.169
+How about a billion?
+
+410
+00:25:34.169 --> 00:25:36.250
+This is exactly what a computer does.
+
+411
+00:25:36.250 --> 00:25:41.990
+A computer simply compares ones and zeros, but millions or billions of times per second.
+
+412
+00:25:41.990 --> 00:25:43.190
+Wowza.
+
+413
+00:25:43.190 --> 00:25:49.309
+The communication that a computer uses is referred to as binary system, also known as base two
+
+414
+00:25:49.309 --> 00:25:50.909
+numeral system.
+
+415
+00:25:50.909 --> 00:25:53.409
+This means that it only talks in ones and zeros.
+
+416
+00:25:53.409 --> 00:25:57.369
+You may be thinking, okay, my computer only talks in ones and zeros, how do I communicate
+
+417
+00:25:57.369 --> 00:25:58.049
+with it?
+
+418
+00:25:58.070 --> 00:25:59.409
+Think of it like this.
+
+419
+00:25:59.409 --> 00:26:01.789
+We use the letters of the alphabet to form words,
+
+420
+00:26:01.789 --> 00:26:03.389
+and we give those words meaning.
+
+421
+00:26:03.389 --> 00:26:07.169
+We use them to create sentences, paragraphs, and whole stories.
+
+422
+00:26:07.169 --> 00:26:08.629
+The same thing applies to binary,
+
+423
+00:26:08.629 --> 00:26:11.309
+except instead of A, B, C, and so on,
+
+424
+00:26:11.309 --> 00:26:14.369
+we only have zero and one to create words
+
+425
+00:26:14.369 --> 00:26:16.070
+that we give meaning to.
+
+426
+00:26:16.070 --> 00:26:20.289
+In computing terms, we group binary into eight numbers or bits.
+
+427
+00:26:20.289 --> 00:26:22.789
+Technically, a bit is a binary digit.
+
+428
+00:26:22.789 --> 00:26:25.549
+Historically, we use eight bits because in the early days
+
+429
+00:26:25.549 --> 00:26:28.049
+of computing, hardware utilized the base
+
+430
+00:26:28.070 --> 00:26:30.929
+to numeral system to move bits around.
+
+431
+00:26:30.929 --> 00:26:34.230
+2 to the 8th numbers offered us a large enough range
+
+432
+00:26:34.230 --> 00:26:36.669
+of values to do the computing we needed.
+
+433
+00:26:36.669 --> 00:26:39.049
+Back then, any number of bits was used,
+
+434
+00:26:39.049 --> 00:26:40.990
+but eventually the grouping of 8 bits
+
+435
+00:26:40.990 --> 00:26:43.649
+became the industry standard that we used today.
+
+436
+00:26:43.649 --> 00:26:47.470
+You should know that a group of 8 bits is referred to as a byte.
+
+437
+00:26:47.470 --> 00:26:53.369
+So a byte of zeros and ones could look like 1-0-1-1-0-1.
+
+438
+00:26:53.369 --> 00:26:55.570
+Each byte can store one character,
+
+439
+00:26:55.570 --> 00:26:58.049
+and we can have 256 possible values.
+
+440
+00:26:58.070 --> 00:27:02.070
+thanks to the base 2 system, 2 to the 8th.
+
+441
+00:27:02.070 --> 00:27:06.070
+In computer talk, this byte can mean something like the letter C.
+
+442
+00:27:06.070 --> 00:27:08.070
+And this is how computer language is born.
+
+443
+00:27:08.070 --> 00:27:11.070
+Let's make a quick table to translate something a computer might see
+
+444
+00:27:11.070 --> 00:27:14.070
+into something we'd be able to recognize.
+
+445
+00:27:14.070 --> 00:27:18.070
+What does the following translate to?
+
+446
+00:27:18.070 --> 00:27:20.070
+Did you get hello?
+
+447
+00:27:20.070 --> 00:27:22.070
+Pretty cool, right?
+
+448
+00:27:22.070 --> 00:27:26.070
+By using binary, we can have unlimited communication with our computer.
+
+449
+00:27:26.070 --> 00:27:27.070
+Everything you see on your computer right now,
+
+450
+00:27:27.070 --> 00:27:32.610
+right now, whether it's a video, an image, text, or anything else is nothing more than a
+
+451
+00:27:32.610 --> 00:27:34.090
+one or a zero.
+
+452
+00:27:34.090 --> 00:27:37.389
+It is important that you understand how binary works.
+
+453
+00:27:37.389 --> 00:27:40.970
+It is the basis for everything else we'll do on this course, so make sure you understand
+
+454
+00:27:40.970 --> 00:27:48.429
+the concept before moving on.
+
+455
+00:27:48.429 --> 00:27:53.010
+Remember from the earlier video that a byte can store only zeros and ones.
+
+456
+00:27:53.010 --> 00:27:56.070
+That means we can have 256 possible values.
+
+457
+00:27:56.070 --> 00:28:01.070
+By the end of this video, you'll learn how we can represent the words, numbers, emojis,
+
+458
+00:28:01.070 --> 00:28:06.309
+and more we see on our screens from only these 256 possible values.
+
+459
+00:28:06.309 --> 00:28:08.950
+It's all thanks to character encoding.
+
+460
+00:28:08.950 --> 00:28:14.470
+Character encoding is used to assign our binary values to characters so that we as humans can read them.
+
+461
+00:28:14.470 --> 00:28:19.409
+We definitely wouldn't want to see all the text in our emails and web pages rendered in complex
+
+462
+00:28:19.409 --> 00:28:21.450
+sequences of zeros and ones.
+
+463
+00:28:21.450 --> 00:28:23.909
+This is where character encodings come in handy.
+
+464
+00:28:23.909 --> 00:28:25.909
+You can think of character encoding as a dictionary.
+
+465
+00:28:26.070 --> 00:28:32.070
+It's a way for your computers to look up which human character should be represented by a given binary value.
+
+466
+00:28:32.070 --> 00:28:35.070
+The oldest character encoding standard used is ASCII.
+
+467
+00:28:35.070 --> 00:28:39.070
+It represents the English alphabet, digits, and punctuation marks.
+
+468
+00:28:39.070 --> 00:28:44.070
+The first character in the ASCII to Binary Table, a lowercase A,
+
+469
+00:28:44.070 --> 00:28:49.070
+maps to 01100001 in binary.
+
+470
+00:28:49.070 --> 00:28:55.070
+This is done for all the characters you can find in the English alphabet, as well as numbers, and some special symbols.
+
+471
+00:28:55.070 --> 00:29:01.990
+The great thing with ASCII was that we only needed to use 127 values out of our possible 256.
+
+472
+00:29:02.669 --> 00:29:05.770
+It lasted for a very long time, but eventually it wasn't enough.
+
+473
+00:29:06.070 --> 00:29:11.809
+Other character encoding standards were created to represent different languages, different amounts of characters, and more.
+
+474
+00:29:12.510 --> 00:29:16.849
+Eventually, they would require more than 256 values we would are allowed to have.
+
+475
+00:29:16.849 --> 00:29:20.970
+Then came UTF8, the most prevalent encoding standard used today.
+
+476
+00:29:21.690 --> 00:29:25.049
+Along with having the same ASCII table, it also lets us use a very,
+
+477
+00:29:25.070 --> 00:29:30.309
+number of bytes. What do I mean by that? Think of any emoji. It's not possible to make
+
+478
+00:29:30.309 --> 00:29:35.450
+emojis with a single byte since we can only store one character in a byte. Instead,
+
+479
+00:29:35.450 --> 00:29:41.070
+UTF8 allows us to store a character in more than one byte, which means endless emoji fun.
+
+480
+00:29:41.070 --> 00:29:47.530
+UTF8 is built off the Unicode standard. We won't go into much detail, but the Unicode standard
+
+481
+00:29:47.530 --> 00:29:52.450
+helps us represent character encoding in a consistent manner. Now that we've been able to represent
+
+482
+00:29:52.450 --> 00:29:57.049
+letters, numbers, punctuation marks, and even emojis, how do we represent color?
+
+483
+00:29:57.049 --> 00:29:59.169
+Where there are all kinds of color models.
+
+484
+00:29:59.169 --> 00:30:02.530
+For now, let's stick to a basic one that's used in a lot of computers,
+
+485
+00:30:02.530 --> 00:30:05.490
+RGB, or red, green, and blue model.
+
+486
+00:30:05.490 --> 00:30:08.849
+Just like the actual colors, if you mix a combination of any of these,
+
+487
+00:30:08.849 --> 00:30:11.649
+you'll be able to get the full range of colors.
+
+488
+00:30:11.649 --> 00:30:15.889
+In Computer Land, we use three characters for the RGB model.
+
+489
+00:30:15.889 --> 00:30:18.210
+Each character represents a shade of the color,
+
+490
+00:30:18.210 --> 00:30:21.570
+and that then changes the color of the pixel you see on your screen.
+
+491
+00:30:21.570 --> 00:30:24.950
+With just eight combinations of zeros and ones,
+
+492
+00:30:24.950 --> 00:30:27.909
+we're able to represent everything that you see on your computer
+
+493
+00:30:27.909 --> 00:30:30.549
+from a simple letter A to the very video
+
+494
+00:30:30.549 --> 00:30:33.389
+that you're watching right now on the Coursera website.
+
+495
+00:30:33.389 --> 00:30:34.330
+Very cool.
+
+496
+00:30:38.330 --> 00:30:42.210
+You might be wondering how our computers get these ones and zeros.
+
+497
+00:30:42.210 --> 00:30:43.349
+It's a great question.
+
+498
+00:30:43.349 --> 00:30:46.429
+Imagine we have a light bulb and a switch that turns the state
+
+499
+00:30:46.429 --> 00:30:48.690
+of the light on or off.
+
+500
+00:30:48.690 --> 00:30:51.549
+If we turn the light on, we can denote that state as one.
+
+501
+00:30:51.570 --> 00:31:02.445
+If the light bulb is off we can represent the state of zero Now imagine eight light bulbs and switches that represents eight bits with a state of zero or one
+
+502
+00:31:02.445 --> 00:31:06.005
+Let's backtrack to the punch cards that were used in Jakard's loom.
+
+503
+00:31:06.005 --> 00:31:08.825
+Remember that the loom used cards with holes in them.
+
+504
+00:31:08.825 --> 00:31:12.605
+When the loom would reach a hole, it would hook the thread underneath, meaning that the
+
+505
+00:31:12.605 --> 00:31:14.245
+loom was on.
+
+506
+00:31:14.245 --> 00:31:18.545
+If there wasn't a hole, it would not hook the thread, so it was off.
+
+507
+00:31:18.545 --> 00:31:21.325
+This is a foundational binary concept.
+
+508
+00:31:21.325 --> 00:31:23.925
+By utilizing the two states of on or off,
+
+509
+00:31:23.925 --> 00:31:28.445
+Jakard was able to weave intricate patterns into fabric with his looms.
+
+510
+00:31:28.445 --> 00:31:31.705
+Then the industry started refining the punch cards a little more.
+
+511
+00:31:31.705 --> 00:31:34.265
+If there was a hole, the computer would read one.
+
+512
+00:31:34.265 --> 00:31:36.405
+If there wasn't a hole, it would read zero.
+
+513
+00:31:36.405 --> 00:31:41.685
+Then by just translating the combination of zeros and ones, a computer could calculate
+
+514
+00:31:41.685 --> 00:31:43.885
+any possible amount of numbers.
+
+515
+00:31:43.885 --> 00:31:46.945
+Binary in today's computer isn't done by reading holes.
+
+516
+00:31:46.945 --> 00:31:51.085
+It uses electricity via transistors allowing electrical signals to pass through.
+
+517
+00:31:51.085 --> 00:31:54.285
+If there's an electric voltage, we would denote it as one.
+
+518
+00:31:54.765 --> 00:31:56.765
+If there isn't, we would denote it by zero.
+
+519
+00:31:57.045 --> 00:32:01.265
+But just having transistors isn't enough for our computer to be able to do complex tasks.
+
+520
+00:32:01.545 --> 00:32:06.085
+Imagine if you had two light switches on opposite ends of a room, each controlling a light in the room.
+
+521
+00:32:06.605 --> 00:32:11.365
+What if, when you went to turn on the light with one switch, the other switch wouldn't turn off?
+
+522
+00:32:11.845 --> 00:32:13.665
+That would be a very poorly designed room.
+
+523
+00:32:14.045 --> 00:32:18.085
+Both switches should either turn the light on or off, depending on the state of the light.
+
+524
+00:32:18.085 --> 00:32:21.885
+Fortunately, we have something known as logic gates.
+
+525
+00:32:21.885 --> 00:32:26.525
+Logic gates allow our transistors to do more complex tasks like decide where to send electrical
+
+526
+00:32:26.525 --> 00:32:29.605
+signals depending on logical conditions.
+
+527
+00:32:29.605 --> 00:32:33.805
+There are lots of different types of logic gates, but we won't discuss them in detail here.
+
+528
+00:32:33.805 --> 00:32:38.405
+If you're curious about the role that transistors and logic gates play in modern circuitry,
+
+529
+00:32:38.405 --> 00:32:40.925
+you can read more about it in the supplementary reading.
+
+530
+00:32:40.925 --> 00:32:46.125
+Now we know how our computer gets its ones and zeros to calculate into meaningful instructions.
+
+531
+00:32:46.125 --> 00:32:48.065
+Later in this course, we'll be able to talk about how we're able to talk about how we're
+
+532
+00:32:48.085 --> 00:32:53.845
+to turn human readable instructions into zeros and ones that our computer understands through compilers.
+
+533
+00:32:53.845 --> 00:33:02.525
+That's one of the very basic building blocks of programming that's led to the creation of our favorite social media sites, video games, and just about everything else.
+
+534
+00:33:02.525 --> 00:33:05.525
+And I'm super excited to teach you how to count in binary.
+
+535
+00:33:05.525 --> 00:33:07.325
+And that's up next.
+
+536
+00:33:11.325 --> 00:33:18.065
+Binary is the fundamental communication block of computers, but it's used to represent more than just text and images.
+
+537
+00:33:18.085 --> 00:33:21.785
+It's used in many aspects of computing like computer networking,
+
+538
+00:33:21.785 --> 00:33:23.545
+what you'll learn about in a later course.
+
+539
+00:33:23.545 --> 00:33:26.585
+It's important that you understand how computers count in binary.
+
+540
+00:33:26.585 --> 00:33:31.185
+We've shown you simple lookup tables that you can use like the ASCII binary table,
+
+541
+00:33:31.185 --> 00:33:35.885
+but as an IT support specialist, whether you're working on networking or security,
+
+542
+00:33:35.885 --> 00:33:37.745
+you'll need to know how binary works.
+
+543
+00:33:37.745 --> 00:33:39.145
+So let's get started.
+
+544
+00:33:39.145 --> 00:33:43.545
+You'll probably need a trusty pen and paper, a calculator, and some good old-fashioned brain
+
+545
+00:33:43.545 --> 00:33:45.485
+power to help you in this video.
+
+546
+00:33:45.485 --> 00:33:49.725
+The binary system is how our computers count using ones and zeros.
+
+547
+00:33:49.725 --> 00:33:51.225
+But humans don't count like that.
+
+548
+00:33:51.225 --> 00:33:55.265
+When you were a child, you may have counted using 10 fingers on your hand.
+
+549
+00:33:55.265 --> 00:33:59.925
+That innate counting system is called the decimal form or base 10 system.
+
+550
+00:33:59.925 --> 00:34:04.885
+In the decimal system, there are 10 possible numbers you can use, ranging from 0 to 9.
+
+551
+00:34:04.885 --> 00:34:11.425
+When we count binary, which only uses 0 and 1, we convert it to a system that we can understand, decimal.
+
+552
+00:34:11.425 --> 00:34:16.105
+330, 250, 244 million.
+
+553
+00:34:16.105 --> 00:34:18.025
+They're all decimal numbers.
+
+554
+00:34:18.025 --> 00:34:20.405
+We use the decimal system to help us figure out
+
+555
+00:34:20.405 --> 00:34:22.804
+what bits our computer can use.
+
+556
+00:34:22.804 --> 00:34:25.045
+We can represent any number in existence
+
+557
+00:34:25.045 --> 00:34:26.765
+just by using bits.
+
+558
+00:34:26.765 --> 00:34:29.005
+That's right, we can represent this number
+
+559
+00:34:29.005 --> 00:34:31.045
+just using ones and zeros.
+
+560
+00:34:31.045 --> 00:34:32.585
+So how does that work?
+
+561
+00:34:32.585 --> 00:34:34.185
+Let's consider these numbers.
+
+562
+00:34:34.185 --> 00:34:41.324
+128, 64, 32, 16, 8, 4, 2, and 1.
+
+563
+00:34:41.425 --> 00:34:43.185
+What patterns do you see?
+
+564
+00:34:43.185 --> 00:34:46.705
+Hopefully you'll see that each number is a double of the previous number going right
+
+565
+00:34:46.705 --> 00:34:47.705
+to left.
+
+566
+00:34:47.705 --> 00:34:49.265
+What happens if you add them all up?
+
+567
+00:34:49.265 --> 00:34:50.864
+You get 255.
+
+568
+00:34:50.864 --> 00:34:52.185
+That's kind of weird.
+
+569
+00:34:52.185 --> 00:34:55.344
+I thought we could have 256 values for a byte.
+
+570
+00:34:55.344 --> 00:34:56.344
+Well, we do.
+
+571
+00:34:56.344 --> 00:35:01.865
+The zero is counted as a value, so the maximum decibel number you can have is 255.
+
+572
+00:35:01.865 --> 00:35:04.625
+What do you think the number is represented here?
+
+573
+00:35:04.625 --> 00:35:07.265
+See where the ones and the zeros are represented?
+
+574
+00:35:07.265 --> 00:35:10.945
+Remember, if our computer sees a one, then the value is on.
+
+575
+00:35:10.945 --> 00:35:13.805
+If it sees a zero, then the value is off.
+
+576
+00:35:13.805 --> 00:35:16.625
+If you add these numbers up, you'll get a decimal value.
+
+577
+00:35:16.625 --> 00:35:18.465
+If you guess 10, then you're right.
+
+578
+00:35:18.465 --> 00:35:19.665
+Good job.
+
+579
+00:35:19.665 --> 00:35:21.505
+If you didn't get it, that's okay too.
+
+580
+00:35:21.505 --> 00:35:22.745
+Take another look.
+
+581
+00:35:22.745 --> 00:35:26.765
+The two and eight are on, and if we add them up, we get 10.
+
+582
+00:35:26.765 --> 00:35:29.285
+Let's look at our ask you to binary table again.
+
+583
+00:35:29.285 --> 00:35:35.225
+The letter H in binary is 011-000.
+
+584
+00:35:35.225 --> 00:35:37.785
+Now let's look at an ask-e to decimal table.
+
+585
+00:35:37.785 --> 00:35:40.505
+The letter H in decimal is 104.
+
+586
+00:35:40.945 --> 00:35:43.705
+Now let's try our conversion chart again.
+
+587
+00:35:43.705 --> 00:35:47.705
+64 plus 32 plus 8 equals 104.
+
+588
+00:35:47.705 --> 00:35:48.945
+Look at that.
+
+589
+00:35:48.945 --> 00:35:50.145
+The math checks out.
+
+590
+00:35:50.145 --> 00:35:51.945
+Now we're cooking.
+
+591
+00:35:55.945 --> 00:36:00.945
+When we interact with our computers, we use our mouse, keyboard, or even a touchscreen.
+
+592
+00:36:00.945 --> 00:36:04.945
+We don't tell it the actual zeros and ones it needs to understand something.
+
+593
+00:36:04.945 --> 00:36:07.945
+But wait, we actually do.
+
+594
+00:36:07.945 --> 00:36:09.945
+We just don't ever have to worry about it.
+
+595
+00:36:09.945 --> 00:36:16.345
+We use the concept of abstraction to take a relatively complex system and simplify it for our use.
+
+596
+00:36:16.345 --> 00:36:19.765
+You use abstraction every day in the real world and you may not even know it.
+
+597
+00:36:19.765 --> 00:36:24.725
+If you've ever driven a car, you don't need to know how to operate the transmission or the engine directly.
+
+598
+00:36:24.725 --> 00:36:28.185
+There's a steering wheel, some pedals, maybe a gear stick.
+
+599
+00:36:28.185 --> 00:36:33.065
+If you buy a car from a different manufacturer, you operate it in pretty much the same way,
+
+600
+00:36:33.065 --> 00:36:36.385
+even though the stuff under the hood might be completely different.
+
+601
+00:36:36.385 --> 00:36:38.725
+This is the essence of abstraction.
+
+602
+00:36:38.725 --> 00:36:42.165
+Abstraction hides complexity by providing a common interface,
+
+603
+00:36:42.165 --> 00:36:46.825
+the steering wheel, pedals, gearstick, and gauges in our car example.
+
+604
+00:36:46.825 --> 00:36:48.825
+The same thing happens in our computer.
+
+605
+00:36:48.825 --> 00:36:51.165
+We don't need to know how it works underneath the hood.
+
+606
+00:36:51.165 --> 00:36:54.685
+We have a mouse and a keyboard we can use to interact with it.
+
+607
+00:36:54.685 --> 00:36:59.185
+Thanks to abstraction, the average computer user doesn't have to worry about the technical details.
+
+608
+00:36:59.185 --> 00:37:04.025
+We'll use this under the hood metaphor throughout the program to describe the area that contains
+
+609
+00:37:04.025 --> 00:37:07.285
+the underlying implementation of a technology.
+
+610
+00:37:07.285 --> 00:37:11.565
+In computing, we use abstraction to make a very complex problem, like how to make computers
+
+611
+00:37:11.565 --> 00:37:13.645
+work easier to think about.
+
+612
+00:37:13.645 --> 00:37:18.965
+We do that by breaking it apart into simpler ideas that describe single concepts or individual
+
+613
+00:37:18.965 --> 00:37:22.885
+jobs that need to be done, and then stack them in layers.
+
+614
+00:37:22.885 --> 00:37:26.625
+This concept of extraction will be used throughout this entire course.
+
+615
+00:37:26.625 --> 00:37:29.525
+It's a fundamental concept in the computing world.
+
+616
+00:37:29.525 --> 00:37:34.465
+Another simple example of abstraction in an IT role that you might see a lot is an error
+
+617
+00:37:34.465 --> 00:37:38.465
+We don't have to dig through someone else's code and find a bug.
+
+618
+00:37:38.465 --> 00:37:42.465
+This has been abstracted out for us already in the form of an error message.
+
+619
+00:37:42.465 --> 00:37:49.465
+A simple error message like, file not found, actually tells us a lot of information and saves us time to figure out a solution.
+
+620
+00:37:49.465 --> 00:37:56.465
+Can you imagine if instead of abstracting an error message, our computer did nothing and we had no clue where to start looking for answers?
+
+621
+00:37:56.465 --> 00:38:00.465
+Abstraction helps us in many ways that we don't even realize.
+
+622
+00:38:04.465 --> 00:38:13.305
+In the last video, I mentioned that people don't need to understand how a computer works for them to use it because abstraction makes things simpler for us.
+
+623
+00:38:13.945 --> 00:38:15.005
+That's technically true.
+
+624
+00:38:15.545 --> 00:38:20.905
+But since you're stepping to the world of IT, you do need to understand all the layers of a computer and how they work.
+
+625
+00:38:21.485 --> 00:38:26.845
+It's essential that you understand how the different pieces interact so you can resolve any issue that may arise.
+
+626
+00:38:26.845 --> 00:38:33.285
+For the rest of this course, we'll deep dive into the layers of computer architecture and learn all the parts that make up a computer.
+
+627
+00:38:33.285 --> 00:38:38.985
+The computer can be cut into four main layers, hardware, operating system, software, and users.
+
+628
+00:38:39.525 --> 00:38:42.645
+The hardware layer is made up of the physical components of a computer.
+
+629
+00:38:43.245 --> 00:38:45.425
+These are objects you can physically hold in your hand.
+
+630
+00:38:45.765 --> 00:38:48.345
+Laptops, phones, monitors, keyboards.
+
+631
+00:38:48.785 --> 00:38:49.685
+You get the idea.
+
+632
+00:38:50.105 --> 00:38:53.845
+In the next lesson, you'll learn all of the components of a computer and how they work.
+
+633
+00:38:54.365 --> 00:38:57.265
+You'll even be able to build your own computer by the end of this module.
+
+634
+00:38:57.665 --> 00:39:00.585
+Their operating system allows hardware to communicate with the system.
+
+635
+00:39:00.585 --> 00:39:03.465
+hardware is created by many different manufacturers.
+
+636
+00:39:04.205 --> 00:39:08.845
+The operating system allows them to be used with our system, regardless of where it came from.
+
+637
+00:39:09.165 --> 00:39:13.105
+In the next few lessons, you'll learn about the major operating systems that we use today,
+
+638
+00:39:13.485 --> 00:39:17.545
+and you'll be able to understand all of the underlying components that make up an operating system.
+
+639
+00:39:17.985 --> 00:39:23.905
+By the end of these lessons, you'll have a strong grasp on the major components of any operating system like Android or Windows,
+
+640
+00:39:24.625 --> 00:39:27.385
+and use that knowledge to navigate any operating system.
+
+641
+00:39:27.885 --> 00:39:30.565
+The software layer is how we as humans interact with.
+
+642
+00:39:30.585 --> 00:39:35.425
+our computers. When you use a computer, you're given a vast amount of software that you interact
+
+643
+00:39:35.425 --> 00:39:42.405
+with, whether it's a mobile app, a web browser, a word processor, or the operating system itself.
+
+644
+00:39:42.405 --> 00:39:47.545
+Later in this course, we'll learn how software is installed on our systems and how we interact
+
+645
+00:39:47.545 --> 00:39:52.365
+with different types of software. The last layer may not seem like it's part of the system,
+
+646
+00:39:52.365 --> 00:39:56.825
+but it's an essential layer of the computer architecture, the user. The user interacts with
+
+647
+00:39:56.825 --> 00:40:00.565
+the computer and she can do more than that. She can operate, maintain,
+
+648
+00:40:00.585 --> 00:40:02.585
+and even program the computer.
+
+649
+00:40:02.585 --> 00:40:05.585
+The user layer is one of the most important layers we'll learn about.
+
+650
+00:40:05.585 --> 00:40:07.585
+When you step into the field of IT,
+
+651
+00:40:07.585 --> 00:40:10.585
+you may have your hands full with the technical aspects.
+
+652
+00:40:10.585 --> 00:40:13.585
+What the most important part of IT is the human element.
+
+653
+00:40:13.585 --> 00:40:15.585
+While we work with computers every day,
+
+654
+00:40:15.585 --> 00:40:18.585
+it is the user interaction that makes up most of our job,
+
+655
+00:40:18.585 --> 00:40:21.585
+from responding to user emails, to fixing their computers.
+
+656
+00:40:21.585 --> 00:40:23.585
+By the end of the course,
+
+657
+00:40:23.585 --> 00:40:26.585
+you'll also learn how to apply your knowledge of how a computer works
+
+658
+00:40:26.585 --> 00:40:29.585
+to fix real-world issues that can sometimes seem random and obscure.
+
+659
+00:40:29.585 --> 00:40:31.405
+random and obscure.
+
+660
+00:40:31.405 --> 00:40:37.005
+We'll do this by learning how to utilize problem-solving tactics to identify issues and solutions.
+
+661
+00:40:37.005 --> 00:40:38.545
+There's a lot ahead.
+
+662
+00:40:38.545 --> 00:40:42.785
+The next instructor you're going to meet is a friend of mine, Devon Shrethairn.
+
+663
+00:40:42.785 --> 00:40:45.905
+And I know there's no better person to teach you about hardware.
+
+664
+00:40:45.905 --> 00:40:49.225
+But even show you how to build a computer from its component parts.
+
+665
+00:40:49.225 --> 00:40:50.625
+Pretty cool.
+
+666
+00:40:50.625 --> 00:40:54.985
+But before you get to building that computer, we got a quiz coming up for you on binary counting.
+
+667
+00:40:59.585 --> 00:41:02.025
+Google IT Support Certificate.
+
+668
+00:41:02.025 --> 00:41:06.145
+Access the full experience including job search help and get the official certificate by clicking
+
+669
+00:41:06.145 --> 00:41:09.005
+the icon or the link in the description.
+
+670
+00:41:09.005 --> 00:41:13.345
+Watch the next lesson in the course by clicking here and subscribe to our channel for more lessons
+
+671
+00:41:13.345 --> 00:41:15.585
+from upcoming Google Career Certificates.

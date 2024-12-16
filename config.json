@@ -1,0 +1,19 @@
+{
+  "demos": [
+    {
+      "title": "Foundations of IT Support",
+      "body": "Talk to and learn from the Google IT Support Certificate course for entry-level IT Support Specialists covering hardware, the Internet, computer software, troubleshooting, and customer service.",
+      "transcripts": [
+        "it-support-course/An In-Depth Look at the Internet - Google IT Support Certificate [EKM7FUHZwVo].vtt",
+        "it-support-course/Build a Computer in 20 minutes - Google IT Support Certificate [2su9UP4dSzo].vtt",
+        "it-support-course/Intro to IT - Google IT Support Certificate [f_c7PrH3rX8].vtt",
+        "it-support-course/IT Customer Service - Google IT Support Certificate [9q44g-1wgrQ].vtt",
+        "it-support-course/IT Support for Mobile Devices - Google IT Support Certificate [nPVAAapx_5s].vtt",
+        "it-support-course/Modern Computer Programs & Hardware - Google IT Support Certificate [bImv4l4f8Kw].vtt",
+        "it-support-course/Operating Systems - Composition and Management - Google IT Support Certificate [7CrfA-ukRe4].vtt",
+        "it-support-course/Software - Installation, Removal, and Everything in Between - Google IT Support Certificate [G7hBtzi8D0o].vtt",
+        "it-support-course/Welcome to IT Support - Google IT Support Certificate [lJC_sJ6jhDo].vtt"
+      ]
+    }
+  ]
+}

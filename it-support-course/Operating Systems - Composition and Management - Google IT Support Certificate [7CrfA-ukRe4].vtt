@@ -1,0 +1,2281 @@
+WEBVTT
+
+0
+00:00:00.000 --> 00:00:05.000
+Welcome back.
+
+1
+00:00:05.000 --> 00:00:09.500
+You've learned about the basics of computing with binary and the hardware layer of the computer
+
+2
+00:00:09.500 --> 00:00:10.500
+architecture.
+
+3
+00:00:10.500 --> 00:00:14.320
+Now it's time to move on to the next layer, the operating system.
+
+4
+00:00:14.320 --> 00:00:18.640
+By the end of this lesson, you'll know what an operating system is and what makes up an operating
+
+5
+00:00:18.640 --> 00:00:19.840
+system.
+
+6
+00:00:19.840 --> 00:00:24.460
+You'll also get some hands-on experience with the three biggest operating systems used today.
+
+7
+00:00:24.460 --> 00:00:28.120
+Before we get deeper into operating systems, I'd like to introduce myself to you.
+
+8
+00:00:28.120 --> 00:00:29.980
+My name is Cindy Quatch, and I'm a site-reliang.
+
+9
+00:00:30.000 --> 00:00:32.140
+reliability engineer at Google.
+
+10
+00:00:32.140 --> 00:00:35.920
+The team I work on is responsible for the management and support of Google's entire
+
+11
+00:00:35.920 --> 00:00:39.900
+internal mobile fleet, Android OS, iOS, and Chrome OS.
+
+12
+00:00:39.900 --> 00:00:43.000
+Operating systems are an essential part of IT support.
+
+13
+00:00:43.000 --> 00:00:47.160
+Everyone uses their computer to accomplish something, whether that's browsing the web,
+
+14
+00:00:47.160 --> 00:00:50.500
+writing a novel, making graphics, playing video games, etc.
+
+15
+00:00:50.500 --> 00:00:54.760
+Whatever the case may be, they need to interact with their operating system to do it.
+
+16
+00:00:54.760 --> 00:00:59.600
+In IT support, it's essential to understand how operating systems work so you can help someone
+
+17
+00:00:59.600 --> 00:01:01.600
+accomplish the task they sit out to do.
+
+18
+00:01:01.600 --> 00:01:05.200
+Whether that's figuring out why an application won't start, why the graphics look funny on
+
+19
+00:01:05.200 --> 00:01:07.880
+their video games, or anything else.
+
+20
+00:01:07.880 --> 00:01:11.200
+Things can get really messy and challenging, and that's part of the fun.
+
+21
+00:01:11.200 --> 00:01:12.720
+So let's begin.
+
+22
+00:01:12.720 --> 00:01:20.160
+In this lesson, we're going to talk about an important part of computing that makes
+
+23
+00:01:20.160 --> 00:01:23.220
+working in IT support a little easier.
+
+24
+00:01:23.220 --> 00:01:27.400
+Actually, it makes things a lot easier for just about anyone.
+
+25
+00:01:27.400 --> 00:01:30.460
+After this, you're on your way to an important meeting.
+
+26
+00:01:30.460 --> 00:01:34.160
+You've been rehearsing for this presentation all week, and now you're ready to show the big
+
+27
+00:01:34.160 --> 00:01:35.160
+wigs what you got.
+
+28
+00:01:35.160 --> 00:01:38.760
+But wait, the slide deck, where is it?
+
+29
+00:01:38.760 --> 00:01:40.440
+It's not on your laptop.
+
+30
+00:01:40.440 --> 00:01:41.940
+Where could it be?
+
+31
+00:01:41.940 --> 00:01:46.440
+It turns out you forgot your only copy on your desktop at home.
+
+32
+00:01:46.440 --> 00:01:51.400
+It's too late now to turn around and get it, so you sit there, dreading the inevitable.
+
+33
+00:01:51.400 --> 00:01:56.360
+But wait a minute, suddenly you remember that you have a remote connection set up from your laptop
+
+34
+00:01:56.360 --> 00:01:58.260
+to your desktop.
+
+35
+00:01:58.260 --> 00:02:01.680
+You use this connection to log into your computer at home,
+
+36
+00:02:01.680 --> 00:02:03.540
+and just as if you are sitting at home,
+
+37
+00:02:03.540 --> 00:02:05.580
+you're able to grab the file from your desktop
+
+38
+00:02:05.580 --> 00:02:07.580
+and copy it to your laptop.
+
+39
+00:02:07.580 --> 00:02:10.880
+You then proceed to give one amazing presentation.
+
+40
+00:02:10.880 --> 00:02:12.920
+Consider another scenario.
+
+41
+00:02:12.920 --> 00:02:14.280
+You bought a computer at a store,
+
+42
+00:02:14.280 --> 00:02:16.680
+and you're having a lot of issues with it.
+
+43
+00:02:16.680 --> 00:02:20.100
+The store has a computer help desk that can help you with the issues,
+
+44
+00:02:20.100 --> 00:02:22.720
+but it's after hours and the store's closed.
+
+45
+00:02:22.720 --> 00:02:24.800
+You really need to get your computer issue fixed.
+
+46
+00:02:24.800 --> 00:02:25.920
+So what are your options?
+
+47
+00:02:25.920 --> 00:02:29.920
+Fortunately, the store provides 24-7 tech support online.
+
+48
+00:02:29.920 --> 00:02:32.920
+Now instead of waiting until a physical store is open again,
+
+49
+00:02:32.920 --> 00:02:37.920
+you can reach a tech online and have them help you with your issue through a remote connection.
+
+50
+00:02:37.920 --> 00:02:41.920
+Remote connection makes working in an IT support role much easier
+
+51
+00:02:41.920 --> 00:02:45.920
+since it allows us to manage multiple machines from anywhere in the world.
+
+52
+00:02:45.920 --> 00:02:48.920
+In this lesson, we're going to learn about remote connection.
+
+53
+00:02:48.920 --> 00:02:54.920
+SSH or Secure Shell is a protocol implemented by other programs to securely access one computer from another.
+
+54
+00:02:54.920 --> 00:02:59.920
+To use SSH, you need to have an SSH client installed on the computer you're connecting from,
+
+55
+00:02:59.920 --> 00:03:03.920
+along with an SSH server on the computer you're trying to connect to.
+
+56
+00:03:03.920 --> 00:03:09.920
+Keep in mind that when we say SSH server, we don't mean another physical machine that serves data.
+
+57
+00:03:09.920 --> 00:03:11.920
+An SSH server is just software.
+
+58
+00:03:11.920 --> 00:03:16.920
+On the remote machine, the SSH server is running as a background process.
+
+59
+00:03:16.920 --> 00:03:21.920
+It constantly checks if a client is trying to connect to it, then we'll authenticate its request.
+
+60
+00:03:21.920 --> 00:03:28.360
+The most popular program to use SSH with in Linux is the OpenSH program.
+
+61
+00:03:28.360 --> 00:03:33.040
+We'll talk about how to use SSH from a Windows machine using the popular open source program
+
+62
+00:03:33.040 --> 00:03:34.540
+PUDD.
+
+63
+00:03:34.540 --> 00:03:38.740
+For now, let's just talk about what happens when you use SSH.
+
+64
+00:03:38.740 --> 00:03:41.960
+We're going to show you an example of SSHing into a remote machine.
+
+65
+00:03:41.960 --> 00:03:47.660
+So first things first, to log into a remote machine, we have to have an account on that computer.
+
+66
+00:03:47.660 --> 00:03:51.900
+We also need the host name or IP address of that computer.
+
+67
+00:03:51.920 --> 00:03:52.920
+Let's test this.
+
+68
+00:03:52.920 --> 00:04:05.880
+So SSH, Cindy, and IP address.
+
+69
+00:04:05.880 --> 00:04:06.920
+We get this message.
+
+70
+00:04:06.920 --> 00:04:11.880
+The authenticity of host and then the IP address can't be established.
+
+71
+00:04:11.880 --> 00:04:16.839
+This message is just saying we've never connected to this machine before, and our SSH client
+
+72
+00:04:16.839 --> 00:04:20.980
+can't really verify we're connecting to a machine we want to connect to.
+
+73
+00:04:20.980 --> 00:04:21.899
+But we can verify this.
+
+74
+00:04:21.920 --> 00:04:24.920
+is the right machine. So let's just go ahead and type yes.
+
+75
+00:04:24.920 --> 00:04:41.360
+Now this host gets saved to the computer as a known host, so we won't get this message
+
+76
+00:04:41.360 --> 00:04:46.520
+again when we try to log into it. Okay, now that we're connected through SSH, any of the
+
+77
+00:04:46.520 --> 00:04:51.800
+text commands that we type are sent securely to the SSH server. From here, you can even
+
+78
+00:04:51.800 --> 00:04:56.560
+launch an application that'll let you see a GUI instead of working directly in the shell.
+
+79
+00:04:56.560 --> 00:05:00.660
+You can read more about how to do that in the supplemental reading.
+
+80
+00:05:00.660 --> 00:05:04.400
+We can connect to SSH using passwords as you saw earlier.
+
+81
+00:05:04.400 --> 00:05:09.220
+This way of authenticating to a remote machine is pretty standard, but it's not super secure.
+
+82
+00:05:09.220 --> 00:05:13.180
+The alternative is using an SSH authentication key.
+
+83
+00:05:13.180 --> 00:05:18.600
+SSH keys come in a set of two keys called private and public keys.
+
+84
+00:05:18.600 --> 00:05:22.340
+You can think of them as actual physical keys to a special safe.
+
+85
+00:05:22.340 --> 00:05:26.160
+You can use one key to lock the safe, but it won't unlock it.
+
+86
+00:05:26.160 --> 00:05:30.440
+The other key can then only unlock the safe but not lock it.
+
+87
+00:05:30.440 --> 00:05:33.100
+That's basically how public and private keys work.
+
+88
+00:05:33.100 --> 00:05:37.660
+You can lock something with a public key, but you can only unlock it with a private key and
+
+89
+00:05:37.660 --> 00:05:39.260
+vice versa.
+
+90
+00:05:39.260 --> 00:05:43.520
+This ensures that whatever is in the safe is available to only those with the public and private
+
+91
+00:05:43.520 --> 00:05:45.180
+keys.
+
+92
+00:05:45.180 --> 00:05:48.580
+You'll learn about the technical details of public and private keys in our ITTA.
+
+93
+00:05:48.600 --> 00:05:54.220
+security course. Don't worry if this doesn't make sense right now. It will. And that's basically
+
+94
+00:05:54.220 --> 00:06:00.480
+how SSH works. Not too scary, right? Another way that you can connect securely to a remote machine
+
+95
+00:06:00.480 --> 00:06:06.320
+is through VPN. A VPN is a virtual private network. It allows you to connect to a private
+
+96
+00:06:06.320 --> 00:06:12.420
+network like your work network over the internet. Think of it as a more sophisticated SSH with a lot
+
+97
+00:06:12.420 --> 00:06:17.960
+more setup. It allows you to access resources like shared file servers and network devices
+
+98
+00:06:17.960 --> 00:06:23.280
+as if you are connected to your work network. Spoiler alert, we'll also touch upon the technical
+
+99
+00:06:23.280 --> 00:06:28.480
+details behind VPN in the IT security course. We've covered a lot about remote connections
+
+100
+00:06:28.480 --> 00:06:32.960
+and how they work. We'll talk more about the popular remote connection programs for Windows
+
+101
+00:06:32.960 --> 00:06:36.540
+and Linux and how to set them up in the system administration course.
+
+102
+00:06:40.540 --> 00:06:42.400
+The ability to make remote connections.
+
+103
+00:06:42.420 --> 00:06:44.760
+is equally useful on Windows computers.
+
+104
+00:06:44.760 --> 00:06:47.180
+Putty is a free open source software
+
+105
+00:06:47.180 --> 00:06:48.960
+that you can use to make remote connections
+
+106
+00:06:48.960 --> 00:06:52.420
+through several network protocols, including SSH.
+
+107
+00:06:52.420 --> 00:06:53.880
+You can visit the Putty website
+
+108
+00:06:53.880 --> 00:06:55.660
+to download the entire software package
+
+109
+00:06:55.660 --> 00:06:57.580
+with a Microsoft installer.
+
+110
+00:06:57.580 --> 00:07:00.420
+Those are the MSI files we talked about earlier.
+
+111
+00:07:00.420 --> 00:07:02.860
+Or you can choose a specific executable,
+
+112
+00:07:02.860 --> 00:07:05.020
+which provides the functionality you're after,
+
+113
+00:07:05.020 --> 00:07:07.180
+like putty.exe.
+
+114
+00:07:07.180 --> 00:07:08.920
+The Putty Downloads page is linked
+
+115
+00:07:08.920 --> 00:07:10.220
+in the next supplemental reading
+
+116
+00:07:10.220 --> 00:07:12.180
+in case you want to check it out.
+
+117
+00:07:12.180 --> 00:07:14.100
+Once you've downloaded and installed putty,
+
+118
+00:07:14.100 --> 00:07:15.620
+you can use it by launching the GUI.
+
+119
+00:07:22.260 --> 00:07:26.020
+A window will appear showing you the basic options for your connection.
+
+120
+00:07:26.020 --> 00:07:30.300
+Make a note of the host name, port, and connection type options.
+
+121
+00:07:30.300 --> 00:07:32.620
+By default, the port is set to 22,
+
+122
+00:07:32.620 --> 00:07:35.700
+which is the default port the SSH protocol uses,
+
+123
+00:07:35.700 --> 00:07:38.320
+and the connection type is set to SSH.
+
+124
+00:07:38.320 --> 00:07:40.260
+All you need to do is type in the host name
+
+125
+00:07:40.260 --> 00:07:42.160
+or IP address of the computer you want to take.
+
+126
+00:07:42.180 --> 00:07:42.680
+connect to.
+
+127
+00:07:47.580 --> 00:07:50.340
+Then click Open to start up a new SSH session.
+
+128
+00:07:59.780 --> 00:08:02.080
+And now I've SSAHed into a remote computer.
+
+129
+00:08:03.000 --> 00:08:06.080
+Running Putty from the GUI isn't your only option.
+
+130
+00:08:06.080 --> 00:08:08.740
+You can also use it on the command line.
+
+131
+00:08:08.740 --> 00:08:12.160
+Open a PowerShell prompt and type out the application name.
+
+132
+00:08:12.180 --> 00:08:13.180
+like this.
+
+133
+00:08:19.180 --> 00:08:24.180
+Then tell it you want to connect via SSH by adding the dash SSH option.
+
+134
+00:08:24.180 --> 00:08:32.179
+You can also provide the user and address in the form of user at IP address and specifying the port at the end.
+
+135
+00:08:32.179 --> 00:08:35.179
+Altogether, the command would look something like this.
+
+136
+00:08:42.179 --> 00:08:47.680
+Putty also comes with a tool called Plink, or Putty Link,
+
+137
+00:08:47.680 --> 00:08:50.680
+which is built into the command line after Putty is installed.
+
+138
+00:08:50.680 --> 00:08:54.180
+You can use Plink to make remote SSH connections too.
+
+139
+00:08:54.180 --> 00:09:10.460
+SSH can be super useful especially if you want to connect from a computer running Windows to a Linux operating system running remotely Microsoft actually provides another way to connect to other Windows computers called the Remote Desktop Protocol or RDP
+
+140
+00:09:10.460 --> 00:09:17.520
+There are also RDP clients for Linux and OS10 too, like Real VNC and Microsoft RDP on Mac.
+
+141
+00:09:17.520 --> 00:09:20.840
+We'll add some links to these clients in the supplemental reading.
+
+142
+00:09:20.840 --> 00:09:25.420
+RDP provides users with a graphical user interface to remote computers, provided the
+
+143
+00:09:25.420 --> 00:09:28.220
+remote computer has enabled incoming RDP connections.
+
+144
+00:09:28.220 --> 00:09:36.220
+A client program called the Microsoft Terminal Services client, or MSTSC.e, is used to create
+
+145
+00:09:36.220 --> 00:09:39.300
+RDP connections to remote computers.
+
+146
+00:09:39.300 --> 00:09:43.940
+You can enable remote connections on your computer by opening up the start menu, right-clicking
+
+147
+00:09:43.940 --> 00:09:51.420
+on this PC, then selecting properties.
+
+148
+00:09:51.420 --> 00:09:53.020
+From there, select remote settings.
+
+149
+00:09:58.220 --> 00:10:03.220
+And then pick an option from the remote desktop portion of the panel.
+
+150
+00:10:03.220 --> 00:10:08.220
+There are some security implications that come with allowing people to remotely connect to your computer.
+
+151
+00:10:08.220 --> 00:10:11.220
+You should only let users who you trust do this.
+
+152
+00:10:11.220 --> 00:10:16.220
+Typically, in an industry setting, these kinds of settings are usually set by the system administrator
+
+153
+00:10:16.220 --> 00:10:19.220
+for the company's computers that connect to the network.
+
+154
+00:10:19.220 --> 00:10:22.220
+Once you've allowed connections on the remote computer,
+
+155
+00:10:22.220 --> 00:10:25.220
+and provided you're on the list of users allowed to access it,
+
+156
+00:10:25.220 --> 00:10:27.220
+you can use the remote desktop protocol client,
+
+157
+00:10:27.220 --> 00:10:32.220
+MSTSC.e to connect to it from anywhere else on the network.
+
+158
+00:10:36.220 --> 00:10:41.220
+You can launch the RDP client in a few ways.
+
+159
+00:10:41.220 --> 00:10:45.220
+You can type MSTSC at the run box
+
+160
+00:10:45.220 --> 00:10:51.220
+or look up remote desktop connections in the start menu.
+
+161
+00:10:55.220 --> 00:10:56.220
+Once you've launched the client,
+
+162
+00:10:56.220 --> 00:11:01.420
+Once you've launched the client, it'll ask for the name or IP address of the computer you want to connect to.
+
+163
+00:11:02.140 --> 00:11:05.339
+The WindowsRDP client can also be launched from the command line,
+
+164
+00:11:05.339 --> 00:11:11.900
+where you can specify more parameters like slash admin if you want to connect to the remote machine with administrative credentials.
+
+165
+00:11:11.900 --> 00:11:16.140
+We've linked to the RDP documentation in the supplementary reading in case you want to learn more.
+
+166
+00:11:20.380 --> 00:11:23.339
+We introduced the concept of an operating system in earlier lessons.
+
+167
+00:11:23.339 --> 00:11:26.060
+But what is it exactly? A lot of us hear the terms of the term.
+
+168
+00:11:26.220 --> 00:11:31.460
+term operating system and think of the interfaces of our desktops and phones like the menus,
+
+169
+00:11:31.460 --> 00:11:33.300
+buttons, and backgrounds.
+
+170
+00:11:33.300 --> 00:11:37.700
+Technically, these are part of the operating system, but it's a little more complex than that.
+
+171
+00:11:37.700 --> 00:11:41.780
+An operating system is the whole package that manages our computer's resources and lets
+
+172
+00:11:41.780 --> 00:11:43.380
+us interact with it.
+
+173
+00:11:43.380 --> 00:11:47.820
+There are two main parts to an operating system, the kernel and the user space.
+
+174
+00:11:47.820 --> 00:11:50.880
+The kernel is the main core of an operating system.
+
+175
+00:11:50.880 --> 00:11:55.320
+It talks directly to our hardware and manages our systems resources.
+
+176
+00:11:55.320 --> 00:11:58.080
+As users, we don't interact with the kernel directly.
+
+177
+00:11:58.080 --> 00:12:02.880
+Instead, we interact with the second part of an operating system, the user space.
+
+178
+00:12:02.880 --> 00:12:06.860
+The user space is basically made up of everything outside the kernel.
+
+179
+00:12:06.860 --> 00:12:10.820
+These are things that we interact with directly, like system programs, user interfaces,
+
+180
+00:12:10.820 --> 00:12:11.820
+etc.
+
+181
+00:12:11.820 --> 00:12:16.000
+When we say operating system, we're talking about both the kernel and the user space.
+
+182
+00:12:16.000 --> 00:12:19.560
+There are hundreds of operating systems out there, but we'll focus on the major ones used
+
+183
+00:12:19.560 --> 00:12:22.820
+in IT, Windows, Mac, and Linux.
+
+184
+00:12:22.820 --> 00:12:25.300
+The Windows OS is developed by Microsoft and use widely.
+
+185
+00:12:25.320 --> 00:12:27.320
+in the business and consumer space.
+
+186
+00:12:27.320 --> 00:12:31.320
+Most PCs you buy come with Windows as the default operating system.
+
+187
+00:12:31.320 --> 00:12:36.320
+PC means personal computer, which technically means a computer that one person uses.
+
+188
+00:12:36.320 --> 00:12:40.320
+But in today's world, PC is more commonly referred to as a Windows computer.
+
+189
+00:12:40.320 --> 00:12:44.320
+So we'll just refer to a PC as a Windows computer from here.
+
+190
+00:12:44.320 --> 00:12:47.320
+MacOS by Apple is mainly used in the consumer space.
+
+191
+00:12:47.320 --> 00:12:50.320
+If you buy an Apple computer, it'll come with MacOS preloaded.
+
+192
+00:12:50.320 --> 00:12:54.320
+The last operating system we'll dive into is the Linux operating system.
+
+193
+00:12:54.320 --> 00:12:57.320
+Linux is an open source operating system,
+
+194
+00:12:57.320 --> 00:13:01.320
+which means its software is free to share, modify, and distribute.
+
+195
+00:13:01.320 --> 00:13:05.320
+Linux is used heavily in business infrastructure and in the consumer space.
+
+196
+00:13:05.320 --> 00:13:10.320
+Linux itself is actually a kernel developed by Linus Torvalds.
+
+197
+00:13:10.320 --> 00:13:14.320
+Because of the way it evolved, we call the Linux kernel the Linux operating system.
+
+198
+00:13:14.320 --> 00:13:20.320
+Today, Linux has become a huge community effort with developers all over the world contributing to its success.
+
+199
+00:13:20.320 --> 00:13:24.320
+Because Linux is open source, lots of different organizations packaged their own version,
+
+200
+00:13:24.320 --> 00:13:29.280
+of it. Operating systems like Windows or Macintosh, on the other hand, are solely developed
+
+201
+00:13:29.280 --> 00:13:37.120
+by their respective companies. We call these different Linux OS's distributions. Some common Linux distributions
+
+202
+00:13:37.120 --> 00:13:43.200
+are Ubuntu, Debian, and Red Hat. Another operating system that has started to gain popularity
+
+203
+00:13:43.200 --> 00:13:48.000
+is ChromeOS, but we won't go into detail on that one. You can read more about it in the supplemental
+
+204
+00:13:48.000 --> 00:13:52.880
+reading right after this video. We also won't go over any of the operating systems used in mobile
+
+205
+00:13:52.880 --> 00:13:57.320
+devices like Android OS, iOS, and Windows 10 mobile.
+
+206
+00:13:57.320 --> 00:14:01.380
+But you should be aware that mobile phone operating systems are quickly overtaking their
+
+207
+00:14:01.380 --> 00:14:04.440
+desktop counterparts in terms of quantity.
+
+208
+00:14:04.440 --> 00:14:08.380
+Mobile phone usage around the world is more prevalent than desktop computers.
+
+209
+00:14:08.380 --> 00:14:11.300
+You can read more about this in the supplemental reading.
+
+210
+00:14:11.300 --> 00:14:15.720
+But in this course, we're only going to focus on the Windows and Linux operating systems,
+
+211
+00:14:15.720 --> 00:14:18.260
+since you'll most likely work with them in IT support.
+
+212
+00:14:18.260 --> 00:14:22.640
+One cool thing to call out is that Chrome OS and Android OS both run the Linux kernel underneath
+
+213
+00:14:22.640 --> 00:14:23.640
+the hood.
+
+214
+00:14:23.640 --> 00:14:26.940
+So there's a chance you've already worked with Linux and didn't even know it.
+
+215
+00:14:26.940 --> 00:14:31.300
+There are lots of operating systems out there, and they all share common characteristics.
+
+216
+00:14:31.300 --> 00:14:36.140
+If you're able to understand the basic building blocks of one OS, you can apply that to any operating
+
+217
+00:14:36.140 --> 00:14:38.720
+system and understand how it works.
+
+218
+00:14:38.720 --> 00:14:43.040
+In IT support, it's super common to work with many different operating systems, from desktop
+
+219
+00:14:43.040 --> 00:14:45.560
+OSs to smartphone OSs and more.
+
+220
+00:14:45.560 --> 00:14:49.220
+Throughout the rest of this module, we're going to learn what an operating system is.
+
+221
+00:14:49.220 --> 00:14:52.520
+More specifically, we're going to learn about the two components that make up an operating
+
+222
+00:14:52.520 --> 00:14:55.640
+system, the kernel space, and the user space.
+
+223
+00:14:55.640 --> 00:14:58.600
+Before we get there, let's do a rundown of the basics.
+
+224
+00:14:58.600 --> 00:15:01.520
+The kernel does file storage and file management.
+
+225
+00:15:01.520 --> 00:15:05.800
+You can compare it to a physical office file where we store data in paper form.
+
+226
+00:15:05.800 --> 00:15:08.339
+A computer file is just data that we store.
+
+227
+00:15:08.339 --> 00:15:13.380
+And a file can be anything, a word document, a picture, a song, literally anything.
+
+228
+00:15:13.380 --> 00:15:16.240
+A file system is how we manage these files.
+
+229
+00:15:16.240 --> 00:15:19.480
+Just like in an office, we use a system to store our files.
+
+230
+00:15:19.480 --> 00:15:21.880
+We don't just put all our files in one cabinet.
+
+231
+00:15:21.880 --> 00:15:24.120
+That would be seriously messy.
+
+232
+00:15:24.120 --> 00:15:30.180
+Instead, we organize those files in folders or directories to make them easier to find.
+
+233
+00:15:30.180 --> 00:15:33.640
+There are lots of different types of file systems, which will cover more in depth in future
+
+234
+00:15:33.640 --> 00:15:34.780
+videos.
+
+235
+00:15:34.780 --> 00:15:39.140
+Another important function of the kernel is process management.
+
+236
+00:15:39.140 --> 00:15:42.120
+We have many programs that we want to run on our system.
+
+237
+00:15:42.120 --> 00:15:47.120
+To run them, we manage the order they run in, how many resources they take up, how long they
+
+238
+00:15:47.120 --> 00:15:48.640
+run, etc.
+
+239
+00:15:48.640 --> 00:15:51.780
+Our kernel helps us do this with its process management capabilities.
+
+240
+00:15:51.880 --> 00:15:56.880
+For example, you've probably used your computer to do several tasks at once.
+
+241
+00:15:56.880 --> 00:16:00.880
+Maybe you write in a text document while listening to music or playing a video.
+
+242
+00:16:00.880 --> 00:16:04.880
+The process scheduler is part of the kernel that makes this multitasking possible.
+
+243
+00:16:04.880 --> 00:16:09.880
+It switches the execution of each different process on the CPU faster than you can blink.
+
+244
+00:16:09.880 --> 00:16:13.880
+And it gives you the illusion that things are happening simultaneously.
+
+245
+00:16:13.880 --> 00:16:15.880
+Next up is memory management.
+
+246
+00:16:15.880 --> 00:16:20.880
+Our kernel optimizes memory usage and make sure our applications have enough memory to run.
+
+247
+00:16:20.880 --> 00:16:26.079
+We won't get into too much detail right now, so stay tuned for more on this in the next few videos.
+
+248
+00:16:26.079 --> 00:16:31.680
+The last important function that a kernel performs is input-output, or I-O-management.
+
+249
+00:16:31.680 --> 00:16:38.640
+This is how our kernel talks to external devices like disks, keyboards, networks, connections, audio devices, and more.
+
+250
+00:16:38.640 --> 00:16:44.320
+I-O management is anything that can give us input or that we can use for output of data.
+
+251
+00:16:44.320 --> 00:16:49.680
+If you've ever saved a file to disk, clicked a mouse button, or used a microphone when video chatting,
+
+252
+00:16:49.680 --> 00:16:54.320
+With a friend, you've got the kernel's ability to manage I.O. to think.
+
+253
+00:16:54.320 --> 00:16:57.200
+And that's a basic rundown of the main functions of the kernel.
+
+254
+00:16:57.200 --> 00:17:02.000
+File management, process management, memory management, and I.O. management.
+
+255
+00:17:02.000 --> 00:17:06.400
+Finally, we'll talk about the other component of an operating system, the user space.
+
+256
+00:17:06.400 --> 00:17:08.800
+The user space is everything outside the kernel.
+
+257
+00:17:08.800 --> 00:17:11.920
+These are the things that we interact with directly like programs,
+
+258
+00:17:11.920 --> 00:17:16.640
+such as text editors, music players, system settings, user interfaces, etc.
+
+259
+00:17:16.640 --> 00:17:19.520
+By the end of this module, you'll hopefully have a solid understanding
+
+260
+00:17:19.520 --> 00:17:21.520
+of all these functions of an operating system.
+
+261
+00:17:21.520 --> 00:17:26.520
+Let's start by taking a deeper dive into the kernel's file management.
+
+262
+00:17:30.520 --> 00:17:33.520
+Imagine if you had to store a single file in a cabinet.
+
+263
+00:17:33.520 --> 00:17:34.520
+That's not so bad, right?
+
+264
+00:17:34.520 --> 00:17:37.520
+What if instead of one file you had to store 100,000?
+
+265
+00:17:37.520 --> 00:17:39.520
+Can you see a problem here?
+
+266
+00:17:39.520 --> 00:17:43.520
+Well, on our computers, we can easily store hundreds of thousands of files,
+
+267
+00:17:43.520 --> 00:17:44.520
+if not more.
+
+268
+00:17:44.520 --> 00:17:45.520
+Problem solved?
+
+269
+00:17:45.520 --> 00:17:46.520
+Not quite.
+
+270
+00:17:46.520 --> 00:17:48.520
+We have to be able to keep track of all these files.
+
+271
+00:17:48.520 --> 00:17:53.520
+of all these files, the kernel handles file storage and file systems on our machines.
+
+272
+00:17:53.520 --> 00:17:57.520
+And in this lesson, we're going to dig a little deeper on how it does that.
+
+273
+00:17:57.520 --> 00:18:12.480
+There are three main components to handling files on an OS the file data metadata and file system Let start with the file system When we have a brand new hard disk that we want to store data on we need to erase and configure the disk
+
+274
+00:18:12.480 --> 00:18:16.400
+This way, our operating system can read and write data to it.
+
+275
+00:18:16.400 --> 00:18:20.480
+This is important since it's how our operating system keeps tracks of files.
+
+276
+00:18:20.480 --> 00:18:22.840
+So it must know what kind of file system is used.
+
+277
+00:18:22.840 --> 00:18:26.400
+There are lots of file systems and they're used for different purposes.
+
+278
+00:18:26.400 --> 00:18:31.600
+Some file systems support the storage of large amounts of data, others only support small amounts.
+
+279
+00:18:31.600 --> 00:18:36.480
+We can operate at different speeds and have varying resiliency towards file corruption and so on.
+
+280
+00:18:36.480 --> 00:18:38.840
+We won't get into which file system is best.
+
+281
+00:18:38.840 --> 00:18:40.440
+That's for you to decide.
+
+282
+00:18:40.440 --> 00:18:44.560
+But the major OS manufacturers have their own unique file systems that they recommend.
+
+283
+00:18:44.560 --> 00:18:49.080
+For Windows, the major file system that's used is NTFS.
+
+284
+00:18:49.080 --> 00:18:54.980
+It was introduced in the previous version of Windows OS, Windows NT, and it includes many
+
+285
+00:18:54.980 --> 00:18:59.720
+features like encryption, faster access speeds, security, and more.
+
+286
+00:18:59.720 --> 00:19:01.580
+Microsoft is developing another file system called.
+
+287
+00:19:01.600 --> 00:19:06.420
+called ReFS, but it isn't quite ready for consumer use just yet.
+
+288
+00:19:06.420 --> 00:19:10.340
+If you're interested in learning more, you can read more about it in the next supplemental reading.
+
+289
+00:19:10.340 --> 00:19:14.500
+For MacOS, the default file system is HFS plus.
+
+290
+00:19:14.500 --> 00:19:19.860
+It's journaled, which means it does a better job at saving your disk state in case of a failure.
+
+291
+00:19:19.860 --> 00:19:23.720
+This is a feature on other types of file systems like NTFS.
+
+292
+00:19:23.720 --> 00:19:28.100
+For Linux, different distributions will use different file system types.
+
+293
+00:19:28.100 --> 00:19:31.580
+A standard for file systems for Linux is EXT4.
+
+294
+00:19:31.600 --> 00:19:35.940
+4, which is compatible with older ExtE file systems.
+
+295
+00:19:35.940 --> 00:19:40.260
+In general, different file system types don't play nicely with each other.
+
+296
+00:19:40.260 --> 00:19:44.600
+You might not be able to easily move files across different file systems depending on the file
+
+297
+00:19:44.600 --> 00:19:46.220
+system type.
+
+298
+00:19:46.220 --> 00:19:51.400
+A good guideline to use is just to use the file system that your operating system recommends.
+
+299
+00:19:51.400 --> 00:19:55.360
+You can read more about the different types of file systems in the supplemental reading.
+
+300
+00:19:55.360 --> 00:19:59.360
+Another important part of file management is the storage of actual file data.
+
+301
+00:19:59.360 --> 00:20:01.580
+We write data to our hard drive in the form of data
+
+302
+00:20:01.600 --> 00:20:06.600
+When we save something to our hard disks, it doesn't always sit in one piece.
+
+303
+00:20:06.600 --> 00:20:10.600
+It can be broken down into many pieces and written to different parts of the disk.
+
+304
+00:20:10.600 --> 00:20:15.600
+Block storage improves faster handling of data because the data isn't stored on one long piece,
+
+305
+00:20:15.600 --> 00:20:17.600
+and it can be accessed quicker.
+
+306
+00:20:17.600 --> 00:20:20.600
+It's also better for utilizing storage space.
+
+307
+00:20:20.600 --> 00:20:25.600
+Lastly, we need to keep the metadata that contains the information about our file.
+
+308
+00:20:25.600 --> 00:20:28.600
+There's a lot of information about our file that we want to know,
+
+309
+00:20:28.600 --> 00:20:30.600
+like who created it, when it was last modified,
+
+310
+00:20:30.600 --> 00:20:34.220
+was last modified, who has access to it, and so on.
+
+311
+00:20:34.220 --> 00:20:38.280
+The file metadata tells us everything we need to know about our file.
+
+312
+00:20:38.280 --> 00:20:40.620
+It also tells us what type of file it is.
+
+313
+00:20:40.620 --> 00:20:45.360
+A file extension is the appended part of a file name that tells us what type of file it is
+
+314
+00:20:45.360 --> 00:20:47.420
+in certain operating systems.
+
+315
+00:20:47.420 --> 00:20:49.440
+Take cool underscore image.
+
+316
+00:20:49.440 --> 00:20:51.120
+JPEG.
+
+317
+00:20:51.120 --> 00:20:54.560
+JPEG is a file extension associated with image files.
+
+318
+00:20:54.560 --> 00:20:59.040
+You'll see different types of file extensions like this when you're working with your operating system.
+
+319
+00:20:59.040 --> 00:21:02.880
+The working knowledge of file systems and the differences between them is a great skill to
+
+320
+00:21:02.880 --> 00:21:06.040
+have in your IT support specialist toolbox.
+
+321
+00:21:06.040 --> 00:21:10.740
+It can be super useful when you need to do things like recover data from damaged disks or explore
+
+322
+00:21:10.740 --> 00:21:14.860
+ways to boot from two different kinds of operating systems like Windows and Linux on the
+
+323
+00:21:14.860 --> 00:21:16.920
+same computer.
+
+324
+00:21:16.920 --> 00:21:25.280
+One of the most important tasks that our kernel performs is process management.
+
+325
+00:21:25.280 --> 00:21:29.020
+A process is a program that's executing like our internet browser or tech.
+
+326
+00:21:29.040 --> 00:21:35.560
+editor. A program is an application that we can run like Chrome. Take note of the difference,
+
+327
+00:21:35.560 --> 00:21:41.040
+we can have many processes of the same program running at the same time. Think of how many
+
+328
+00:21:41.040 --> 00:21:46.280
+Chrome windows you can open. These are all different processes for the same program. When we want
+
+329
+00:21:46.280 --> 00:21:52.280
+to run our programs, we have to dedicate computer resources to them, like RAM and CPU. We only
+
+330
+00:21:52.280 --> 00:21:56.940
+have a finite amount of resources, and we want to be able to run multiple programs. Our
+
+331
+00:21:56.940 --> 00:21:59.540
+The kernel has to manage our resources efficiently
+
+332
+00:21:59.540 --> 00:22:02.380
+so that all the programs we want to use can be run.
+
+333
+00:22:02.380 --> 00:22:05.380
+Our kernel doesn't just dedicate all of our computer's resources
+
+334
+00:22:05.380 --> 00:22:06.580
+to one process.
+
+335
+00:22:06.580 --> 00:22:10.140
+Our system is actually constantly running multiple processes
+
+336
+00:22:10.140 --> 00:22:12.740
+that are necessary for it to function.
+
+337
+00:22:12.740 --> 00:22:16.480
+So our kernel has to worry about all of these processes at once.
+
+338
+00:22:16.480 --> 00:22:20.440
+When a program wants to run, a process needs to be created for it.
+
+339
+00:22:20.440 --> 00:22:24.679
+This process needs to have hardware resources like RAM and CPU.
+
+340
+00:22:24.679 --> 00:22:26.840
+The kernel has to schedule time for the CPU to execute
+
+341
+00:22:26.840 --> 00:22:29.300
+execute the instructions in the process.
+
+342
+00:22:29.300 --> 00:22:32.720
+But there's only one CPU and many processes.
+
+343
+00:22:32.720 --> 00:22:36.679
+How is the CPU able to execute multiple processes at once?
+
+344
+00:22:36.679 --> 00:22:38.020
+It actually doesn't.
+
+345
+00:22:38.020 --> 00:22:40.740
+It executes processes one by one
+
+346
+00:22:40.740 --> 00:22:43.740
+through something known as a time slice.
+
+347
+00:22:43.740 --> 00:22:46.320
+A time slice is a very short interval of time
+
+348
+00:22:46.320 --> 00:22:50.380
+that gets allocated to a process per CPU execution.
+
+349
+00:22:50.380 --> 00:22:52.740
+It's so short that you don't even notice it.
+
+350
+00:22:52.740 --> 00:22:55.260
+I mean, it's super short.
+
+351
+00:22:55.260 --> 00:22:56.820
+The CPU executes one process.
+
+352
+00:22:56.840 --> 00:23:01.360
+process in milliseconds, then executes another process, then another.
+
+353
+00:23:01.360 --> 00:23:05.700
+To the human eye, everything looks like it runs simultaneously.
+
+354
+00:23:05.700 --> 00:23:08.120
+That's how fast the CPU works.
+
+355
+00:23:08.120 --> 00:23:12.860
+If your computer is running slowly and your CPU resources are being maxed out, there could
+
+356
+00:23:12.860 --> 00:23:15.380
+be many factors at play.
+
+357
+00:23:15.380 --> 00:23:20.220
+It's possible that one process is taking up more time slices than it should.
+
+358
+00:23:20.220 --> 00:23:23.780
+This means that the next process can't be executed.
+
+359
+00:23:23.780 --> 00:23:26.820
+Another possibility is that there are too many processes that want C.
+
+360
+00:23:26.840 --> 00:23:30.179
+CPU time and the CPU can't keep up with them.
+
+361
+00:23:30.179 --> 00:23:35.240
+Whatever the case may be, even though the kernel does its best to manage processes for us,
+
+362
+00:23:35.240 --> 00:23:38.720
+we might need to step in manually from time to time.
+
+363
+00:23:38.720 --> 00:23:41.620
+We'll talk about how to manage processes in a later course.
+
+364
+00:23:41.620 --> 00:23:47.400
+The kernel creates processes, efficiently schedules them, and manages how processes are terminated.
+
+365
+00:23:47.400 --> 00:23:51.940
+This is important since we need a way to collect all of the previously used resources that
+
+366
+00:23:51.940 --> 00:23:56.080
+active processes were taking up and reallocate them to another process.
+
+367
+00:23:56.840 --> 00:24:07.179
+Remember that when a process runs, it needs CPU time, but it also needs memory.
+
+368
+00:24:07.179 --> 00:24:11.700
+When processes are run, they have to take up space in memory so that the computer can read
+
+369
+00:24:11.700 --> 00:24:13.080
+and load them quickly.
+
+370
+00:24:13.080 --> 00:24:18.200
+However, compared to our hard disk drives, memory comes in smaller quantities.
+
+371
+00:24:18.200 --> 00:24:23.460
+So to give us more memory than we physically have, we use something called virtual memory.
+
+372
+00:24:23.460 --> 00:24:26.780
+Virtual memory is the combination of hard drive space and RAM.
+
+373
+00:24:26.840 --> 00:24:29.840
+that acts like memory that our processes can use.
+
+374
+00:24:29.840 --> 00:24:32.840
+When we execute a process, we take the data of the program
+
+375
+00:24:32.840 --> 00:24:34.840
+in chunks we call pages.
+
+376
+00:24:34.840 --> 00:24:37.840
+We store these pages in virtual memory.
+
+377
+00:24:37.840 --> 00:24:39.840
+If we want to read and execute these pages,
+
+378
+00:24:39.840 --> 00:24:42.840
+they have to be sent to physical memory or RAM.
+
+379
+00:24:42.840 --> 00:24:45.840
+Why don't we just store the entire program in RAM
+
+380
+00:24:45.840 --> 00:24:47.840
+so we can execute it quickly?
+
+381
+00:24:47.840 --> 00:24:50.840
+Well, you could, if it was small enough,
+
+382
+00:24:50.840 --> 00:24:52.840
+but for large applications, it would be wasteful.
+
+383
+00:24:52.840 --> 00:24:54.840
+Have you ever worked in a word processor
+
+384
+00:24:54.840 --> 00:24:55.840
+and then gone to a menu don't normally?
+
+385
+00:24:55.840 --> 00:25:00.520
+If I go onto a menu you don't normally use and notice the application slow down a little,
+
+386
+00:25:00.520 --> 00:25:05.820
+it's because your computer had to load the page for that menu from virtual memory into RAM.
+
+387
+00:25:05.820 --> 00:25:11.080
+We don't use all the features of our application at once, so why load it up at once?
+
+388
+00:25:11.080 --> 00:25:13.940
+It's similar to cooking a recipe from a cookbook.
+
+389
+00:25:13.940 --> 00:25:16.860
+You don't need to read the whole book just to make one recipe.
+
+390
+00:25:16.860 --> 00:25:20.960
+You only need to read the pages of the recipe you're currently using.
+
+391
+00:25:20.960 --> 00:25:25.820
+When we store our virtual memory on our hard drive, we call the allocated space swap space
+
+392
+00:25:25.840 --> 00:25:31.520
+When we get into practical applications of disk partitioning, we'll allocate space for swap.
+
+393
+00:25:31.520 --> 00:25:34.679
+The kernel takes care of all of this for us, of course.
+
+394
+00:25:34.679 --> 00:25:40.300
+It handles the process of taking pages of data and swapping them between RAM and virtual memory.
+
+395
+00:25:40.300 --> 00:25:43.280
+But the kernel isn't the only hard worker around.
+
+396
+00:25:43.280 --> 00:25:45.800
+You've done great getting through the lessons so far.
+
+397
+00:25:45.800 --> 00:25:47.300
+Nice work.
+
+398
+00:25:47.300 --> 00:25:50.760
+Up next, we'll tackle I.O. management.
+
+399
+00:25:50.760 --> 00:25:51.760
+See you there.
+
+400
+00:25:55.840 --> 00:26:01.840
+So far, we've learned how hard our kernel works by handling files, managing file storage,
+
+401
+00:26:01.840 --> 00:26:06.840
+juggling all the different processes running on our computer, and allocating memory.
+
+402
+00:26:06.840 --> 00:26:10.840
+Another important task that our kernel handles is managing input and output.
+
+403
+00:26:10.840 --> 00:26:15.840
+We refer to devices that perform input and output as I-O devices.
+
+404
+00:26:15.840 --> 00:26:20.840
+These include our monitors, keyboards, mice, hard disk drives, speakers,
+
+405
+00:26:20.840 --> 00:26:24.840
+Bluetooth headsets, webcams, and network adapters.
+
+406
+00:26:24.840 --> 00:26:27.960
+These I.O. devices are all managed by our kernel.
+
+407
+00:26:27.960 --> 00:26:31.080
+The kernel needs to be able to load up drivers that are used
+
+408
+00:26:31.080 --> 00:26:35.080
+so that we can recognize and speak to these different types of hardware.
+
+409
+00:26:35.080 --> 00:26:38.600
+When the kernel is able to start the drivers to communicate with hardware,
+
+410
+00:26:38.600 --> 00:26:43.640
+it also manages the transfer of data in and out of the devices.
+
+411
+00:26:43.640 --> 00:26:47.800
+I.O. doesn't just mean the transfer of data between us and our devices.
+
+412
+00:26:47.800 --> 00:26:51.960
+The devices also need to be able to talk to each other.
+
+413
+00:26:51.960 --> 00:26:56.200
+Our kernel handles all the intercommunication between devices.
+
+414
+00:26:56.200 --> 00:27:00.100
+It also figures out what the most efficient method of transfer is,
+
+415
+00:27:00.100 --> 00:27:04.000
+and it tries its best to make sure our data doesn't have errors during process.
+
+416
+00:27:04.000 --> 00:27:18.640
+When you troubleshooting or solving a problem with a slow machine it usually some sort of hardware resource deficiency If you don have enough RAM you can load up as many processes If you don have enough CPU you can execute programs fast enough
+
+417
+00:27:18.640 --> 00:27:23.620
+If you have too much input coming into a device or too much output going somewhere, you'll
+
+418
+00:27:23.620 --> 00:27:27.180
+also block other data from being sent or received.
+
+419
+00:27:27.180 --> 00:27:32.740
+It's slow is one of the most common problems you'll solve in an IT support role.
+
+420
+00:27:32.740 --> 00:27:35.480
+Knowing the potential sources of that slowness is a big
+
+421
+00:27:35.500 --> 00:27:39.000
+help when you're trying to narrow down the cause of the latency.
+
+422
+00:27:39.000 --> 00:27:43.060
+Trouleshooting is such an important part of any IT support role.
+
+423
+00:27:43.060 --> 00:27:49.020
+That's why we'll share some troubleshooting best practices in detail in upcoming lessons of this course.
+
+424
+00:27:49.020 --> 00:27:53.840
+Beyond desktop support, identifying the source of a resource bottleneck and a server or
+
+425
+00:27:53.840 --> 00:27:58.800
+large IT system like a web application can unlock performance gains and new heights
+
+426
+00:27:58.800 --> 00:28:00.740
+of responsiveness for your users.
+
+427
+00:28:05.500 --> 00:28:09.340
+Okay, we've covered the kernel's major responsibilities.
+
+428
+00:28:09.340 --> 00:28:13.580
+Now let's discuss the final major aspect of an operating system,
+
+429
+00:28:13.580 --> 00:28:15.260
+how humans interact with it.
+
+430
+00:28:15.260 --> 00:28:18.060
+This is what we call the user space.
+
+431
+00:28:18.060 --> 00:28:20.220
+When we interact with an operating system,
+
+432
+00:28:20.220 --> 00:28:23.420
+we want to do certain functions like create files and folders,
+
+433
+00:28:23.420 --> 00:28:27.100
+open applications, delete items, you get the idea.
+
+434
+00:28:27.100 --> 00:28:30.060
+There are two ways that we can interact with our OS,
+
+435
+00:28:30.060 --> 00:28:33.100
+with a shell or a graphical user interface.
+
+436
+00:28:33.100 --> 00:28:35.100
+There are also some shells that use graphical user interface.
+
+437
+00:28:35.100 --> 00:28:41.340
+user interfaces, but we'll work with a command line interface or CLI shell for the most part.
+
+438
+00:28:41.340 --> 00:28:44.780
+This just means that we'll use text commands.
+
+439
+00:28:44.780 --> 00:28:50.680
+A graphical user interface or GUI is a visual way to interact with a computer.
+
+440
+00:28:50.680 --> 00:28:54.820
+We use our mouse to click and drag, to open folders, etc.
+
+441
+00:28:54.820 --> 00:28:57.020
+We can see everything we do with it.
+
+442
+00:28:57.020 --> 00:29:01.860
+You probably use a GUI every day without realizing you're using one.
+
+443
+00:29:01.860 --> 00:29:04.300
+To watch this video, you probably used a GUI.
+
+444
+00:29:04.300 --> 00:29:09.500
+Clicking icons and navigating menus to open your web browser and navigate to the Coursera website.
+
+445
+00:29:09.500 --> 00:29:13.740
+People usually recognize a device or product based on its GUI.
+
+446
+00:29:13.740 --> 00:29:18.780
+You might be able to spot the difference between a computer running Microsoft Windows or Mac OS
+
+447
+00:29:18.780 --> 00:29:22.140
+based on the design of the Windows, menus, and icons.
+
+448
+00:29:22.140 --> 00:29:28.140
+You've probably seen GUIs in other places too, like mobile phones and tablets, ATM machines, and airport kiosks.
+
+449
+00:29:28.140 --> 00:29:33.820
+A shell is basically a program that interprets text commands and sends them to the OS to execute.
+
+450
+00:29:33.820 --> 00:29:36.179
+Before we had fancy visual interfaces,
+
+451
+00:29:36.179 --> 00:29:39.500
+commands like create a file had to be typed out.
+
+452
+00:29:39.500 --> 00:29:41.080
+While we have GUIs today,
+
+453
+00:29:41.080 --> 00:29:43.679
+the shell is still commonly used to run commands,
+
+454
+00:29:43.679 --> 00:29:46.060
+especially by power users.
+
+455
+00:29:46.060 --> 00:29:49.340
+Power users are above average computer users.
+
+456
+00:29:49.340 --> 00:29:53.160
+In Linux especially, it's essential that you actually know commands,
+
+457
+00:29:53.160 --> 00:29:54.480
+not just a GUI.
+
+458
+00:29:54.480 --> 00:29:56.440
+This is because most of the Linux machines
+
+459
+00:29:56.440 --> 00:30:00.580
+you interact with in IT support will be accessed remotely.
+
+460
+00:30:00.580 --> 00:30:03.020
+Most of the time, you won't be given a GUI.
+
+461
+00:30:03.020 --> 00:30:03.800
+There are lots of different,
+
+462
+00:30:03.820 --> 00:30:04.820
+types of shells.
+
+463
+00:30:04.820 --> 00:30:08.820
+Some have different features, some handle performance differently.
+
+464
+00:30:08.820 --> 00:30:11.820
+It's the same concept behind different operating systems.
+
+465
+00:30:11.820 --> 00:30:15.820
+For our purposes, we'll just be using the most common shell,
+
+466
+00:30:15.820 --> 00:30:19.820
+Bash or Born Again shell in Linux.
+
+467
+00:30:19.820 --> 00:30:22.820
+There's also a shell for Windows called PowerShell,
+
+468
+00:30:22.820 --> 00:30:24.820
+but we will be covering it here.
+
+469
+00:30:24.820 --> 00:30:28.820
+You'll learn more about Windows PowerShell in the third course of this program.
+
+470
+00:30:28.820 --> 00:30:31.820
+Operating systems in you, becoming a power user.
+
+471
+00:30:31.820 --> 00:30:32.820
+Throughout this program, we'll learn to learn to be a power user.
+
+472
+00:30:32.820 --> 00:30:37.060
+program will learn how to use the Windows GUI and Windows Shell PowerShell.
+
+473
+00:30:37.060 --> 00:30:42.580
+You might be thinking, but it's easier for me to navigate a GUI than it is to use commands
+
+474
+00:30:42.580 --> 00:30:44.060
+to do the same thing.
+
+475
+00:30:44.060 --> 00:30:46.060
+So why would I want to learn both?
+
+476
+00:30:46.060 --> 00:30:48.060
+I can't stress this enough.
+
+477
+00:30:48.060 --> 00:30:52.280
+It's vital for you to know how to use a shell in an IT support role.
+
+478
+00:30:52.280 --> 00:30:55.340
+Some tasks can only be completed through commands.
+
+479
+00:30:55.340 --> 00:30:59.640
+In more advanced IT roles, you might have to manage thousands of machines.
+
+480
+00:30:59.640 --> 00:31:02.800
+You don't want to have to click a button or drag a window on every machine.
+
+481
+00:31:02.820 --> 00:31:04.820
+when you can just run a command once.
+
+482
+00:31:04.820 --> 00:31:08.820
+You're actually going to learn how to automate this in a leader course.
+
+483
+00:31:08.820 --> 00:31:11.820
+Using a GUI and shell isn't all you'll be doing.
+
+484
+00:31:11.820 --> 00:31:15.820
+We'll also interact with our operating system through applications.
+
+485
+00:31:15.820 --> 00:31:19.820
+There are system applications and libraries that we use on a day-to-day basis,
+
+486
+00:31:19.820 --> 00:31:22.820
+like the login application, system settings, and more.
+
+487
+00:31:22.820 --> 00:31:26.820
+Throughout this course, you'll learn more about how to use system applications.
+
+488
+00:31:26.820 --> 00:31:30.820
+And we'll even get hands-on with the applications used in your operating system.
+
+489
+00:31:32.820 --> 00:31:38.320
+Imagine this scenario.
+
+490
+00:31:38.320 --> 00:31:41.780
+You're playing your favorite video game and you finally get to the big boss.
+
+491
+00:31:41.780 --> 00:31:46.400
+You spent countless hours finding this boss, neglecting all other responsibilities like your
+
+492
+00:31:46.400 --> 00:31:49.120
+job, school, even hygiene.
+
+493
+00:31:49.120 --> 00:31:51.000
+That's pretty gross, but I get it.
+
+494
+00:31:51.000 --> 00:31:55.800
+So you're right about to kill the big boss when suddenly your game console shuts off completely.
+
+495
+00:31:55.800 --> 00:31:57.700
+You'd probably freak out for a second.
+
+496
+00:31:57.700 --> 00:32:00.360
+But then you remember, it's okay.
+
+497
+00:32:00.360 --> 00:32:02.360
+You saved the game before the boss came along.
+
+498
+00:32:02.360 --> 00:32:05.260
+now you can turn it back on and you'll be at the same spot.
+
+499
+00:32:05.260 --> 00:32:07.440
+But then your console shuts off again.
+
+500
+00:32:07.440 --> 00:32:09.520
+This happens over and over.
+
+501
+00:32:09.520 --> 00:32:11.900
+You, like most people, are devastated.
+
+502
+00:32:11.900 --> 00:32:16.120
+You fly into a fit of rage, but then just before you toss your console out,
+
+503
+00:32:16.120 --> 00:32:18.820
+you make one last dish effort and yell,
+
+504
+00:32:18.820 --> 00:32:20.800
+tell me what's wrong with you.
+
+505
+00:32:20.800 --> 00:32:24.740
+Suddenly, you hear a faint voice telling you what you want to hear.
+
+506
+00:32:24.740 --> 00:32:26.120
+Wouldn't that be amazing?
+
+507
+00:32:26.120 --> 00:32:29.420
+Sure, that scenario was a bit exaggerated.
+
+508
+00:32:29.420 --> 00:32:32.160
+But my point is that our computers actually can talk to us
+
+509
+00:32:32.160 --> 00:32:34.240
+and tell us what's wrong.
+
+510
+00:32:34.240 --> 00:32:36.560
+Maybe they won't whisper answers to us,
+
+511
+00:32:36.560 --> 00:32:39.060
+but they speak to us in the form of logs.
+
+512
+00:32:39.060 --> 00:32:42.560
+Logs are files that record system events on our computer,
+
+513
+00:32:42.560 --> 00:32:44.540
+just like a system's diary.
+
+514
+00:32:44.540 --> 00:32:47.400
+Our computer will record events like when it was turned on,
+
+515
+00:32:47.400 --> 00:32:48.880
+when a driver was loaded,
+
+516
+00:32:48.880 --> 00:32:50.580
+and even when something isn't working
+
+517
+00:32:50.580 --> 00:32:52.780
+in the form of error messages.
+
+518
+00:32:52.780 --> 00:32:54.500
+In all operating systems,
+
+519
+00:32:54.500 --> 00:32:56.560
+logs are kept so we can refer back to them
+
+520
+00:32:56.560 --> 00:32:59.100
+when we need to find out something that happened.
+
+521
+00:32:59.100 --> 00:33:00.660
+But logs can be hard to navigate
+
+522
+00:33:00.660 --> 00:33:02.140
+because our computer will essentially
+
+523
+00:33:02.160 --> 00:33:07.360
+record everything. Here's what a log looks like. As you can see, it can be tough to make your
+
+524
+00:33:07.360 --> 00:33:11.840
+way through a log. But with a little bit of elbow grease, we can figure out what happened
+
+525
+00:33:11.840 --> 00:33:17.040
+on our computer and piece together a solution. We'll see an example of how a log is useful
+
+526
+00:33:17.040 --> 00:33:21.840
+in figuring out an issue in a later lesson. We'll dive into the technical details of logs in a
+
+527
+00:33:21.840 --> 00:33:27.360
+later course. For now, just be aware that we can investigate details about our computer that aren't
+
+528
+00:33:27.360 --> 00:33:28.700
+obvious to us.
+
+529
+00:33:28.700 --> 00:33:32.860
+Unfortunately, our computers, cars, and machines don't have a little voice that tells
+
+530
+00:33:32.860 --> 00:33:35.240
+it's what's wrong when there's a problem.
+
+531
+00:33:35.240 --> 00:33:39.240
+But by the end of this program, you'll be able to navigate and read logs so you won't even
+
+532
+00:33:39.240 --> 00:33:44.340
+need it.
+
+533
+00:33:44.340 --> 00:33:49.120
+As an IT support specialist, you'll probably work on lots of computers that won't start.
+
+534
+00:33:49.120 --> 00:33:52.800
+It's important to know the steps an operating system takes so you can help diagnose this
+
+535
+00:33:52.800 --> 00:33:55.040
+sort of issue.
+
+536
+00:33:55.040 --> 00:33:57.340
+Booting a computer or starting a computer
+
+537
+00:33:57.360 --> 00:34:01.640
+comes from the phrase to pull oneself up by one's bootstraps.
+
+538
+00:34:01.640 --> 00:34:08.699
+Basically, it means to start from nothing and follow a series of steps to arrive at a fully operational system.
+
+539
+00:34:08.699 --> 00:34:11.600
+When we start up a computer, we'll use the term boot.
+
+540
+00:34:11.600 --> 00:34:15.560
+For most operating systems, the boot process follows a general pattern,
+
+541
+00:34:15.560 --> 00:34:19.040
+much like how we have different cars start up in the same way.
+
+542
+00:34:19.040 --> 00:34:21.520
+Put in the key, turn on the ignition, etc.
+
+543
+00:34:21.520 --> 00:34:24.120
+Here's a rundown of the boot process.
+
+544
+00:34:24.120 --> 00:34:26.359
+First, the computer is powered on.
+
+545
+00:34:26.359 --> 00:34:29.600
+Remember when we learned about the BIOS UEFI in earlier videos?
+
+546
+00:34:29.600 --> 00:34:34.540
+The BIOS UAFI is a low-level software that initializes our computer's hardware to make
+
+547
+00:34:34.540 --> 00:34:36.679
+sure everything is good to go.
+
+548
+00:34:36.679 --> 00:34:43.120
+So next, the BIOSUEFI runs a process called the Power On Self-Test, or Post.
+
+549
+00:34:43.120 --> 00:34:49.600
+The post performs a series of diagnostic tests to make sure that the computer is in proper working order.
+
+550
+00:34:49.600 --> 00:34:54.800
+Next, depending on the BIOS UAFI configuration, a boot device will be selected.
+
+551
+00:34:54.800 --> 00:35:01.800
+The devices that are attached to our system, like hard drives, USB drives, CD drives, etc., are configured in a certain boot order.
+
+552
+00:35:01.800 --> 00:35:07.800
+The devices will be checked in this order, and the computer will search for what's known as a bootloader.
+
+553
+00:35:07.800 --> 00:35:11.800
+The bootloader is a small program that loads the operating system.
+
+554
+00:35:11.800 --> 00:35:17.800
+Once our computer finds a bootloader on a device in the listed order, it'll start to execute this program.
+
+555
+00:35:17.800 --> 00:35:23.800
+This will then start to load a larger and more complex program and eventually loads our operating system.
+
+556
+00:35:23.800 --> 00:35:27.800
+Once the bootloader loads up our operating system, our kernel gets loaded.
+
+557
+00:35:27.800 --> 00:35:30.800
+The kernel controls access to our computer's resources.
+
+558
+00:35:30.800 --> 00:35:35.800
+It also loads up drivers and more so that our hardware can talk to our software.
+
+559
+00:35:35.800 --> 00:35:40.800
+Next, essential system processes and user space items are launched.
+
+560
+00:35:40.800 --> 00:35:45.800
+These include processes like user login, spinning up a desktop environment, and more,
+
+561
+00:35:45.800 --> 00:35:48.800
+which basically allows us to interact with our system.
+
+562
+00:35:48.800 --> 00:35:49.800
+And that's it.
+
+563
+00:35:49.800 --> 00:35:52.800
+After these simple steps, you'll be able to get to work.
+
+564
+00:35:52.800 --> 00:35:53.800
+work.
+
+565
+00:35:53.800 --> 00:35:59.640
+Congratulations on finishing this lesson from the Google IT support certificate.
+
+566
+00:35:59.640 --> 00:36:03.780
+Access the full experience including job search help and get the official certificate by clicking
+
+567
+00:36:03.780 --> 00:36:06.620
+the icon or the link in the description.
+
+568
+00:36:06.620 --> 00:36:10.980
+Watch the next lesson in the course by clicking here and subscribe to our channel for more lessons
+
+569
+00:36:10.980 --> 00:36:13.980
+from upcoming Google Career Certificates.

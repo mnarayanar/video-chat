@@ -1,0 +1,2265 @@
+WEBVTT
+
+0
+00:00:00.000 --> 00:00:08.400
+Hi, my name is Victor Escobito, and I'm a corporate operations engineer.
+
+1
+00:00:08.400 --> 00:00:12.360
+I'm excited to spend the next few lessons with you before my colleague and friend Gian
+
+2
+00:00:12.360 --> 00:00:16.360
+takes the reins and wraps up the rest of the lessons on the internet.
+
+3
+00:00:16.360 --> 00:00:19.720
+Before we dive in though, I'd like to tell you a little bit about myself.
+
+4
+00:00:19.720 --> 00:00:24.440
+My passion for IT began way back when I was nine years old, and my dad brought home our first
+
+5
+00:00:24.440 --> 00:00:25.440
+computer.
+
+6
+00:00:25.440 --> 00:00:29.980
+He was a mechanical engineer and started using the computer to help him with his CAD work.
+
+7
+00:00:30.000 --> 00:00:33.820
+This was the first time I was exposed to computers and later realized you can install new
+
+8
+00:00:33.820 --> 00:00:36.440
+software on it, including computer games.
+
+9
+00:00:36.440 --> 00:00:41.140
+As I tinkered with a computer, shortly to my dad's dismay, I became more and more interested
+
+10
+00:00:41.140 --> 00:00:45.440
+in how it worked and eventually started to open up the case and peek inside.
+
+11
+00:00:45.440 --> 00:00:49.800
+I found pieces that could be removed and even some that shouldn't, learning through trial
+
+12
+00:00:49.800 --> 00:00:51.680
+and error along the way.
+
+13
+00:00:51.680 --> 00:00:55.420
+I couldn't really explain what it was, but I just found the mechanics of how it all worked
+
+14
+00:00:55.420 --> 00:00:57.400
+together so fascinating.
+
+15
+00:00:57.400 --> 00:00:59.940
+Looking back, these were the seeds that inspired my career.
+
+16
+00:01:00.000 --> 00:01:07.380
+But you see where I grew up, going to college and pursuing a career wasn't exactly talked about or heavily encouraged.
+
+17
+00:01:07.720 --> 00:01:12.840
+I'm a first generation Mexican American and there weren't a lot of people I knew pursuing a career in tech.
+
+18
+00:01:13.220 --> 00:01:19.780
+My friends and family were mostly worrying about graduating high school and making sure they had jobs not really thinking about careers.
+
+19
+00:01:20.240 --> 00:01:26.600
+My school didn't have the resources to offer many technical classes and even though my father was working in mechanical engineering,
+
+20
+00:01:26.600 --> 00:01:30.620
+computers were a tool to him, like a mill, ruler, or a hammer.
+
+21
+00:01:31.640 --> 00:01:34.160
+My parents encouraged me to work hard and pursue computers,
+
+22
+00:01:34.380 --> 00:01:37.920
+but they couldn't really give advice about college or a career in tech.
+
+23
+00:01:38.320 --> 00:01:41.640
+To no real fault of their own, they just didn't have the necessary experience.
+
+24
+00:01:42.100 --> 00:01:46.160
+When I decided to go to college, I decided to try my hand at computer science,
+
+25
+00:01:46.420 --> 00:01:50.660
+since it could feed my curiosity for how computers worked at a more fundamental level.
+
+26
+00:01:50.660 --> 00:01:55.240
+I realized that having this foundational knowledge really allowed me to understand
+
+27
+00:01:55.240 --> 00:01:59.080
+some of the higher level concepts that were important in a career in tech.
+
+28
+00:01:59.080 --> 00:02:03.480
+So while in school, I took on my first IT job for a local small company.
+
+29
+00:02:03.480 --> 00:02:08.520
+I've been working in IT now for 12 years, with the last seven years being here at Google.
+
+30
+00:02:08.520 --> 00:02:12.600
+I now work on managing deployments of large internal IT projects for the company.
+
+31
+00:02:12.600 --> 00:02:16.840
+Applying the knowledge I picked up over the years in my initial IT help desk roles
+
+32
+00:02:16.840 --> 00:02:22.120
+to make sure that I understand how I'm impacting our users and various support teams.
+
+33
+00:02:22.120 --> 00:02:25.160
+Now that you know a little bit about me, let's dig into the
+
+34
+00:02:25.240 --> 00:02:31.240
+internet. The internet made it possible for us to connect with almost anyone in the world.
+
+35
+00:02:31.240 --> 00:02:36.680
+Before the internet, you had to use paper maps and write down step-by-step directions to get
+
+36
+00:02:36.680 --> 00:02:42.120
+where you wanted to go. If you wanted to see what your friends were up to, you'd have to call them,
+
+37
+00:02:42.120 --> 00:02:47.480
+actually talk to them. If you wanted to learn something new, you had to go to a library and
+
+38
+00:02:47.480 --> 00:02:51.960
+hope they have a book on the subject you wanted to learn. People didn't really discover new
+
+39
+00:02:51.960 --> 00:02:55.080
+restaurants unless they heard about it from someone else or it was absolutely.
+
+40
+00:02:55.240 --> 00:03:00.540
+advertised. There was no Yelp or other website that rates restaurants like we have today.
+
+41
+00:03:00.540 --> 00:03:05.860
+For some of us, life without the internet seems unimaginable. We get it. It's become an integral
+
+42
+00:03:05.860 --> 00:03:12.020
+part of our lives. In the next few lessons, you'll be learning about what the internet is,
+
+43
+00:03:12.020 --> 00:03:17.740
+how it came to be, and how it has impacted us both in negative and positive ways.
+
+44
+00:03:19.740 --> 00:03:25.180
+When most people think of the internet, they think of a magical cloud that
+
+45
+00:03:25.240 --> 00:03:28.000
+lets you access your favorite websites, shop online,
+
+46
+00:03:28.000 --> 00:03:31.180
+and you have seemingly endless stream of cat pictures.
+
+47
+00:03:31.180 --> 00:03:33.140
+But there isn't any magic involved.
+
+48
+00:03:33.140 --> 00:03:37.240
+There's no mysterious entity that grants us a cat picture on demand.
+
+49
+00:03:37.240 --> 00:03:40.040
+The internet is just an interconnection of computers
+
+50
+00:03:40.040 --> 00:03:42.440
+around the world, like a giant spider web
+
+51
+00:03:42.440 --> 00:03:44.520
+that brings all of us together.
+
+52
+00:03:44.520 --> 00:03:48.200
+We call the interconnection of computers a network.
+
+53
+00:03:48.200 --> 00:03:51.280
+Computers in a network can talk to each other
+
+54
+00:03:51.280 --> 00:03:52.960
+and send data to one another.
+
+55
+00:03:52.960 --> 00:03:55.220
+You can create a simple network with just two
+
+56
+00:03:55.240 --> 00:04:01.060
+computers. In fact, you might already have your own network at home connecting all of your home devices.
+
+57
+00:04:01.600 --> 00:04:07.700
+Let's think on a bigger scale. What about the computers at your school or workplace? Are they in a
+
+58
+00:04:07.700 --> 00:04:14.220
+network? They sure are. All of the computers there are linked together in a network. Can we link
+
+59
+00:04:14.220 --> 00:04:20.779
+your home, school, and workplace networks together? We absolutely can. Your workplace connects to a
+
+60
+00:04:20.779 --> 00:04:25.220
+bigger network and that network connects to an even bigger network and on and on. Aventer
+
+61
+00:04:25.240 --> 00:04:30.600
+Eventually, you've got billions of computers that are interconnected, making up what we call
+
+62
+00:04:30.600 --> 00:04:31.720
+the internet.
+
+63
+00:04:31.720 --> 00:04:37.820
+You, like most people, probably access the internet through a browser like Mozilla Firefox,
+
+64
+00:04:37.820 --> 00:04:40.840
+Google Chrome, Microsoft Edge, or something else.
+
+65
+00:04:40.840 --> 00:04:46.040
+This is done through the World Wide Web, but don't make the mistake of thinking the Internet
+
+66
+00:04:46.040 --> 00:04:47.820
+is the World Wide Web.
+
+67
+00:04:47.820 --> 00:04:53.140
+The Internet is the physical connection of computers and wires around the world.
+
+68
+00:04:53.140 --> 00:04:56.600
+The web is the information on the internet.
+
+69
+00:04:56.600 --> 00:04:59.940
+We use it to access the internet through a link like
+
+70
+00:04:59.940 --> 00:05:02.780
+www.gou.goule.com.
+
+71
+00:05:02.780 --> 00:05:06.580
+The World Wide Web isn't the only way we can access the internet.
+
+72
+00:05:06.580 --> 00:05:09.760
+Your email, chat, and file sharing programs
+
+73
+00:05:09.760 --> 00:05:11.720
+are also ways you can access the internet.
+
+74
+00:05:11.720 --> 00:05:16.020
+In the IT field, managing, building, and designing networks
+
+75
+00:05:16.020 --> 00:05:17.940
+is known as networking.
+
+76
+00:05:17.940 --> 00:05:21.500
+Networking is a super important and large field in IT.
+
+77
+00:05:21.500 --> 00:05:22.900
+There are specialized jobs,
+
+78
+00:05:22.900 --> 00:05:27.580
+college degree programs and tons of literature dedicated entirely to networking.
+
+79
+00:05:27.580 --> 00:05:33.020
+If you work in the IT field, it's super critical that you understand the fundamentals of networking.
+
+80
+00:05:33.020 --> 00:05:34.660
+So how does it all work?
+
+81
+00:05:34.660 --> 00:05:37.900
+To answer that question, we're going to need a lot more time.
+
+82
+00:05:37.900 --> 00:05:42.080
+Fortunately, we have a separate course entirely dedicated to this topic.
+
+83
+00:05:42.080 --> 00:05:45.140
+We'll only cover the high-level overview of networking here.
+
+84
+00:05:45.140 --> 00:05:50.620
+The internet is composed of a massive network of satellites, cellular networks, and physical
+
+85
+00:05:50.620 --> 00:05:52.660
+cables buried in underneath the ground.
+
+86
+00:05:52.660 --> 00:05:55.160
+We don't actually connect to the internet directly.
+
+87
+00:05:55.160 --> 00:05:58.900
+Instead, computers called servers connect directly to the internet.
+
+88
+00:05:58.900 --> 00:06:05.580
+Servers store the websites that we use, like Wikipedia, Google, Reddit, and BBC.
+
+89
+00:06:05.580 --> 00:06:08.080
+These websites serve content.
+
+90
+00:06:08.080 --> 00:06:13.340
+The machines that we use, like our mobile phones, laptops, video game consoles, and more,
+
+91
+00:06:13.340 --> 00:06:15.300
+are called clients.
+
+92
+00:06:15.300 --> 00:06:19.900
+Clients request the content, like pictures, websites from the servers.
+
+93
+00:06:19.900 --> 00:06:22.640
+Clients don't connect directly to the internet.
+
+94
+00:06:22.660 --> 00:06:30.420
+Instead, they connect to a network run by an internet service provider, or ISP, like CenturyLink,
+
+95
+00:06:30.420 --> 00:06:33.920
+Level 3, Comcast, Telefonica, and things like that.
+
+96
+00:06:33.920 --> 00:06:39.660
+ISPs have already built networks and run all the necessary physical cabling that connects
+
+97
+00:06:39.660 --> 00:06:43.100
+millions of computers together in one network.
+
+98
+00:06:43.100 --> 00:06:47.100
+They also connect to other networks and other ISPs.
+
+99
+00:06:47.100 --> 00:06:51.900
+These other networks connect to the networks of Google, Reddit, universities.
+
+100
+00:06:51.900 --> 00:06:58.320
+all the other networks in the world. Together, they form one giant network of computers called
+
+101
+00:06:58.320 --> 00:07:04.780
+the internet. But how do the clients know how to get to servers? Well, how would you send a letter
+
+102
+00:07:04.780 --> 00:07:09.660
+to someone? You'd put your address on the letter and send it to the address of the person you're
+
+103
+00:07:09.660 --> 00:07:15.860
+sending the letter to. Computers have addresses, just like houses. Computers on a network have an
+
+104
+00:07:15.860 --> 00:07:21.880
+identifier called an IP address. An IP address is composed of digits and numbers like 100.
+
+105
+00:07:21.900 --> 00:07:30.820
+100.1.4.3. When we want to access a website like www.coursera.com, we're actually going to their
+
+106
+00:07:30.820 --> 00:07:39.920
+IP address, like 172.217.6.46. Devices that can connect to a network have another unique identifier
+
+107
+00:07:39.920 --> 00:07:46.340
+called a Mac address. Mac addresses are generally permanent and hard-coded onto a device.
+
+108
+00:07:46.940 --> 00:07:51.880
+A sample Mac address can be something like this. When you send or receive data,
+
+109
+00:07:51.900 --> 00:07:56.900
+through a network, you need to have both an IP and a Mac address.
+
+110
+00:07:56.900 --> 00:07:59.900
+You might be wondering why we need to have two different numbers
+
+111
+00:07:59.900 --> 00:08:00.900
+to identify something.
+
+112
+00:08:00.900 --> 00:08:02.900
+That's a good question.
+
+113
+00:08:02.900 --> 00:08:05.900
+Think again of the letter analogy we used before.
+
+114
+00:08:05.900 --> 00:08:07.900
+An IP address is your house address,
+
+115
+00:08:07.900 --> 00:08:11.900
+while the Mac address is the name of the recipient of the letter.
+
+116
+00:08:11.900 --> 00:08:14.900
+You want to make sure your letter gets to the right location
+
+117
+00:08:14.900 --> 00:08:16.900
+and to the right person.
+
+118
+00:08:16.900 --> 00:08:20.900
+A more simplified example of the letter delivery would go like this.
+
+119
+00:08:20.900 --> 00:08:25.940
+I'm in New York City and I got a letter that I want to send to a friend, May.
+
+120
+00:08:25.940 --> 00:08:28.660
+May is halfway across the world in Tokyo,
+
+121
+00:08:28.660 --> 00:08:32.140
+so our letter will go through lots of places before it reaches her.
+
+122
+00:08:32.140 --> 00:08:34.059
+I put her name and address on there,
+
+123
+00:08:34.059 --> 00:08:36.659
+and I also put my name and address on there too.
+
+124
+00:08:36.659 --> 00:08:38.900
+When I drop my letter off at the post office,
+
+125
+00:08:38.900 --> 00:08:40.500
+the mail person looks at it.
+
+126
+00:08:40.500 --> 00:08:42.840
+He thinks, I don't know how to get to Tokyo from here,
+
+127
+00:08:42.840 --> 00:08:45.260
+but there's a truck that's headed to Texas.
+
+128
+00:08:45.260 --> 00:08:46.700
+He puts my letter in that truck.
+
+129
+00:08:46.700 --> 00:08:48.220
+At the post office in Texas,
+
+130
+00:08:48.220 --> 00:08:50.300
+a male person looks at the letter and says,
+
+131
+00:08:50.300 --> 00:08:52.400
+I don't know how to get to Tokyo from here,
+
+132
+00:08:52.400 --> 00:08:55.080
+but we have a truck going to San Francisco.
+
+133
+00:08:55.080 --> 00:08:57.200
+She puts my letter in that truck.
+
+134
+00:08:57.200 --> 00:08:59.040
+At the post office in San Francisco,
+
+135
+00:08:59.040 --> 00:09:00.880
+yet another male person looks at my letter.
+
+136
+00:09:00.880 --> 00:09:03.880
+He says, oh, there's a plane headed to Tokyo
+
+137
+00:09:03.880 --> 00:09:14.562
+and puts the letter on that plane When it finally reaches Tokyo the postman there says oh I know where May lives and delivers the letter to her Obviously there are many more nuance
+
+138
+00:09:14.562 --> 00:09:17.142
+to mail delivery than what I described,
+
+139
+00:09:17.142 --> 00:09:18.702
+but this process is similar
+
+140
+00:09:18.702 --> 00:09:21.522
+to how information gets routed across the internet.
+
+141
+00:09:21.522 --> 00:09:25.122
+One thing to call out is that data that's sent through a network
+
+142
+00:09:25.122 --> 00:09:26.642
+is sent through packets.
+
+143
+00:09:26.642 --> 00:09:28.682
+They're little bits of data,
+
+144
+00:09:28.682 --> 00:09:31.482
+and you guessed it, ones and zeros.
+
+145
+00:09:31.482 --> 00:09:34.102
+It doesn't matter if it's pictures, email,
+
+146
+00:09:34.102 --> 00:09:35.602
+music, or text.
+
+147
+00:09:35.602 --> 00:09:37.402
+When we move data through the network,
+
+148
+00:09:37.402 --> 00:09:39.802
+we break them down into packets.
+
+149
+00:09:39.802 --> 00:09:42.122
+When a packet gets to its destination,
+
+150
+00:09:42.122 --> 00:09:44.662
+it will rearrange itself back in order.
+
+151
+00:09:44.662 --> 00:09:46.762
+Think of a packet like a letter.
+
+152
+00:09:46.762 --> 00:09:48.522
+Let's actually look at this process again,
+
+153
+00:09:48.522 --> 00:09:52.182
+but this time we'll use IP addresses and Mac addresses.
+
+154
+00:09:52.182 --> 00:09:58.582
+Natalie has a computer with IP address 113.8.81.2,
+
+155
+00:09:58.582 --> 00:10:02.182
+and she wants to go to Google.com and search for pictures of cats.
+
+156
+00:10:02.182 --> 00:10:04.082
+Before she does that, her computer has to send
+
+157
+00:10:04.102 --> 00:10:09.222
+a packet to ask google.com if it can access their website. Our packet knows google.com's
+
+158
+00:10:09.222 --> 00:10:17.622
+IP address is 172.217.6.46. But it doesn't know how to get there just yet. The packet
+
+159
+00:10:17.622 --> 00:10:23.382
+travels from one place to another at each destination where it asks, hey, do you know where
+
+160
+00:10:23.382 --> 00:10:28.262
+a google.com is? Eventually, it'll be routed to another destination that can get the packet
+
+161
+00:10:28.262 --> 00:10:34.082
+closer and closer to google.com. Once it reaches a destination that can deliver the packet to a
+
+162
+00:10:34.102 --> 00:10:35.822
+server at google.com?
+
+163
+00:10:35.822 --> 00:10:41.342
+Google will send Natalie a packet saying she can access an unlimited number of cat pictures.
+
+164
+00:10:41.342 --> 00:10:44.862
+There are many technical details that we left out in this explanation, but don't worry.
+
+165
+00:10:44.862 --> 00:10:48.302
+You'll learn all about the nitty-gritty in the networking course of this program.
+
+166
+00:10:48.302 --> 00:10:56.622
+For now, this is what you need to know about the not-so magic of the internet.
+
+167
+00:10:56.622 --> 00:11:00.602
+Now that we understand what networks are, let's talk about how they're connected.
+
+168
+00:11:00.602 --> 00:11:03.942
+There are a lot of ways you can connect computers to a network.
+
+169
+00:11:04.102 --> 00:11:06.862
+We'll only cover a few of the major ones in this course.
+
+170
+00:11:06.862 --> 00:11:11.942
+First, there's an Ethernet cable, which lets you physically connect to the network through
+
+171
+00:11:11.942 --> 00:11:12.862
+a cable.
+
+172
+00:11:12.862 --> 00:11:16.862
+On the back of the desktop we worked in the previous lessons, there's a network port that
+
+173
+00:11:16.862 --> 00:11:19.442
+you plug your Ethernet cable into.
+
+174
+00:11:19.442 --> 00:11:24.082
+Another way to connect to a network is through Wi-Fi, which is wireless networking.
+
+175
+00:11:24.082 --> 00:11:29.282
+Most modern computing systems have wireless capabilities like mobile phones, smart televisions,
+
+176
+00:11:29.282 --> 00:11:30.482
+and laptops.
+
+177
+00:11:30.482 --> 00:11:33.862
+We connect to wireless networks through radios and antennas.
+
+178
+00:11:34.102 --> 00:11:38.482
+The glass method will go over uses fiber optic cables to connect to a network.
+
+179
+00:11:38.482 --> 00:11:43.142
+This is the most expensive method since fiber optic cables allow greater speeds than all the
+
+180
+00:11:43.142 --> 00:11:44.142
+other methods.
+
+181
+00:11:44.142 --> 00:11:49.542
+Fiber optic gets its name because the cables contain glass fibers that move data through
+
+182
+00:11:49.542 --> 00:11:52.082
+light instead of electricity.
+
+183
+00:11:52.082 --> 00:11:56.422
+This means that we send ones and zeros through a beam of light instead of an electrical
+
+184
+00:11:56.422 --> 00:11:58.382
+current through a copper wire.
+
+185
+00:11:58.382 --> 00:11:59.882
+How cool is that?
+
+186
+00:11:59.882 --> 00:12:02.502
+But our cables have to connect to something.
+
+187
+00:12:02.502 --> 00:12:07.382
+We don't just have millions of cables going in and out of computers to connect them together.
+
+188
+00:12:07.382 --> 00:12:12.662
+Instead, computers connect to a few different devices that help organize our network together.
+
+189
+00:12:12.662 --> 00:12:16.002
+The first device that your computer connects to is a router.
+
+190
+00:12:16.002 --> 00:12:21.082
+A router connects lots of different devices together and helps route network traffic.
+
+191
+00:12:21.082 --> 00:12:27.042
+Let's say we have four computers, A, B, C, and D, connected together through a router in the
+
+192
+00:12:27.042 --> 00:12:28.702
+same network.
+
+193
+00:12:28.702 --> 00:12:31.382
+You want to send a file from computer A to computer B.
+
+194
+00:12:31.382 --> 00:12:39.222
+Our packets go through the router and the router utilizes network protocols to help determine where to send the packet.
+
+195
+00:12:39.542 --> 00:12:41.722
+We'll cover network protocols in the next video.
+
+196
+00:12:42.182 --> 00:12:47.802
+For now, just know that our router uses a set of rules to figure out where to send our data.
+
+197
+00:12:48.422 --> 00:12:52.202
+So now our packet gets routed from computer A to computer B.
+
+198
+00:12:52.702 --> 00:12:52.862
+Sweet.
+
+199
+00:12:53.542 --> 00:12:57.182
+What if we wanted to send a packet to a computer not in our network?
+
+200
+00:12:57.182 --> 00:13:02.182
+What if we wanted to send a packet to our friend Alejandro's computer?
+
+201
+00:13:02.182 --> 00:13:05.182
+Alejandro is on a different network altogether.
+
+202
+00:13:05.182 --> 00:13:08.882
+Fortunately, our router knows how to handle that too.
+
+203
+00:13:08.882 --> 00:13:13.582
+The packet will get routed outsider network to our ISPs network.
+
+204
+00:13:13.582 --> 00:13:18.682
+Using networking protocols, it's able to figure out where Alejandro's computer is.
+
+205
+00:13:18.682 --> 00:13:24.682
+During this process, our packet is traveling across many different routers, switches, and hubs.
+
+206
+00:13:24.682 --> 00:13:29.082
+Switches and hubs are also devices that help our data travel.
+
+207
+00:13:29.082 --> 00:13:31.722
+Think of switches like mail rooms in a building.
+
+208
+00:13:31.722 --> 00:13:34.162
+Routers get our letters to the building,
+
+209
+00:13:34.162 --> 00:13:36.882
+but once we're inside, we use the mailroom
+
+210
+00:13:36.882 --> 00:13:39.002
+to figure out where to send a letter.
+
+211
+00:13:39.002 --> 00:13:41.542
+Hubs are like company memos.
+
+212
+00:13:41.542 --> 00:13:43.682
+They don't know who to send the memo to,
+
+213
+00:13:43.682 --> 00:13:45.322
+so they send it to everyone.
+
+214
+00:13:45.322 --> 00:13:48.142
+Working with network devices is important to understand,
+
+215
+00:13:48.142 --> 00:13:50.642
+because it's likely that one day you'll have users
+
+216
+00:13:50.642 --> 00:13:52.882
+reporting problems accessing the internet.
+
+217
+00:13:52.882 --> 00:13:54.662
+You'll want to investigate your way up
+
+218
+00:13:54.682 --> 00:14:00.962
+the network stack, a technology stack, in this case, a network stack, is just a set of hardware
+
+219
+00:14:00.962 --> 00:14:04.882
+or software that provides the infrastructure for a computer.
+
+220
+00:14:04.882 --> 00:14:09.722
+So the network stack is all the components that makes up computer networking.
+
+221
+00:14:09.722 --> 00:14:12.602
+You might need to investigate the network stack in your job.
+
+222
+00:14:12.602 --> 00:14:16.602
+You'd start with making sure the end-user computers are working properly.
+
+223
+00:14:16.602 --> 00:14:21.182
+Then you'd turn your attention to other possible points of failure, like the cabling, switches,
+
+224
+00:14:21.182 --> 00:14:24.442
+and routers that work together to access the internet.
+
+225
+00:14:24.442 --> 00:14:27.562
+We'll dive a little deeper into the different networking devices
+
+226
+00:14:27.562 --> 00:14:28.762
+in the networking course.
+
+227
+00:14:28.762 --> 00:14:31.682
+For now, let's route ourselves to the next lesson,
+
+228
+00:14:31.682 --> 00:14:33.042
+the language of the internet.
+
+229
+00:14:37.202 --> 00:14:39.322
+We talked briefly about the networking protocols
+
+230
+00:14:39.322 --> 00:14:41.702
+our devices used to help our packets get
+
+231
+00:14:41.702 --> 00:14:44.122
+from one destination to another destination.
+
+232
+00:14:44.122 --> 00:14:45.362
+But what are they?
+
+233
+00:14:45.362 --> 00:14:47.802
+There are lots and lots of network protocols used
+
+234
+00:14:47.802 --> 00:14:50.542
+and they're all necessary to help us get our packets
+
+235
+00:14:50.542 --> 00:14:51.562
+in the right place.
+
+236
+00:14:51.562 --> 00:14:54.422
+Think of network protocols, like a set of rules,
+
+237
+00:14:54.442 --> 00:14:56.482
+for how we transfer data in a network.
+
+238
+00:14:56.822 --> 00:14:59.062
+Imagine if you sent a letter to your friend Sasha
+
+239
+00:14:59.062 --> 00:15:00.182
+who lives in California,
+
+240
+00:15:00.662 --> 00:15:03.502
+but your post office sends it out to another Sasha
+
+241
+00:15:03.502 --> 00:15:04.742
+who lives out in New York.
+
+242
+00:15:04.902 --> 00:15:06.242
+That would hopefully never happen
+
+243
+00:15:06.242 --> 00:15:07.962
+since the post office has rules
+
+244
+00:15:07.962 --> 00:15:09.982
+that they follow to make sure your letter
+
+245
+00:15:09.982 --> 00:15:11.402
+is sent to the correct address.
+
+246
+00:15:11.762 --> 00:15:13.902
+Our networking protocols do the same thing.
+
+247
+00:15:14.202 --> 00:15:16.262
+There are rules that make sure our packets
+
+248
+00:15:16.262 --> 00:15:17.582
+are routed efficiently,
+
+249
+00:15:18.182 --> 00:15:19.982
+aren't corrupted, are secure,
+
+250
+00:15:20.742 --> 00:15:21.742
+go to the right machine,
+
+251
+00:15:22.102 --> 00:15:23.322
+and are named appropriately.
+
+252
+00:15:23.762 --> 00:15:24.422
+You get the idea.
+
+253
+00:15:24.442 --> 00:15:29.982
+What will cover specific network protocols later on, but there are two protocols that you need to know.
+
+254
+00:15:30.382 --> 00:15:39.062
+The transmission control protocol and the internet protocol, or TCPIP for short, which have become the predominant protocols of the internet.
+
+255
+00:15:39.062 --> 00:15:44.762
+The internet protocol, or IP, is responsible for delivering our packets to the right computers.
+
+256
+00:15:45.482 --> 00:15:48.742
+Remember those addresses that computers use to find something on a network?
+
+257
+00:15:49.382 --> 00:15:52.742
+They're called IP addresses, or internet protocol addresses.
+
+258
+00:15:52.742 --> 00:15:55.802
+The internet protocol helps us route information.
+
+259
+00:15:56.262 --> 00:16:05.182
+The Transmission Control Protocol, or TCP, is a protocol that handles reliable delivery of information from one network to another.
+
+260
+00:16:06.042 --> 00:16:12.482
+This protocol was an important part of the creation of the internet since it led us share information with other computers.
+
+261
+00:16:12.942 --> 00:16:18.902
+We'll spend a lot of time diving into these protocols in the next course, the bits and bytes of computer networking.
+
+262
+00:16:19.162 --> 00:16:19.742
+So stay tuned.
+
+263
+00:16:20.422 --> 00:16:22.722
+For now, you've got a high-level understanding.
+
+264
+00:16:22.742 --> 00:16:25.742
+of how the internet works with TCP IP.
+
+265
+00:16:29.742 --> 00:16:31.742
+Lots of different ways to use the internet.
+
+266
+00:16:31.742 --> 00:16:35.742
+We all know that, but I want to cover one of the more prevalent ways
+
+267
+00:16:35.742 --> 00:16:38.742
+that people access the internet through the web.
+
+268
+00:16:38.742 --> 00:16:42.742
+All websites can be accessed through the web.
+
+269
+00:16:42.742 --> 00:16:44.742
+Websites are basically text documents
+
+270
+00:16:44.742 --> 00:16:49.742
+that we format with HTML or hypertext markup language.
+
+271
+00:16:49.742 --> 00:16:51.742
+It's a coding language used by web browsers.
+
+272
+00:16:51.742 --> 00:16:58.582
+by web browsers. Webpages are generally made up of very basic components. They contain multimedia
+
+273
+00:16:58.582 --> 00:17:04.982
+content like text, images, audio, and video. When you want to navigate to a website, you
+
+274
+00:17:04.982 --> 00:17:14.642
+would type in a URL like www.reddit.com. A URL, which stands for Uniform Resource Locator,
+
+275
+00:17:14.642 --> 00:17:20.922
+is just a web address similar to a home address. Notice the www. in the URL? It stands for
+
+276
+00:17:20.922 --> 00:17:28.622
+worldwide web. The second portion, Reddit.com, is something we call a domain name. Anyone can register
+
+277
+00:17:28.622 --> 00:17:34.642
+a domain name. It's just our website name. Once a name is taken, it'll be registered to ICANN,
+
+278
+00:17:35.022 --> 00:17:40.762
+the internet corporation for assigned names and numbers. Once a domain name is registered with ICANN,
+
+279
+00:17:41.142 --> 00:17:46.242
+no one else can take that name unless it becomes available again. The last part of the URL,
+
+280
+00:17:46.662 --> 00:17:50.902
+in this case is dot com, but you can also use different domain ending,
+
+281
+00:17:50.922 --> 00:17:57.722
+like Reddit.net or Reddit.org, the different domain name endings are standards for what type of
+
+282
+00:17:57.722 --> 00:18:03.942
+website it might be. So a domain that ends in.edu is mainly used for educational institutions.
+
+283
+00:18:04.482 --> 00:18:10.202
+Remember how computers use IP addresses to find another computer? Well, you can do the same if you
+
+284
+00:18:10.202 --> 00:18:24.025
+wanted to find a computer on the internet Let go ahead and type 172 into a web browser and hit enter Wait a minute what happened How come we at Google homepage
+
+285
+00:18:24.025 --> 00:18:32.305
+It turns out the IP address 172.217.6.46 maps to Google's homepage through a critical
+
+286
+00:18:32.305 --> 00:18:36.145
+web protocol domain name system or DNS.
+
+287
+00:18:36.145 --> 00:18:43.405
+DNS acts like our internet's directory and lets us use human readable words to map to an IP address.
+
+288
+00:18:43.645 --> 00:18:46.405
+The computer doesn't know what Google.com is.
+
+289
+00:18:46.405 --> 00:18:48.925
+It only knows how to get to an IP address.
+
+290
+00:18:48.925 --> 00:18:53.525
+With DNS, it's able to map Google's IP address with Google.com.
+
+291
+00:18:53.525 --> 00:18:57.605
+Every time you go on a website, your computer is performing a DNS lookup
+
+292
+00:18:57.605 --> 00:19:01.685
+to find the IP address of the website name you typed in.
+
+293
+00:19:01.685 --> 00:19:06.965
+This trick can be a good first step in diagnosing certain kinds of DNS issues.
+
+294
+00:19:06.965 --> 00:19:11.445
+So if you're able to access a website by its IP address,
+
+295
+00:19:11.445 --> 00:19:14.445
+but not its human-readable domain name,
+
+296
+00:19:14.445 --> 00:19:17.365
+then there's a good bet that there's probably a problem
+
+297
+00:19:17.365 --> 00:19:21.065
+somewhere in the DNS configuration your network is using.
+
+298
+00:19:21.065 --> 00:19:24.225
+Understanding IP addresses can come in handy
+
+299
+00:19:24.225 --> 00:19:27.045
+in all sorts of other situations you might encounter
+
+300
+00:19:27.045 --> 00:19:28.765
+as an IT support specialist.
+
+301
+00:19:28.765 --> 00:19:31.445
+The source of internet requests are usually identified
+
+302
+00:19:31.445 --> 00:19:33.965
+by IP addresses in server logs.
+
+303
+00:19:33.965 --> 00:19:36.445
+Many pieces of IT infrastructure need to have
+
+304
+00:19:36.445 --> 00:19:38.545
+some kind of IP address configuration
+
+305
+00:19:38.545 --> 00:19:40.925
+applied to them in order to work.
+
+306
+00:19:40.925 --> 00:19:45.045
+DNS is a huge system and we'll be discussing more about it later.
+
+307
+00:19:45.045 --> 00:19:47.965
+Now that you understand the basics of how the internet works,
+
+308
+00:19:47.965 --> 00:19:53.245
+I'll sign out for now and leave you in the very capable hands of my friend and colleague Gian Spikusa.
+
+309
+00:19:53.245 --> 00:19:57.365
+I'll see you again in course two, the bits and bytes of computer networking.
+
+310
+00:19:57.365 --> 00:20:02.925
+But in the next lessons, Gian is going to talk about the incredible boom of the internet age.
+
+311
+00:20:06.925 --> 00:20:10.905
+You've learned what the internet is and a little bit about how it works.
+
+312
+00:20:10.925 --> 00:20:14.685
+Now, we're going to take a step back and learn why it was created.
+
+313
+00:20:14.685 --> 00:20:17.325
+But before we do that, I'd like to introduce myself.
+
+314
+00:20:17.325 --> 00:20:21.325
+My name is Gian Spacusa, and I'm a program manager in Android Security.
+
+315
+00:20:21.325 --> 00:20:29.245
+I help protect Android's 2 billion-plus users by managing new security features for each of Android's desserts, or versions of Android.
+
+316
+00:20:29.245 --> 00:20:34.125
+I've always loved technology, and I've worked in IT since I was 16 and throughout university.
+
+317
+00:20:34.125 --> 00:20:39.645
+I would fill my past time reading about new tech and building servers from old computer parts in my basement.
+
+318
+00:20:39.645 --> 00:20:43.825
+My earliest memory of working on tech is waiting for my parents to go to sleep so I could
+
+319
+00:20:43.825 --> 00:20:48.405
+quietly dial up the internet while the phone was free and just browse websites all night long
+
+320
+00:20:48.405 --> 00:20:50.805
+and read about random tech things.
+
+321
+00:20:50.805 --> 00:20:55.685
+My first jobs were as a one-person IT crew at three nonprofit organizations.
+
+322
+00:20:55.685 --> 00:21:00.525
+It was both stressful and really exciting to be responsible for everything, from configuring
+
+323
+00:21:00.525 --> 00:21:05.585
+and administrating backup servers to just showing new employees how to access email and use their
+
+324
+00:21:05.585 --> 00:21:06.885
+computers.
+
+325
+00:21:06.885 --> 00:21:08.965
+I'm really excited to be here with you.
+
+326
+00:21:08.965 --> 00:21:12.925
+I was never a really great test taker, and my grades reflected that.
+
+327
+00:21:12.925 --> 00:21:17.125
+But I knew with hard work and perseverance, I could build a great career in IT.
+
+328
+00:21:17.125 --> 00:21:18.165
+And so can you.
+
+329
+00:21:18.165 --> 00:21:22.425
+So let's get started and dig in a bit more on the Internet.
+
+330
+00:21:22.425 --> 00:21:25.725
+The Internet has become an essential part of our lives.
+
+331
+00:21:25.725 --> 00:21:29.725
+Our bank accounts, entertainment, news, and education are all on the Internet.
+
+332
+00:21:29.725 --> 00:21:34.185
+It's important to learn why that is, since some of the original designs of the Internet
+
+333
+00:21:34.185 --> 00:21:35.845
+have reached their limitations.
+
+334
+00:21:35.845 --> 00:21:38.945
+As an IT support specialist, you should understand what they're
+
+335
+00:21:38.965 --> 00:21:41.505
+the future of the internet holds and why.
+
+336
+00:21:41.505 --> 00:21:44.565
+Let's go back in time to the 1950s where it all started.
+
+337
+00:21:44.565 --> 00:21:47.945
+Remember, back then, computers were huge and bulky.
+
+338
+00:21:47.945 --> 00:21:52.545
+If you were a programmer, you needed to directly interact with these massive computers.
+
+339
+00:21:52.545 --> 00:21:57.145
+That would get real old, real fast, especially if you had several people who wanted to use
+
+340
+00:21:57.145 --> 00:22:00.045
+the only computing resource available.
+
+341
+00:22:00.045 --> 00:22:04.925
+In the late 1960s, the US government spun up a project called DARPA.
+
+342
+00:22:04.925 --> 00:22:08.945
+It went on to create the earliest version of the internet that we see today, with the last
+
+343
+00:22:08.965 --> 00:22:15.245
+the ARPANET. Eventually, computer programmers were able to share a single computing resource
+
+344
+00:22:15.245 --> 00:22:20.485
+by being able to remotely access the computer. But there was still a big problem. Networks
+
+345
+00:22:20.485 --> 00:22:25.085
+couldn't talk to each other. It wasn't until the 1970s that we had a critical breakthrough
+
+346
+00:22:25.085 --> 00:22:29.445
+in computer networking that fixed this problem. It was thanks to computer scientists
+
+347
+00:22:29.445 --> 00:22:35.225
+Vinton Cerf and Bob Kahn, who created the method we call the transmission control protocol
+
+348
+00:22:35.225 --> 00:22:39.025
+and the Internet Protocol, or TCPIP.
+
+349
+00:22:39.025 --> 00:22:45.325
+First, only a handful of computers and universities, governments, and businesses adopt TCPIP,
+
+350
+00:22:45.325 --> 00:22:50.725
+then hundreds, and then, in the span of 50 years, billions of computers.
+
+351
+00:22:50.725 --> 00:22:54.325
+TCPIP is the protocol that we use on the Internet today.
+
+352
+00:22:54.325 --> 00:22:59.725
+Finally, people around the world could send data to one another, but they were still a problem.
+
+353
+00:22:59.725 --> 00:23:02.025
+The information they sent was just text.
+
+354
+00:23:02.025 --> 00:23:05.025
+It wasn't centralized and it was pretty bland.
+
+355
+00:23:05.025 --> 00:23:11.785
+Then, in the 1990s, a computer scientist by the name of Tim Burns Lee invented the World Wide Web.
+
+356
+00:23:11.785 --> 00:23:16.805
+It utilized different protocols for displaying information and web pages and became the predominant
+
+357
+00:23:16.805 --> 00:23:20.425
+way of communication and accessing the Internet.
+
+358
+00:23:20.425 --> 00:23:24.645
+Anyone who had an internet connection at that time was able to access the information source
+
+359
+00:23:24.645 --> 00:23:26.225
+of the World Wide Web.
+
+360
+00:23:26.225 --> 00:23:29.545
+It's been 30 years since the creation of the World Wide Web.
+
+361
+00:23:29.545 --> 00:23:34.625
+We've gone from sending simple email messages and viewing basic web pages to having video chats
+
+362
+00:23:34.625 --> 00:23:39.625
+and instant news updates, order food, buy books, and even cars in a matter of seconds.
+
+363
+00:23:39.625 --> 00:23:43.785
+Taking an online course like this wasn't even possible until recently.
+
+364
+00:23:43.785 --> 00:23:48.585
+The creation of the internet that we know today was the culmination of knowledge and engineering
+
+365
+00:23:48.585 --> 00:23:51.625
+from many brilliant scientists and organizations.
+
+366
+00:23:51.625 --> 00:23:55.825
+If you want to learn more about the history of the internet, check out the supplemental reading
+
+367
+00:23:55.825 --> 00:23:58.125
+and the networking course in this program.
+
+368
+00:24:02.125 --> 00:24:04.605
+We've mentioned IP addresses a lot in this course.
+
+369
+00:24:04.625 --> 00:24:07.125
+but we haven't actually gone into detail about them.
+
+370
+00:24:07.125 --> 00:24:10.125
+They're actually different versions of IP addresses.
+
+371
+00:24:10.125 --> 00:24:15.125
+The current protocol, Internet Protocol version 4, or IPV4,
+
+372
+00:24:15.125 --> 00:24:20.125
+is an address that consists of 32 bits separated into four groups.
+
+373
+00:24:20.125 --> 00:24:27.125
+Remember, 42 bits is 4 bytes, and 1 byte can be stored up to 256 values
+
+374
+00:24:27.125 --> 00:24:29.125
+from 0 to 255.
+
+375
+00:24:29.125 --> 00:24:34.125
+So IPV4 addresses can be something like 73.55,
+
+376
+00:24:34.125 --> 00:24:41.125
+25.242.3. Even though it might seem like a lot of possible IPV4 addresses, there are less
+
+377
+00:24:41.125 --> 00:24:47.245
+than 4.3 billion IPV4 addresses. There are way more than 4.3 billion websites out on
+
+378
+00:24:47.245 --> 00:24:53.025
+the web today. Some IPV4 addresses are even reserved for special purposes, so the number
+
+379
+00:24:53.025 --> 00:24:58.245
+of usable IP addresses is even less. A device that wants to connect to the Internet needs to
+
+380
+00:24:58.245 --> 00:25:03.925
+have an IP address, but devices around the world have already exceeded those numbers. So, where
+
+381
+00:25:03.925 --> 00:25:06.205
+Where have we been getting IP addresses?
+
+382
+00:25:06.205 --> 00:25:10.345
+IP addresses have been able to keep up with the amount of devices in the world thanks
+
+383
+00:25:10.345 --> 00:25:15.125
+to IPV6 or Internet Protocol version 6 addresses.
+
+384
+00:25:15.125 --> 00:25:23.045
+IPV6 addresses consist of 128 bits, four times the amount that IPV4 uses, which means
+
+385
+00:25:23.045 --> 00:25:25.405
+way more devices can have IP addresses.
+
+386
+00:25:25.405 --> 00:25:29.645
+The adoption of IPV6 addresses has been slow but steady.
+
+387
+00:25:29.645 --> 00:25:33.865
+Eventually you'll start seeing more and more IPV6 addresses in the wild.
+
+388
+00:25:33.925 --> 00:25:43.085
+An example, IPV4 address can be something like 172.14.24.1, but an IPV6 address can be
+
+389
+00:25:43.085 --> 00:25:48.065
+something like what you see here. Quite a bit of a difference, don't you think?
+
+390
+00:25:48.065 --> 00:25:55.045
+Here's an analogy for how big this difference is between IPV4 and IPV6. With IPV6, there
+
+391
+00:25:55.045 --> 00:26:03.825
+are two to the 128th power possible IP addresses. Two to the 128th power is an insanely huge number, so huge,
+
+392
+00:26:03.925 --> 00:26:08.245
+that scientists had trouble describing with words just how big this number is.
+
+393
+00:26:08.245 --> 00:26:12.965
+So here's an analogy. Think of a grain of sand. If you scoop up a handful,
+
+394
+00:26:12.965 --> 00:26:17.765
+do you know how many grains you've had in your hand? Probably a lot, but that's not even
+
+395
+00:26:17.765 --> 00:26:24.165
+close to the number we're talking about. Now, take all the grains of sand in the entire world.
+
+396
+00:26:24.165 --> 00:26:30.005
+Assuming there are roughly 7.5 times 10 to the 18th power grains of sand in the world,
+
+397
+00:26:30.005 --> 00:26:33.605
+that still wouldn't be enough IPV6 addresses.
+
+398
+00:26:33.925 --> 00:26:36.925
+Let's take all the sand from multiple Earths.
+
+399
+00:26:36.925 --> 00:26:39.425
+Now you're close to what that number would be.
+
+400
+00:26:39.425 --> 00:26:41.425
+It's a crazy large number.
+
+401
+00:26:41.425 --> 00:26:45.925
+Just know that we won't be running out of IPV6 addresses anytime soon.
+
+402
+00:26:45.925 --> 00:26:49.425
+Another mitigation tool that we've been able to use is NAT,
+
+403
+00:26:49.425 --> 00:26:51.425
+or network address,
+
+404
+00:26:51.425 --> 00:26:55.425
+this lets organizations use one public IP address
+
+405
+00:26:55.425 --> 00:26:57.925
+and many private IP addresses within the network.
+
+406
+00:26:57.925 --> 00:27:00.925
+Think of NAT like a receptionist at a company.
+
+407
+00:27:00.925 --> 00:27:03.425
+You know what number to dial to get to the company,
+
+408
+00:27:03.425 --> 00:27:05.405
+And once you reach the receptionist,
+
+409
+00:27:05.405 --> 00:27:07.965
+he can transfer your call to one of the private numbers
+
+410
+00:27:07.965 --> 00:27:09.225
+inside the company.
+
+411
+00:27:09.225 --> 00:27:13.145
+Now, instead of companies using hundreds of public IP addresses,
+
+412
+00:27:13.145 --> 00:27:15.285
+they can just use one IP address.
+
+413
+00:27:15.285 --> 00:27:17.765
+Remember the routers we talked about earlier?
+
+414
+00:27:17.765 --> 00:27:20.525
+One task you might need to perform when you're an IT support
+
+415
+00:27:20.525 --> 00:27:32.967
+specialist is to configure NAT on a router to facilitate communication between your company network and the outside world There are lots of other limitations that we had to deal with You learn more about them in the networking course
+
+416
+00:27:32.967 --> 00:27:37.967
+For now, you should have a general understanding of why IPV4 is so limiting for us today,
+
+417
+00:27:37.967 --> 00:27:40.967
+and how IPV6 helps solve that problem.
+
+418
+00:27:44.967 --> 00:27:47.967
+There's no doubt that the Internet has made it much easier for us
+
+419
+00:27:47.967 --> 00:27:49.967
+to connect with our friends and family,
+
+420
+00:27:49.967 --> 00:27:51.967
+but it's also made it easier to connect with everyone's more.
+
+421
+00:27:51.967 --> 00:27:53.967
+to connect with everyone else in the world.
+
+422
+00:27:53.967 --> 00:27:56.967
+We're no longer confined to our local neighborhoods.
+
+423
+00:27:56.967 --> 00:27:58.967
+Decades ago, if you wanted to sell something,
+
+424
+00:27:58.967 --> 00:28:00.967
+you'd place your goods in your driveway
+
+425
+00:28:00.967 --> 00:28:03.967
+and put up signs for a garage sale.
+
+426
+00:28:03.967 --> 00:28:06.967
+The only way someone would see this is if they drove by your neighborhood
+
+427
+00:28:06.967 --> 00:28:08.967
+and saw your sign.
+
+428
+00:28:08.967 --> 00:28:11.967
+We got a little more savvy and started advertising in our local newspaper.
+
+429
+00:28:11.967 --> 00:28:13.967
+We had to pay to list our ad,
+
+430
+00:28:13.967 --> 00:28:17.967
+but at least we were able to reach more people in our neighborhood.
+
+431
+00:28:17.967 --> 00:28:19.967
+Then the internet boom happened,
+
+432
+00:28:19.967 --> 00:28:20.967
+and we could use sites like Craigslist to post.
+
+433
+00:28:20.967 --> 00:28:26.007
+at Craigslist to post an advertisement for free and reach more people in our city.
+
+434
+00:28:26.007 --> 00:28:30.967
+Then we were able to sell the people outside of our city to cities and other states.
+
+435
+00:28:30.967 --> 00:28:35.967
+Eventually, we could sell the people outside of our own country, all thanks to the Internet.
+
+436
+00:28:35.967 --> 00:28:40.367
+Globalization is the movement that lets governments, businesses, and organizations
+
+437
+00:28:40.367 --> 00:28:44.427
+communicate and integrate together on an international scale.
+
+438
+00:28:44.427 --> 00:28:48.847
+It's been made possible by the Internet and information technology.
+
+439
+00:28:48.847 --> 00:28:51.667
+can communicate with each other faster.
+
+440
+00:28:51.667 --> 00:28:56.087
+News happening on the other side of the world reaches us before we can blink.
+
+441
+00:28:56.087 --> 00:29:00.427
+And global and financial trade have increased dramatically.
+
+442
+00:29:00.427 --> 00:29:05.387
+Globalization has transformed almost every aspect of human society as we know it.
+
+443
+00:29:05.387 --> 00:29:08.567
+Media and social movements have become globalized too.
+
+444
+00:29:08.567 --> 00:29:13.567
+In 2011, several countries in the Middle East started riots and protests against their government
+
+445
+00:29:13.567 --> 00:29:16.967
+regimes, known as the Arab Spring protests.
+
+446
+00:29:16.967 --> 00:29:18.727
+Because of outlets like social media, they're more.
+
+447
+00:29:18.727 --> 00:29:23.727
+movement gained worldwide attention, and citizens of many different countries banded together
+
+448
+00:29:23.727 --> 00:29:25.887
+to take collective action.
+
+449
+00:29:25.887 --> 00:29:30.067
+Social media movements like this have been going on for years, gathering together people
+
+450
+00:29:30.067 --> 00:29:34.227
+from all over the world and unifying them under a single cause.
+
+451
+00:29:34.227 --> 00:29:38.107
+The Internet has also dramatically changed the way we consume entertainment.
+
+452
+00:29:38.107 --> 00:29:42.807
+A few years ago, if you wanted to watch something on TV, you had to actually sit in front
+
+453
+00:29:42.807 --> 00:29:46.327
+of your TV right when it aired, or else you'd miss it.
+
+454
+00:29:46.327 --> 00:29:48.547
+Then we started recording our shows.
+
+455
+00:29:48.547 --> 00:29:52.787
+both on VHS and then on things like TiVo, so we could watch them later.
+
+456
+00:29:52.787 --> 00:29:58.227
+But now we have access to more TV shows and movies than we can ever watch in our entire lifetime
+
+457
+00:29:58.227 --> 00:29:59.867
+right at our fingertips.
+
+458
+00:29:59.867 --> 00:30:03.147
+What if you wanted to listen to a new song by your favorite band?
+
+459
+00:30:03.147 --> 00:30:06.367
+You used to have to wait until they released their album in a store.
+
+460
+00:30:06.367 --> 00:30:11.287
+And you couldn't just buy one song, you had to buy the entire album on a CD, cassette tape,
+
+461
+00:30:11.287 --> 00:30:13.807
+or even a vinyl record back in the day.
+
+462
+00:30:13.807 --> 00:30:18.527
+If you wanted to get the day's news, you had to wait until the next day when the newspaper would print it.
+
+463
+00:30:18.547 --> 00:30:25.547
+Even then you weren't able to get a fraction of a fraction of a fraction of a fraction of the news you can get on the Internet today.
+
+464
+00:30:25.547 --> 00:30:30.547
+Retail stores aren't the only place you look when you want to buy something anymore.
+
+465
+00:30:30.547 --> 00:30:35.547
+Now you can order food, clothes, books, and well, just about anything on the Internet.
+
+466
+00:30:35.547 --> 00:30:40.547
+But you don't just buy stuff off the web. You can even get an education.
+
+467
+00:30:40.547 --> 00:30:46.547
+Colleges and universities worldwide are taking education out of the classroom and putting it into your homes.
+
+468
+00:30:46.547 --> 00:30:47.547
+Online courses are becoming a public.
+
+469
+00:30:47.547 --> 00:30:51.547
+are becoming a popular way for people to get a quality education
+
+470
+00:30:51.547 --> 00:30:54.547
+at a more convenient location, time, and price.
+
+471
+00:30:54.547 --> 00:30:55.547
+And it's not just degrees.
+
+472
+00:30:55.547 --> 00:30:58.547
+There's an almost infinite amount of educational tools
+
+473
+00:30:58.547 --> 00:31:00.547
+available on the Internet.
+
+474
+00:31:00.547 --> 00:31:03.547
+A few years ago, all this information on the Internet
+
+475
+00:31:03.547 --> 00:31:06.547
+had to be reached through your laptop or guest top.
+
+476
+00:31:06.547 --> 00:31:08.547
+Now, more than ever, people are going mobile
+
+477
+00:31:08.547 --> 00:31:11.547
+and can access all of this information with their smartphones.
+
+478
+00:31:11.547 --> 00:31:15.547
+It's truly an amazing time to be alive in this technological age.
+
+479
+00:31:15.547 --> 00:31:16.547
+So the take-the-take of this technology.
+
+480
+00:31:16.547 --> 00:31:22.447
+So the takeaway here is that the only constant in the field of technology is change.
+
+481
+00:31:22.447 --> 00:31:28.447
+And as an IT support specialist, you'll have to stay on your toes to keep up with this dynamic shifting landscape.
+
+482
+00:31:32.447 --> 00:31:36.807
+You may have heard of the phrase Internet of Things or IOT.
+
+483
+00:31:36.807 --> 00:31:42.047
+This concept is pretty new, but already has a major impact on the future of computing.
+
+484
+00:31:42.047 --> 00:31:43.947
+The concept is fairly simple.
+
+485
+00:31:43.947 --> 00:31:48.907
+Basically, more and more devices are being connected to the internet in a smarter fashion.
+
+486
+00:31:48.907 --> 00:31:51.707
+Did you know that there are now smart thermostats?
+
+487
+00:31:51.707 --> 00:31:55.547
+Instead of manually programming them when you'll be out of the house, they'll just know when
+
+488
+00:31:55.547 --> 00:31:58.667
+you leave and turn off the air conditioning for you.
+
+489
+00:31:58.667 --> 00:32:00.987
+And it's not just your thermostat.
+
+490
+00:32:00.987 --> 00:32:04.747
+Many companies out there are making smarter household devices.
+
+491
+00:32:04.747 --> 00:32:08.667
+There are fridges that can keep track of what foods you have in there, toasters that can be
+
+492
+00:32:08.667 --> 00:32:13.787
+controlled by your smartphone, lights that can change depending on your mood, and cars that drive
+
+493
+00:32:13.787 --> 00:32:15.827
+you instead of you driving them.
+
+494
+00:32:15.827 --> 00:32:21.327
+The world is moving towards connecting manual devices to the internet and making them smarter.
+
+495
+00:32:21.327 --> 00:32:26.547
+These decisions have many societal implications, though, especially when it comes to cyber security
+
+496
+00:32:26.547 --> 00:32:28.147
+or personal privacy.
+
+497
+00:32:28.147 --> 00:32:33.407
+But there's also a huge potential for IoT to completely transform the world in ways we have yet
+
+498
+00:32:33.407 --> 00:32:35.027
+to see.
+
+499
+00:32:35.027 --> 00:32:40.367
+In the future, people may be shocked to learn that we had to do manual things like make your own coffee
+
+500
+00:32:40.367 --> 00:32:42.747
+or drive to the grocery store.
+
+501
+00:32:42.747 --> 00:32:47.347
+While you may not experience working with an Internet of Things device, you should be aware
+
+502
+00:32:47.347 --> 00:32:50.027
+that it will become a large part of the future of computing.
+
+503
+00:32:50.027 --> 00:32:57.927
+The added convenience made possible by the Internet also makes it harder and harder for
+
+504
+00:32:57.927 --> 00:32:59.987
+us to maintain anonymity.
+
+505
+00:32:59.987 --> 00:33:04.467
+When you purchase something online, your buying habits can be logged and you may be targeting
+
+506
+00:33:04.467 --> 00:33:05.627
+with marketing.
+
+507
+00:33:05.627 --> 00:33:10.427
+Even when you want to do something simple, like book a dinner reservation, your name, phone number,
+
+508
+00:33:10.427 --> 00:33:12.727
+email, and maybe even a credit card number or a credit number.
+
+509
+00:33:12.747 --> 00:33:19.187
+required. Now think about the information you post publicly. Name, pictures, family, friends,
+
+510
+00:33:19.187 --> 00:33:23.967
+and even your location may be available to anyone online. Be aware of what you're sharing
+
+511
+00:33:23.967 --> 00:33:28.747
+by reviewing the privacy policy of a service before you use it. It's up to you to decide
+
+512
+00:33:28.747 --> 00:33:33.707
+if the trade-offs of a service are worth sharing your personal information. In most cases,
+
+513
+00:33:33.707 --> 00:33:37.447
+companies are trying to build great products that make our lives easier. They may offer
+
+514
+00:33:37.447 --> 00:33:42.367
+their products for free because you provide them with free data. Just make sure your information
+
+515
+00:33:42.367 --> 00:33:44.167
+won't fall into the wrong hands.
+
+516
+00:33:44.167 --> 00:33:47.207
+Privacy doesn't just affect us on a personal scale.
+
+517
+00:33:47.207 --> 00:33:49.427
+It's also become a concern for governments.
+
+518
+00:33:49.427 --> 00:33:52.127
+In Europe, data regulation and privacy
+
+519
+00:33:52.127 --> 00:33:55.927
+are strictly protected to help EU citizens gain more control
+
+520
+00:33:55.927 --> 00:33:58.027
+over their personal information.
+
+521
+00:33:58.027 --> 00:34:01.847
+COPA, or the Children's Online Privacy Protection Act,
+
+522
+00:34:01.847 --> 00:34:04.447
+also regulates the information we showed a children
+
+523
+00:34:04.447 --> 00:34:05.987
+under the age of 13.
+
+524
+00:34:05.987 --> 00:34:09.167
+There are many more examples of government regulation of privacy.
+
+525
+00:34:09.167 --> 00:34:12.347
+It's no longer something we can think of on an individual scale.
+
+526
+00:34:12.367 --> 00:34:16.767
+Another concern that's grown with the rise of the internet is the issue of copyright.
+
+527
+00:34:16.767 --> 00:34:21.167
+Imagine you create a beautiful graphic and upload it on the web for your friends to see.
+
+528
+00:34:21.167 --> 00:34:26.867
+Then some random stranger takes your graphic, claims it as their own, and sells it for profit.
+
+529
+00:34:26.867 --> 00:34:34.367
+Thankfully, several companies have been founded and designed specifically to help solve this issue of copyright and intellectual property theft.
+
+530
+00:34:34.367 --> 00:34:40.367
+There are also efforts in place that you've learned about, like open source projects, that benefit from being on the internet.
+
+531
+00:34:40.367 --> 00:34:44.207
+In these cases, open collaboration allows a project to thrive.
+
+532
+00:34:44.207 --> 00:34:46.767
+On top of privacy and copyright considerations,
+
+533
+00:34:46.767 --> 00:34:51.727
+computer security is another issue that you may face in both your personal and professional life.
+
+534
+00:34:52.527 --> 00:34:56.207
+More and more companies are being targeted in cyber security attacks.
+
+535
+00:34:56.207 --> 00:35:02.847
+For example, the Wata Cry attack that started in Europe infected hundreds of thousands of computers across the world.
+
+536
+00:35:02.847 --> 00:35:07.647
+The financial loss of that attack has been estimated over a billion dollars.
+
+537
+00:35:07.647 --> 00:35:10.147
+Hospital computers were even infected.
+
+538
+00:35:10.147 --> 00:35:13.147
+In a critical life-threatening moment, every second matters.
+
+539
+00:35:13.147 --> 00:35:15.947
+Not being able to perform basic medical duties,
+
+540
+00:35:15.947 --> 00:35:17.447
+like pulling medical records,
+
+541
+00:35:17.447 --> 00:35:19.847
+took time away from doctors and nurses,
+
+542
+00:35:19.847 --> 00:35:22.747
+and more importantly, the lives of their patients.
+
+543
+00:35:22.747 --> 00:35:24.047
+Before the WannaCry attack,
+
+544
+00:35:24.047 --> 00:35:26.447
+there were lots of other worldwide attacks.
+
+545
+00:35:26.447 --> 00:35:30.347
+In 2011, the Sony PlayStation Network was attacked,
+
+546
+00:35:30.347 --> 00:35:32.947
+and around 77 million user accounts
+
+547
+00:35:32.947 --> 00:35:35.147
+had personal information exposed.
+
+548
+00:35:35.147 --> 00:35:37.547
+Everything from entire governments to business,
+
+549
+00:35:37.547 --> 00:35:41.547
+that handle the data of millions of people have been compromised.
+
+550
+00:35:41.547 --> 00:35:45.547
+Computer security is no longer the job of specialized security engineers.
+
+551
+00:35:45.547 --> 00:35:47.547
+It's everyone's responsibility.
+
+552
+00:35:47.547 --> 00:35:53.547
+And as an IT support specialist, you'll need to have a fundamental understanding of computer security.
+
+553
+00:35:53.547 --> 00:35:57.547
+You'll get to learn these fundamentals in the course IT security,
+
+554
+00:35:57.547 --> 00:36:00.547
+defense against the digital dark arts, which I'll be teaching you.
+
+555
+00:36:00.547 --> 00:36:02.547
+I spend every day working in security.
+
+556
+00:36:02.547 --> 00:36:07.527
+I love working in the field because I get to help protect people and their devices from all over the
+
+557
+00:36:07.547 --> 00:36:08.547
+the globe.
+
+558
+00:36:08.547 --> 00:36:11.827
+The security course in this program teaches you just that.
+
+559
+00:36:11.827 --> 00:36:16.167
+You'll also learn what threats are out there and how you can prevent and mitigate them
+
+560
+00:36:16.167 --> 00:36:17.867
+and how to secure your workplace.
+
+561
+00:36:17.867 --> 00:36:22.927
+Congratulations on finishing this lesson from the Google IT Support Certificate.
+
+562
+00:36:22.927 --> 00:36:26.587
+Access the full experience including job search help and get the official certificate
+
+563
+00:36:26.587 --> 00:36:29.927
+by clicking the icon or the link in the description.
+
+564
+00:36:29.927 --> 00:36:32.487
+Watch the next lesson in the course by clicking here.
+
+565
+00:36:32.487 --> 00:36:36.567
+And subscribe to our channel for more lessons from upcoming Google Career Certificates.

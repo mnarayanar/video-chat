@@ -1,0 +1,633 @@
+WEBVTT
+
+0
+00:00:00.000 --> 00:00:05.000
+Hi there, it's me again.
+
+1
+00:00:05.000 --> 00:00:08.000
+You might remember me from the previous module.
+
+2
+00:00:08.000 --> 00:00:09.000
+And no worries if not.
+
+3
+00:00:09.000 --> 00:00:12.000
+What's important is that I'm here now.
+
+4
+00:00:12.000 --> 00:00:17.000
+We've made some updates to this program to make sure you got the latest info on mobile devices.
+
+5
+00:00:17.000 --> 00:00:21.000
+You'll see me again throughout the rest of this program, so keep your eyes peeled for me.
+
+6
+00:00:21.000 --> 00:00:23.000
+Let's talk about mobile devices.
+
+7
+00:00:23.000 --> 00:00:25.000
+Mobile devices are computers too.
+
+8
+00:00:25.000 --> 00:00:29.000
+They have CPUs, RAM, storage, power systems, and programs.
+
+9
+00:00:29.000 --> 00:00:36.140
+systems and peripherals. How are they different from a server, a desktop computer, or a laptop?
+
+10
+00:00:36.140 --> 00:00:42.860
+They're special because they're mobile. They're portable and usually powered by batteries.
+
+11
+00:00:42.860 --> 00:00:48.380
+Some mobile devices are general purpose computing devices like tablets or smartphones. Other
+
+12
+00:00:48.380 --> 00:00:54.060
+mobile devices are optimized to perform a specific set of tasks like fitness monitors,
+
+13
+00:00:54.060 --> 00:00:58.940
+ear readers, and smart watches. Mobile devices are usually very integrated.
+
+14
+00:00:59.000 --> 00:01:02.440
+Remember the systems that we showed you earlier?
+
+15
+00:01:02.440 --> 00:01:05.760
+The components could be taken out and held in your hand.
+
+16
+00:01:05.760 --> 00:01:11.160
+Mobile devices build some or all of these components together in a way that you can't take apart.
+
+17
+00:01:11.160 --> 00:01:15.200
+The smaller device, the more integrated the components usually are.
+
+18
+00:01:15.200 --> 00:01:20.920
+The CPU, RAM, and storage might be soldered directly to the device's motherboard.
+
+19
+00:01:20.920 --> 00:01:26.360
+Very small mobile devices use a system on a chip, or SOC.
+
+20
+00:01:26.360 --> 00:01:28.980
+A system on a chip packs the CPU, RAM,
+
+21
+00:01:29.000 --> 00:01:32.000
+and sometimes even the storage onto a single chip.
+
+22
+00:01:32.800 --> 00:01:34.540
+Not only are SOC small,
+
+23
+00:01:34.800 --> 00:01:36.260
+they use less battery power
+
+24
+00:01:36.260 --> 00:01:38.340
+than if those components were separated.
+
+25
+00:01:38.960 --> 00:01:39.960
+Even though they're small,
+
+26
+00:01:40.380 --> 00:01:42.340
+some mobile devices use peripherals.
+
+27
+00:01:42.960 --> 00:01:46.280
+Smartphones connect to Bluetooth headphones, for example.
+
+28
+00:01:47.120 --> 00:01:49.280
+Mobile devices can also be a peripheral.
+
+29
+00:01:49.920 --> 00:01:52.040
+A fitness tracker is a standalone device,
+
+30
+00:01:52.340 --> 00:01:54.840
+but it can also be a peripheral to your smartphone.
+
+31
+00:01:55.560 --> 00:01:58.620
+And that same fitness tracker might use a heart rate monitor
+
+32
+00:01:58.620 --> 00:02:04.460
+as a peripheral. It's peripherals all the way down. Mobile devices may use standard or proprietary
+
+33
+00:02:04.460 --> 00:02:10.720
+ports and connectors. You might need to have a specific adapter or connector for charging a device
+
+34
+00:02:10.720 --> 00:02:16.580
+or connecting your mobile device to a computer. Sometimes the physical shape or the intended use
+
+35
+00:02:16.580 --> 00:02:22.740
+of the mobile device makes a standard connection like USB a bad choice. For example, say you have a
+
+36
+00:02:22.740 --> 00:02:28.600
+waterproof fitness tracker. If it had a micro USB port, that port would be damaged if exposed to one.
+
+37
+00:02:28.620 --> 00:02:34.620
+So instead, it's designed with a custom charging interface that can be submerged underwater.
+
+38
+00:02:34.620 --> 00:02:53.057
+Here are some of the standard power data and display connector types you find used in mobile devices This is a USBC Next we have a lightning adapter then a mini USB and a micro USB a micro and a mini and
+
+39
+00:02:53.057 --> 00:02:57.257
+this is a mini display port.
+
+40
+00:02:57.257 --> 00:03:02.477
+Because mobile devices are generally small and have limited access to power, they run operating
+
+41
+00:03:02.477 --> 00:03:06.977
+systems and application software that's specifically designed to maximize their performance.
+
+42
+00:03:06.997 --> 00:03:11.997
+We'll dive into mobile operating systems and applications in future videos.
+
+43
+00:03:11.997 --> 00:03:17.997
+As an IT support specialist, you might be responsible for helping end users with their mobile devices.
+
+44
+00:03:17.997 --> 00:03:23.997
+This might include setup, troubleshooting, repairing, and replacing mobile devices.
+
+45
+00:03:23.997 --> 00:03:26.997
+Don't worry, we're going to break all of this down for you.
+
+46
+00:03:26.997 --> 00:03:31.997
+One super important thing, mobile devices can contain a lot of personal data.
+
+47
+00:03:31.997 --> 00:03:35.997
+Some organizations allow people to use their own personal devices for work.
+
+48
+00:03:35.997 --> 00:03:42.317
+for work. We call this Bring Your Own Device or B-Y-O-D. You should be careful to respect
+
+49
+00:03:42.317 --> 00:03:47.117
+people's privacy when they bring their own devices to you for help. To know how to handle
+
+50
+00:03:47.117 --> 00:03:52.637
+these devices is always best to refer to your organization's policy. Next up, we'll take a look
+
+51
+00:03:52.637 --> 00:03:56.517
+at how to keep these mobile devices running without being plugged into a power outlet
+
+52
+00:03:56.517 --> 00:03:57.997
+all the time.
+
+53
+00:04:01.997 --> 00:04:05.917
+Sometimes, instead of being plugged into a power outlet all the time, we want to be plugged into a power outlet all the time, we want to be plugged
+
+54
+00:04:05.997 --> 00:04:11.197
+to take our technology with us. Mobile technology uses rechargeable batteries to carry power
+
+55
+00:04:11.197 --> 00:04:16.397
+with the device wherever we take it. Rechargeable devices might have an external charger for
+
+56
+00:04:16.397 --> 00:04:23.357
+removable batteries or might have a cradle, stand, or wireless charger. So rechargeable devices
+
+57
+00:04:23.357 --> 00:04:29.277
+might have an external charger for removable battery or might have a cradle, stand, or wireless
+
+58
+00:04:29.277 --> 00:04:34.557
+charger. Look at this phone. We can top up the battery just by laying it on this wireless
+
+59
+00:04:34.557 --> 00:04:40.157
+inductive charging pad. Isn't that cool? It's also a pretty clever technology. If you want to know
+
+60
+00:04:40.157 --> 00:04:45.997
+how this works, check out the next reading. Rechargeable batteries have a limited lifespan, which is measured
+
+61
+00:04:45.997 --> 00:04:52.717
+in charge cycles. A charge cycle is one full charge and discharge of a battery. When a battery is
+
+62
+00:04:52.717 --> 00:04:58.077
+reaching the end of its lifespan, it may take longer to charge and might not hold as much charge as
+
+63
+00:04:58.077 --> 00:05:04.077
+when it was new. For some devices, you compare the current cycle count of your battery with the rated
+
+64
+00:05:04.077 --> 00:05:08.317
+cycle count of that battery type to see how much more life to expect out of it.
+
+65
+00:05:08.317 --> 00:05:11.917
+You need an external power source to add power to a battery.
+
+66
+00:05:11.917 --> 00:05:16.797
+This could come from a wall outlet, another battery, or even a solar panel.
+
+67
+00:05:16.797 --> 00:05:30.235
+You also need a charging circuit that manages the power transfer from the external power source to the rechargeable battery This circuit works a lot like a power supply unit or PSU that we looked at earlier
+
+68
+00:05:30.235 --> 00:05:34.955
+It makes sure the input power is converted to the correct output power.
+
+69
+00:05:34.955 --> 00:05:41.255
+Instead of using a large PSU, rechargeable devices use more portable power adapters, power
+
+70
+00:05:41.255 --> 00:05:43.315
+supplies, or chargers.
+
+71
+00:05:43.315 --> 00:05:47.755
+A portable power supply powers the device while also charging the battery.
+
+72
+00:05:47.755 --> 00:05:53.514
+These might sound obvious, but you need to make sure that you use the right charger for the right device.
+
+73
+00:05:53.514 --> 00:05:59.135
+Mismatching chargers to devices can damage the battery, the device, and the charger.
+
+74
+00:05:59.135 --> 00:06:04.875
+A lot of chargers and power supplies use USB connectors, but you'll see a wide variety of charging
+
+75
+00:06:04.875 --> 00:06:05.935
+connectors.
+
+76
+00:06:05.935 --> 00:06:11.095
+Rechargeable batteries can be damaged by very cold or very hot environments.
+
+77
+00:06:11.095 --> 00:06:16.875
+Don't charge or discharge recharge recharge recharge batteries unless they're within their safe operating temperature range.
+
+78
+00:06:17.755 --> 00:06:21.354
+It's not just that a damaged rechargeable battery might not perform well.
+
+79
+00:06:21.354 --> 00:06:23.435
+It can also be very dangerous.
+
+80
+00:06:23.435 --> 00:06:27.435
+Batteries can swell, rupture, and sometimes even catch fire.
+
+81
+00:06:27.435 --> 00:06:31.995
+Before working with a damaged battery, you should know how to safely handle it.
+
+82
+00:06:31.995 --> 00:06:36.875
+You'll find some supplemental readings after this video that explains how to safely handle
+
+83
+00:06:36.875 --> 00:06:41.755
+lithium ion batteries, which is a very common type of rechargeable battery.
+
+84
+00:06:41.755 --> 00:06:47.595
+Safe handling procedures vary based on the battery type, so be sure to read up on proper procedures,
+
+85
+00:06:47.595 --> 00:06:49.595
+before you work with a damaged battery.
+
+86
+00:06:50.595 --> 00:06:52.595
+When a battery reaches the end of its life,
+
+87
+00:06:52.595 --> 00:06:54.095
+you'll need to replace it.
+
+88
+00:06:54.095 --> 00:06:56.095
+Some devices will slow themselves down
+
+89
+00:06:56.095 --> 00:06:57.595
+when the battery is getting old
+
+90
+00:06:57.595 --> 00:06:59.595
+to make the battery last longer.
+
+91
+00:06:59.595 --> 00:07:02.095
+If your device is running much slower than usual
+
+92
+00:07:02.095 --> 00:07:04.095
+or shutting down unexpectedly,
+
+93
+00:07:04.095 --> 00:07:06.595
+one thing to check is the battery life.
+
+94
+00:07:06.595 --> 00:07:08.595
+Some devices have batteries
+
+95
+00:07:08.595 --> 00:07:11.095
+that are designed to be replaced by the end user.
+
+96
+00:07:11.095 --> 00:07:13.595
+Other devices have batteries that are very difficult
+
+97
+00:07:13.595 --> 00:07:16.595
+to replace, like small laptops and mobile devices.
+
+98
+00:07:16.595 --> 00:07:22.595
+As an IT support specialist, you might receive special training on how to replace batteries and devices that you support.
+
+99
+00:07:22.595 --> 00:07:30.095
+Or you might be the person sending the device out for battery replacement and then returning the device to the end user.
+
+100
+00:07:30.095 --> 00:07:35.095
+IT support specialists often have to troubleshoot battery life and device charging.
+
+101
+00:07:35.095 --> 00:07:41.095
+The first step is to make sure the charger, the battery, and the device are all designed to work with each other.
+
+102
+00:07:41.095 --> 00:07:46.095
+We'll talk about sending out devices for repair and troubleshooting skills in future videos, so stay here.
+
+103
+00:07:46.095 --> 00:07:47.635
+so stay tuned.
+
+104
+00:07:47.635 --> 00:07:49.595
+For iOS and Android,
+
+105
+00:07:49.595 --> 00:07:51.275
+there are also some things that you could do
+
+106
+00:07:51.275 --> 00:07:53.775
+to make the battery last as long as possible.
+
+107
+00:07:53.775 --> 00:07:56.675
+It's a good idea for you to be familiar with these things
+
+108
+00:07:56.675 --> 00:07:58.914
+so that you can help educate end users
+
+109
+00:07:58.914 --> 00:08:13.492
+on the best ways to get the most out of their mobile devices Check out the supplemental readings to learn more Repairing a mobile device is different from repairing larger more generic computers
+
+110
+00:08:13.492 --> 00:08:19.492
+First, there are thousands of types of mobile devices. There's nowhere we can cover all the differences.
+
+111
+00:08:19.492 --> 00:08:25.992
+Instead, let's check out some of the tools and techniques that you'll rely on to keep mobile devices in your organization running.
+
+112
+00:08:25.992 --> 00:08:30.972
+As an IT support specialist, you might receive training in this area and be responsive to
+
+113
+00:08:30.992 --> 00:08:33.992
+for repairing devices that your organization owns.
+
+114
+00:08:33.992 --> 00:08:35.992
+Before you attempt any repairs,
+
+115
+00:08:35.992 --> 00:08:38.992
+make sure you're familiar with your organization's policy
+
+116
+00:08:38.992 --> 00:08:40.992
+around mobile device repair.
+
+117
+00:08:40.992 --> 00:08:43.992
+Depending on the device, you may or may not be able to repair it
+
+118
+00:08:43.992 --> 00:08:44.992
+on your own.
+
+119
+00:08:44.992 --> 00:08:45.992
+But not so fast.
+
+120
+00:08:45.992 --> 00:08:49.992
+Keep in mind that even when you can repair a device on your own,
+
+121
+00:08:49.992 --> 00:08:51.992
+it will usually void the warranty.
+
+122
+00:08:51.992 --> 00:08:54.992
+So, check the impact on the warranty
+
+123
+00:08:54.992 --> 00:08:56.992
+before working on a device.
+
+124
+00:08:56.992 --> 00:08:57.992
+With specific training,
+
+125
+00:08:57.992 --> 00:09:00.972
+you might be able to perform some repairs without
+
+126
+00:09:00.992 --> 00:09:03.092
+violating the warranty of the device.
+
+127
+00:09:03.092 --> 00:09:06.132
+For example, you might be allowed to replace a crack
+
+128
+00:09:06.132 --> 00:09:08.932
+smartphone screen without voiding the warranty,
+
+129
+00:09:08.932 --> 00:09:10.812
+but you're probably not permitted to replace
+
+130
+00:09:10.812 --> 00:09:12.212
+a damaged charging port.
+
+131
+00:09:12.212 --> 00:09:14.752
+If you're not allowed to perform your own repairs,
+
+132
+00:09:14.752 --> 00:09:16.812
+then it may be your job to send the device out
+
+133
+00:09:16.812 --> 00:09:21.112
+for repair or replacement with an outside vendor or manufacturer.
+
+134
+00:09:21.112 --> 00:09:23.192
+You should know and understand the return,
+
+135
+00:09:23.192 --> 00:09:26.392
+merchandise, authorization, or RMA process
+
+136
+00:09:26.392 --> 00:09:28.512
+for each device that you deal with.
+
+137
+00:09:28.512 --> 00:09:30.972
+The device is warranty or the service agreement,
+
+138
+00:09:30.992 --> 00:09:33.652
+that your organization has with the device's manufacturer
+
+139
+00:09:33.652 --> 00:09:37.392
+will determine how and when it will be repaired or replaced.
+
+140
+00:09:37.952 --> 00:09:40.552
+Depending on the device and your organization's policies,
+
+141
+00:09:41.132 --> 00:09:43.712
+you might also need to make sure that there's no proprietary
+
+142
+00:09:43.712 --> 00:09:47.112
+or personal data on the device before it's sent off for repair
+
+143
+00:09:47.112 --> 00:09:49.772
+by doing a factory reset on the device.
+
+144
+00:09:50.312 --> 00:09:55.112
+A factory reset will remove all data, apps, and customizations from the device.
+
+145
+00:09:56.012 --> 00:09:58.012
+We'll talk a lot more about factory resets
+
+146
+00:09:58.012 --> 00:10:00.592
+and backing up end-user data in future videos.
+
+147
+00:10:00.992 --> 00:10:07.492
+For now, just keep in mind that the end user should be told what will happen to their data when a device is sent off for service.
+
+148
+00:10:07.932 --> 00:10:13.152
+When repairing a mobile device, follow the same best practices that we showed you for working on a PC.
+
+149
+00:10:13.492 --> 00:10:19.012
+Protect against static discharge, use the right tools, keep parts organized and labeled.
+
+150
+00:10:19.372 --> 00:10:21.492
+Taking pictures along the way can help a lot too.
+
+151
+00:10:22.172 --> 00:10:26.052
+Follow vendor documentation and test the device to make sure it still works.
+
+152
+00:10:28.752 --> 00:10:30.972
+Congratulations on finishing this lesson from the course.
+
+153
+00:10:30.992 --> 00:10:33.332
+Google IT Support Certificate.
+
+154
+00:10:33.332 --> 00:10:37.332
+Access the full experience, including job search help, and get the official certificate
+
+155
+00:10:37.332 --> 00:10:40.632
+by clicking the icon or the link in the description.
+
+156
+00:10:40.632 --> 00:10:44.512
+Watch the next lesson in the course by clicking here, and subscribe to our channel for more
+
+157
+00:10:44.512 --> 00:10:47.272
+lessons from upcoming Google Career Certificates.

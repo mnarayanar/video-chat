@@ -1,0 +1,2865 @@
+WEBVTT
+
+0
+00:00:00.000 --> 00:00:05.500
+My name is Devon Shred Daryon.
+
+1
+00:00:05.500 --> 00:00:07.240
+I've been working in IT for 10 years.
+
+2
+00:00:07.240 --> 00:00:09.500
+I'm a corporate operations engineer at Google,
+
+3
+00:00:09.500 --> 00:00:12.240
+where I get to tackle challenging and complex IT issues.
+
+4
+00:00:12.240 --> 00:00:14.380
+I'm really passionate about IT infrastructure,
+
+5
+00:00:14.380 --> 00:00:17.620
+but you can't understand infrastructure until you understand hardware.
+
+6
+00:00:17.620 --> 00:00:18.760
+So let's dig in.
+
+7
+00:00:18.760 --> 00:00:21.880
+In IT, hardware is an essential topic to understand.
+
+8
+00:00:21.880 --> 00:00:24.180
+You might find yourself replacing faulty components
+
+9
+00:00:24.180 --> 00:00:27.080
+or even upgrading an entire fleet of machines one day.
+
+10
+00:00:27.080 --> 00:00:28.420
+By the end of this lesson,
+
+11
+00:00:28.420 --> 00:00:29.980
+you'll be able to describe all the physical
+
+12
+00:00:30.000 --> 00:00:32.340
+parts of a computer and how they work together.
+
+13
+00:00:32.340 --> 00:00:34.760
+You'll even be able to build your own computer.
+
+14
+00:00:34.760 --> 00:00:36.700
+Once you figure out how one computer works,
+
+15
+00:00:36.700 --> 00:00:39.560
+you'll be able to understand how any type of computer works.
+
+16
+00:00:39.560 --> 00:00:40.800
+Excited? I am.
+
+17
+00:00:40.800 --> 00:00:41.760
+Let's get started.
+
+18
+00:00:45.760 --> 00:00:49.280
+Let's face it, computers are everywhere.
+
+19
+00:00:49.280 --> 00:00:52.580
+You come into contact with them at home, work,
+
+20
+00:00:52.580 --> 00:00:54.640
+the airport, the grocery store.
+
+21
+00:00:54.640 --> 00:00:57.360
+You're using some type of computer to take this course.
+
+22
+00:00:57.360 --> 00:00:58.240
+You know what?
+
+23
+00:00:58.240 --> 00:00:59.980
+There's probably one in your pocket right now.
+
+24
+00:01:00.000 --> 00:01:03.760
+While computers are complex and can seem daunting to learn,
+
+25
+00:01:03.760 --> 00:01:07.240
+they ultimately just calculate, process, and store data.
+
+26
+00:01:07.240 --> 00:01:11.500
+In this lesson, we're going to take a peek at what's inside of a computer.
+
+27
+00:01:11.500 --> 00:01:15.240
+We'll spend the next few lessons explaining how each of these components work,
+
+28
+00:01:15.240 --> 00:01:18.500
+but for now, let's check out a typical desktop setup.
+
+29
+00:01:18.500 --> 00:01:22.500
+Desktop are just computers that can fit on or under our desks.
+
+30
+00:01:22.500 --> 00:01:28.500
+So here we have a monitor, a keyboard, a mouse, and a desktop.
+
+31
+00:01:28.500 --> 00:01:33.000
+Sometimes we might even add a webcam, speakers, or a printer setup.
+
+32
+00:01:33.000 --> 00:01:35.800
+We'll call these physical components hardware.
+
+33
+00:01:35.800 --> 00:01:38.500
+Let's take a look at the back of the computer.
+
+34
+00:01:43.000 --> 00:01:47.000
+You can see common connectors here.
+
+35
+00:01:47.000 --> 00:01:51.500
+The power outlet here and the common ports here.
+
+36
+00:01:51.500 --> 00:01:55.000
+Ports are connection points that we can connect devices to
+
+37
+00:01:55.000 --> 00:01:57.500
+that extend the functionality of our computer.
+
+38
+00:01:57.500 --> 00:01:58.400
+We're going to detail.
+
+39
+00:01:58.500 --> 00:02:01.140
+about the ports you see here in a later lesson.
+
+40
+00:02:01.140 --> 00:02:02.840
+But here's a quick rundown.
+
+41
+00:02:02.840 --> 00:02:06.260
+We have a port here to connect to a monitor,
+
+42
+00:02:06.260 --> 00:02:10.520
+and a few ports here to plug your keyboard and mouse.
+
+43
+00:02:10.520 --> 00:02:14.700
+There's another important one here for our network connection.
+
+44
+00:02:14.700 --> 00:02:18.040
+With just these ports, we're able to have the basic functionality
+
+45
+00:02:18.040 --> 00:02:19.980
+to browse the web and much more.
+
+46
+00:02:19.980 --> 00:02:22.920
+Things look pretty similar on a laptop.
+
+47
+00:02:22.920 --> 00:02:28.480
+Here are some of the same ports, a built-in monitor,
+
+48
+00:02:28.500 --> 00:02:31.500
+and the keyboard.
+
+49
+00:02:31.500 --> 00:02:35.500
+There are also physical components inside the laptop case
+
+50
+00:02:35.500 --> 00:02:38.500
+that are hidden for portability.
+
+51
+00:02:38.500 --> 00:02:40.500
+Once you figure out how one computer works,
+
+52
+00:02:40.500 --> 00:02:43.500
+you can figure out how any other computer works.
+
+53
+00:02:43.500 --> 00:02:45.500
+Okay, this is my favorite part.
+
+54
+00:02:45.500 --> 00:02:47.500
+Let's open up this desktop and take a deeper look.
+
+55
+00:02:47.500 --> 00:02:49.500
+Let me first clean up my desk.
+
+56
+00:02:49.500 --> 00:02:57.500
+Get ready for it.
+
+57
+00:02:57.500 --> 00:02:58.500
+ready for it.
+
+58
+00:02:58.500 --> 00:03:04.600
+Whoa, it looks pretty complicated, but that's okay.
+
+59
+00:03:04.600 --> 00:03:05.720
+We'll take you through it.
+
+60
+00:03:05.720 --> 00:03:07.500
+Let's start with a quick tool.
+
+61
+00:03:07.500 --> 00:03:11.800
+Then we'll dive deeper into each of these parts in the next lesson.
+
+62
+00:03:11.800 --> 00:03:18.200
+Right here, this component is the CPU or central processing unit, which is coached by this
+
+63
+00:03:18.200 --> 00:03:19.200
+heat sink.
+
+64
+00:03:19.200 --> 00:03:22.460
+You can think of the CPU as the brain of our computer.
+
+65
+00:03:22.460 --> 00:03:26.360
+The CPU does all the calculations and data processing.
+
+66
+00:03:26.360 --> 00:03:34.260
+It communicates pretty heavily with this component right here, RAM, or random access memory.
+
+67
+00:03:34.260 --> 00:03:36.600
+RAM is our computer's short-term memory.
+
+68
+00:03:36.600 --> 00:03:40.400
+We use this component when we want to store data temporarily.
+
+69
+00:03:40.400 --> 00:03:45.680
+Let's say you're typing something to a chat or a piece of text in a word processor.
+
+70
+00:03:45.680 --> 00:03:48.300
+This information is stored in the RAM.
+
+71
+00:03:48.300 --> 00:03:52.480
+Don't worry, we'll cram in more details on RAM in a later lesson.
+
+72
+00:03:52.480 --> 00:03:56.340
+When we want to store anything in long-term memory, we use this component here.
+
+73
+00:03:56.360 --> 00:03:58.360
+The hard drive.
+
+74
+00:03:58.360 --> 00:04:05.360
+The hard drive holds all our data, which can include music, pictures, applications.
+
+75
+00:04:05.360 --> 00:04:07.360
+Let me show you something else interesting.
+
+76
+00:04:07.360 --> 00:04:09.360
+Have you noticed this large slab here?
+
+77
+00:04:09.360 --> 00:04:12.360
+This is our motherboard.
+
+78
+00:04:12.360 --> 00:04:17.360
+It holds everything in place and lets our components communicate with each other.
+
+79
+00:04:17.360 --> 00:04:20.360
+It's the foundation of our computer.
+
+80
+00:04:20.360 --> 00:04:25.360
+You can think of the motherboard as the body or circuitory system of the computer that connects all the pieces together.
+
+81
+00:04:25.360 --> 00:04:27.000
+all the pieces together.
+
+82
+00:04:27.000 --> 00:04:31.200
+The last component we'll talk about is our power supply,
+
+83
+00:04:31.200 --> 00:04:33.800
+which converts electricity from our wall outlet
+
+84
+00:04:33.800 --> 00:04:36.320
+onto a format that our computer can use.
+
+85
+00:04:36.320 --> 00:04:37.560
+You know what's interesting?
+
+86
+00:04:37.560 --> 00:04:40.280
+All these components make up most computers,
+
+87
+00:04:40.280 --> 00:04:42.120
+even a mobile phone.
+
+88
+00:04:42.120 --> 00:04:44.940
+While it might look very different from your laptop,
+
+89
+00:04:44.940 --> 00:04:47.980
+a mobile phone just uses a smaller version of the hardware
+
+90
+00:04:47.980 --> 00:04:50.340
+that we saw in the desktop and laptop today.
+
+91
+00:04:50.340 --> 00:04:53.680
+So now that we've caught the basic anatomy of the computer,
+
+92
+00:04:53.680 --> 00:04:55.180
+we'll go over each of these components in the desktop,
+
+93
+00:04:55.180 --> 00:04:57.580
+in depth in the next few lessons.
+
+94
+00:04:57.580 --> 00:04:59.460
+Understanding how computer hardware works
+
+95
+00:04:59.460 --> 00:05:02.500
+is a really helpful skill set in IT support.
+
+96
+00:05:02.500 --> 00:05:04.500
+Since an IT department maintains the hardware
+
+97
+00:05:04.500 --> 00:05:06.760
+that a company uses, a solid understanding
+
+98
+00:05:06.760 --> 00:05:08.660
+of these computer internals will come in handy
+
+99
+00:05:08.660 --> 00:05:11.400
+when troubleshooting hardware-related problems.
+
+100
+00:05:11.400 --> 00:05:13.980
+And taking things apart to see how they work,
+
+101
+00:05:13.980 --> 00:05:15.040
+it's just super fine.
+
+102
+00:05:19.780 --> 00:05:21.960
+Before we get our hands dirty with learning
+
+103
+00:05:21.960 --> 00:05:25.060
+how to build a computer, let's talk theory first.
+
+104
+00:05:25.180 --> 00:05:30.360
+In an earlier lesson, we talked about binary and how computers perform calculations.
+
+105
+00:05:30.360 --> 00:05:35.580
+Remember that our computer can only communicate in binary using ones and zeros.
+
+106
+00:05:35.580 --> 00:05:40.580
+Our computers speak in machine language, but we, of course, speak in human languages,
+
+107
+00:05:40.580 --> 00:05:44.180
+like English, Spanish, Mandarin, Hindi.
+
+108
+00:05:44.180 --> 00:05:45.340
+You get the idea.
+
+109
+00:05:45.340 --> 00:05:51.420
+If we want to communicate with our machines, we have to have some sort of translation dictionary.
+
+110
+00:05:51.420 --> 00:05:55.080
+Just like if I wanted to say something in Spanish, I'd look it up in an English.
+
+111
+00:05:55.180 --> 00:05:57.080
+English to Spanish dictionary.
+
+112
+00:05:57.080 --> 00:06:00.200
+Well, our computers have a built-in translation book.
+
+113
+00:06:00.200 --> 00:06:03.220
+In this lesson, we'll dive deeper into how our computer
+
+114
+00:06:03.220 --> 00:06:05.200
+translates the information we give it
+
+115
+00:06:05.200 --> 00:06:07.280
+into instructions that it understands.
+
+116
+00:06:07.280 --> 00:06:09.680
+Right now, you're probably using a web browser,
+
+117
+00:06:09.680 --> 00:06:13.000
+music player, text setter, or something else on your computer.
+
+118
+00:06:13.000 --> 00:06:15.800
+We interact with these applications on a daily basis.
+
+119
+00:06:15.800 --> 00:06:17.960
+They're referred to as programs.
+
+120
+00:06:17.960 --> 00:06:21.880
+Programs are basically instructions that tell the computer what to do.
+
+121
+00:06:21.880 --> 00:06:25.000
+We typically store programs on durable media like hard drives.
+
+122
+00:06:25.000 --> 00:06:28.300
+You can think of programs like cooking recipes.
+
+123
+00:06:28.300 --> 00:06:31.300
+We'll keep these recipes all stored together in a cookbook,
+
+124
+00:06:31.300 --> 00:06:33.660
+just like apps stored in a hard drive.
+
+125
+00:06:33.660 --> 00:06:35.640
+Now, we want to make a ton of food,
+
+126
+00:06:35.640 --> 00:06:37.980
+so we hire a chef to follow our recipes
+
+127
+00:06:37.980 --> 00:06:39.960
+and whip up something good.
+
+128
+00:06:39.960 --> 00:06:43.700
+The faster our chef works, the more food she'll prepare.
+
+129
+00:06:43.700 --> 00:06:45.900
+The chef is our CPU.
+
+130
+00:06:45.900 --> 00:06:49.720
+She processes the recipes we send her and makes the food.
+
+131
+00:06:49.720 --> 00:06:54.700
+Our chef works super fast, so fast that she can cook faster than she can read.
+
+132
+00:06:54.700 --> 00:06:57.980
+So we take copy of the recipes and put them into RAM.
+
+133
+00:06:57.980 --> 00:07:01.440
+Remember that RAM is our computer's short-term memory.
+
+134
+00:07:01.440 --> 00:07:04.000
+It stores information in a location our CPU
+
+135
+00:07:04.000 --> 00:07:07.300
+can access it faster than it could with our hard drive.
+
+136
+00:07:07.300 --> 00:07:10.180
+Now we can give our chef one or two recipes at a time
+
+137
+00:07:10.180 --> 00:07:12.860
+instead of reciting the entire cookbook to her.
+
+138
+00:07:12.860 --> 00:07:17.620
+OK, now let's say I want to make a peanut butter and jelly sandwich.
+
+139
+00:07:17.620 --> 00:07:21.900
+I see a pretty good recipe and send it to our chef to make.
+
+140
+00:07:21.900 --> 00:07:24.680
+Remember that our chef needs these instructions quickly,
+
+141
+00:07:24.700 --> 00:07:27.140
+So I don't send her the entire recipe.
+
+142
+00:07:27.140 --> 00:07:29.940
+I send her one line at a time.
+
+143
+00:07:29.940 --> 00:07:32.940
+One, get two slices of bread.
+
+144
+00:07:32.940 --> 00:07:36.380
+Two, put peanut butter on one slice.
+
+145
+00:07:36.380 --> 00:07:39.460
+Three, put jelly on another slice.
+
+146
+00:07:39.460 --> 00:07:42.380
+Four, combine the two slices of bread.
+
+147
+00:07:42.380 --> 00:07:45.460
+Now, let me throw one more thing at you.
+
+148
+00:07:45.460 --> 00:07:49.320
+Our chef can only communicate with us in ones and zeros.
+
+149
+00:07:49.320 --> 00:07:54.280
+So instead of sending something readable like the recipe for a peanut butter and jelly sandwich,
+
+150
+00:07:54.280 --> 00:07:56.160
+we have to send her something like this.
+
+151
+00:07:56.160 --> 00:07:59.620
+In reality, this process is a little more complicated.
+
+152
+00:07:59.620 --> 00:08:03.120
+Our CPU is constantly taking instructions and executing them.
+
+153
+00:08:03.120 --> 00:08:08.240
+These instructions are written in binary, but how do they travel around the computer?
+
+154
+00:08:08.240 --> 00:08:13.940
+In our computer, we have something called the External Data Bus, or EDB.
+
+155
+00:08:13.940 --> 00:08:16.280
+It's nothing like a bus at all.
+
+156
+00:08:16.280 --> 00:08:21.080
+It's a row of wires that interconnect the parts of our computer, kind of like the veins in our
+
+157
+00:08:21.080 --> 00:08:22.240
+body.
+
+158
+00:08:22.240 --> 00:08:28.480
+When you send a voltage to one of the wires, we say the state of the wire is on or represented
+
+159
+00:08:28.480 --> 00:08:29.860
+by a one.
+
+160
+00:08:29.860 --> 00:08:35.100
+If there's no voltage, then we say that the state is off, represented by a zero.
+
+161
+00:08:35.100 --> 00:08:37.940
+This is how we send around our ones and zeros.
+
+162
+00:08:37.940 --> 00:08:39.100
+Sound familiar?
+
+163
+00:08:39.100 --> 00:08:43.820
+The last lesson, we talked about how transistors help us to send voltages.
+
+164
+00:08:43.820 --> 00:08:46.840
+Now, we know how our bits physically travel around the computer.
+
+165
+00:08:46.840 --> 00:08:49.180
+The EDB comes in different sizes.
+
+166
+00:08:49.180 --> 00:08:52.940
+8-bit, 16-bit, 32, even 64.
+
+167
+00:08:52.940 --> 00:08:55.860
+Can you imagine if you had 64 wires going?
+
+168
+00:08:55.860 --> 00:08:57.860
+You can move around a lot more data.
+
+169
+00:08:57.860 --> 00:09:02.500
+Right now, we're just going to stick with using an EDB with 8 bits in our examples,
+
+170
+00:09:02.500 --> 00:09:04.740
+sending one byte at a time.
+
+171
+00:09:04.740 --> 00:09:10.580
+OK, so now our CPU is receiving a byte, and it needs to get to work.
+
+172
+00:09:10.580 --> 00:09:15.060
+Inside the CPU, there are components known as registers.
+
+173
+00:09:15.060 --> 00:09:18.580
+They let us store the data that our CPU works with.
+
+174
+00:09:18.580 --> 00:09:22.540
+If, for example, our CPU wanted to add two numbers,
+
+175
+00:09:22.540 --> 00:09:25.740
+one number would be stored in a register A.
+
+176
+00:09:25.740 --> 00:09:28.900
+Another number would be stored in register B.
+
+177
+00:09:28.900 --> 00:09:32.540
+The result of those two numbers would be stored in register C.
+
+178
+00:09:32.540 --> 00:09:36.360
+Imagine, the register is one of our chef's work tables.
+
+179
+00:09:36.360 --> 00:09:39.320
+Since she has a place to work, she can start to cook.
+
+180
+00:09:39.320 --> 00:09:42.020
+To do so, she uses a translation book
+
+181
+00:09:42.020 --> 00:09:46.020
+to translate her binary into tasks that she can perform.
+
+182
+00:09:46.020 --> 00:09:48.260
+Let's jump back for a second.
+
+183
+00:09:48.260 --> 00:09:52.880
+Remember that our programs are copied into RAM for the CPU to read.
+
+184
+00:09:52.880 --> 00:09:55.720
+RAM is memory that's randomly accessed,
+
+185
+00:09:55.720 --> 00:09:58.580
+allowing our CPU to read from any part of RAM
+
+186
+00:09:58.580 --> 00:10:00.740
+as quickly as any other part.
+
+187
+00:10:00.740 --> 00:10:04.320
+We don't actually send data from RAM over the EDB.
+
+188
+00:10:04.320 --> 00:10:06.300
+There would be way too much stuff.
+
+189
+00:10:06.300 --> 00:10:10.020
+RAM can hold millions, even billions of rows of data.
+
+190
+00:10:10.020 --> 00:10:11.800
+Despite our sandwich example,
+
+191
+00:10:11.800 --> 00:10:15.260
+most of our recipes aren't simple at all.
+
+192
+00:10:15.260 --> 00:10:17.240
+There can be thousands of lives long.
+
+193
+00:10:17.240 --> 00:10:18.240
+We want to process.
+
+194
+00:10:18.260 --> 00:10:21.260
+and we don't actually go in any particular order.
+
+195
+00:10:21.260 --> 00:10:25.260
+Since we can only send one line of data through the EDB at a time,
+
+196
+00:10:25.260 --> 00:10:31.260
+we need the help of another component, the memory controller chip, or MCC.
+
+197
+00:10:31.260 --> 00:10:43.355
+The MCC is a bridge between the CPU and the RAM You can think of it like a nerve in your brain connecting to your memories The CPU talks to the MCC and says
+
+198
+00:10:43.355 --> 00:10:46.355
+Hey, I need the instructions for step number three of this recipe.
+
+199
+00:10:46.355 --> 00:10:50.355
+The MCC finds instructions for step number three in RAM,
+
+200
+00:10:50.355 --> 00:10:53.355
+grabs the data and sends it through the EDB.
+
+201
+00:10:53.355 --> 00:10:58.355
+There's another bus that's nothing like a bus involved in the process called the address bus.
+
+202
+00:10:58.355 --> 00:11:00.355
+It connects the CPU to the MCC.
+
+203
+00:11:00.355 --> 00:11:03.855
+the MCC and sends over the location of the data,
+
+204
+00:11:03.855 --> 00:11:05.435
+but not the data itself.
+
+205
+00:11:05.435 --> 00:11:08.735
+Then the MCC takes the address and looks for the data,
+
+206
+00:11:08.735 --> 00:11:12.795
+and then data is then sent over the EDB.
+
+207
+00:11:12.795 --> 00:11:15.454
+Believe it or not, RAM isn't the fastest way
+
+208
+00:11:15.454 --> 00:11:18.755
+we can get more data to our CPU for processing.
+
+209
+00:11:18.755 --> 00:11:22.675
+The CPU also uses something known as cache.
+
+210
+00:11:22.675 --> 00:11:25.954
+Cash is smaller than RAM, but it lets us store data
+
+211
+00:11:25.954 --> 00:11:28.954
+that we use often and let's just quickly reference it.
+
+212
+00:11:28.954 --> 00:11:29.915
+Think of RAM like,
+
+213
+00:11:29.915 --> 00:11:31.915
+A refrigerator full of food.
+
+214
+00:11:31.915 --> 00:11:35.535
+It's easy to get into, but it takes time to get something out.
+
+215
+00:11:35.535 --> 00:11:40.375
+On the flip side of that, cash is like the stuff we have in our pockets.
+
+216
+00:11:40.375 --> 00:11:43.975
+It's used to store recently or frequently accessed data.
+
+217
+00:11:43.975 --> 00:11:49.595
+There are three different cache levels in a CPU, L1, L2, and L3.
+
+218
+00:11:49.595 --> 00:11:52.654
+L1 is the smallest and fastest cache.
+
+219
+00:11:52.654 --> 00:11:56.115
+If you're interested in learning more about this, you can check out the supplemental reading
+
+220
+00:11:56.115 --> 00:11:58.235
+I've included right after this video.
+
+221
+00:11:58.235 --> 00:12:02.415
+So now we understand how our RAM interacts with our CPU.
+
+222
+00:12:02.415 --> 00:12:07.875
+But how does our CPU know when a set of instructions ends and a new one begins?
+
+223
+00:12:07.875 --> 00:12:12.454
+Our CPU has an internal clock that keeps its operations in sync.
+
+224
+00:12:12.454 --> 00:12:15.915
+It connects to a special wire called a clock wire.
+
+225
+00:12:15.915 --> 00:12:21.135
+When you send or receive data, it sends a voltage to that clock wire to let the CPU know
+
+226
+00:12:21.135 --> 00:12:23.714
+it can start doing calculations.
+
+227
+00:12:23.714 --> 00:12:27.255
+Think of our clock wires as the ticking of a clock.
+
+228
+00:12:27.255 --> 00:12:30.975
+For every tick, the CPU does one cycle of operations.
+
+229
+00:12:30.975 --> 00:12:35.555
+When you send a voltage to the clock wire, it's referred to as a clock cycle.
+
+230
+00:12:35.555 --> 00:12:38.915
+If you have lots of data, you need to process in a command.
+
+231
+00:12:38.915 --> 00:12:41.975
+You'll need to run lots of clock cycles.
+
+232
+00:12:41.975 --> 00:12:48.015
+Have you ever seen a CPU in the store and has something labeled 3.4 G.H.
+
+233
+00:12:48.015 --> 00:12:52.855
+This number refers to the clock speed of the CPU, which is the maximum number of clock
+
+234
+00:12:52.855 --> 00:12:55.935
+cycles that it can handle in a certain time period.
+
+235
+00:12:55.935 --> 00:13:01.815
+3.40 gigahertz is 3.4 billion cycles per second.
+
+236
+00:13:01.815 --> 00:13:03.615
+That's super fast.
+
+237
+00:13:03.615 --> 00:13:07.415
+But just because it can run at this speed doesn't mean it does.
+
+238
+00:13:07.415 --> 00:13:09.875
+It just means that it can't exceed this number.
+
+239
+00:13:09.875 --> 00:13:13.435
+Still, that number doesn't stop some people from trying.
+
+240
+00:13:13.435 --> 00:13:19.255
+There's a way you can exceed the number of clock cycles on your CPU on almost any device.
+
+241
+00:13:19.255 --> 00:13:23.894
+It's referred to as overclocking, and it increases the rate of your CPU clock cycles
+
+242
+00:13:23.894 --> 00:13:26.475
+in order to perform more tasks.
+
+243
+00:13:26.475 --> 00:13:28.615
+This is commonly used to increase the performance
+
+244
+00:13:28.615 --> 00:13:30.235
+in low-end CPUs.
+
+245
+00:13:30.235 --> 00:13:33.074
+Let's say you're a gamer and you want to have better graphics
+
+246
+00:13:33.074 --> 00:13:34.815
+and less lag while playing.
+
+247
+00:13:34.815 --> 00:13:37.035
+You might want to overclock your CPU
+
+248
+00:13:37.035 --> 00:13:38.755
+when you play the game.
+
+249
+00:13:38.755 --> 00:13:41.015
+But there are cons to doing this,
+
+250
+00:13:41.015 --> 00:13:43.274
+like potentially overheating your CPU.
+
+251
+00:13:43.274 --> 00:13:45.055
+You can read more about overclocking
+
+252
+00:13:45.055 --> 00:13:46.795
+in the next supplementary reading.
+
+253
+00:13:51.714 --> 00:13:53.834
+If someone asked you, calculate the square
+
+254
+00:13:53.894 --> 00:13:59.894
+of 5,439,493, would you do the math by hand?
+
+255
+00:13:59.894 --> 00:14:04.894
+Unless you really love tedious math problems, you'd probably use a calculator.
+
+256
+00:14:04.894 --> 00:14:06.894
+What about binary?
+
+257
+00:14:06.894 --> 00:14:09.894
+Well, you probably wouldn't calculate binary by hand either.
+
+258
+00:14:09.894 --> 00:14:15.894
+There's actually a very powerful calculator right inside of your computer that process binary for us.
+
+259
+00:14:15.894 --> 00:14:18.894
+We've already discussed this in calculator in detail.
+
+260
+00:14:18.894 --> 00:14:19.894
+Do you know what it is?
+
+261
+00:14:19.894 --> 00:14:22.894
+It's our CPU, the brain of our computer.
+
+262
+00:14:22.894 --> 00:14:26.894
+In this video, we'll cover the more practical aspects of the CPU.
+
+263
+00:14:26.894 --> 00:14:32.894
+Remember that translation book that I talked about in an earlier lesson?
+
+264
+00:14:32.894 --> 00:14:36.894
+The CPU uses this to translate and perform functions on our data.
+
+265
+00:14:36.894 --> 00:14:39.894
+This translation book is called an instruction set,
+
+266
+00:14:39.894 --> 00:14:44.894
+which is literally just a list of instructions that our CPU is able to run.
+
+267
+00:14:44.894 --> 00:14:51.895
+Functions like adding, subtracting, copying, data are all instructions that our CPU can carry out.
+
+268
+00:14:51.895 --> 00:14:55.295
+Every single program on your computer, while extremely complex,
+
+269
+00:14:55.295 --> 00:15:00.895
+is broken down into very small and simple instructions found in our instruction set.
+
+270
+00:15:00.895 --> 00:15:04.395
+Instruction sets are hard-coded into our CPU,
+
+271
+00:15:04.395 --> 00:15:08.095
+so different CPU manufacturers may use different instruction sets,
+
+272
+00:15:08.095 --> 00:15:10.694
+but they generally perform the same functions.
+
+273
+00:15:10.694 --> 00:15:13.895
+It's like how car manufacturers build their engines differently,
+
+274
+00:15:13.895 --> 00:15:15.895
+but they all get the same job done.
+
+275
+00:15:15.895 --> 00:15:19.395
+You probably work with computer hardware as an IT support specialist,
+
+276
+00:15:19.395 --> 00:15:21.395
+replacing failed hard disks,
+
+277
+00:15:21.395 --> 00:15:24.595
+upgrading RAM modules and installing video cards.
+
+278
+00:15:24.595 --> 00:15:27.475
+So you need to be aware of what's out there.
+
+279
+00:15:27.475 --> 00:15:32.434
+You've probably heard of a few popular CPU manufacturers or chipsets like
+
+280
+00:15:32.434 --> 00:15:35.475
+Intel, AMD, and Qualcomm.
+
+281
+00:15:35.475 --> 00:15:40.355
+These CPU manufacturers use different product names to differentiate their processes,
+
+282
+00:15:40.355 --> 00:15:43.714
+like Intel Core I7, AMD Athlon,
+
+283
+00:15:43.714 --> 00:15:47.714
+Snapdragon 810, Apple 88, and more.
+
+284
+00:15:47.714 --> 00:15:50.915
+Now when you hear these terms, you'll know what they mean.
+
+285
+00:15:50.915 --> 00:15:54.154
+Each of these CPU manufacturers have their strengths and weaknesses.
+
+286
+00:15:54.154 --> 00:15:58.595
+If you're interested in learning more about why some CPUs are more popular than others,
+
+287
+00:15:58.595 --> 00:16:01.035
+you can check out the next supplemental reading.
+
+288
+00:16:01.035 --> 00:16:03.395
+When you select your CPU,
+
+289
+00:16:03.395 --> 00:16:05.954
+you'll need to make sure it's compatible with your motherboard,
+
+290
+00:16:05.954 --> 00:16:09.235
+the circuit board that connects all your components together.
+
+291
+00:16:09.235 --> 00:16:13.395
+Heads up, you can't just buy a bunch of parts and expect them to work together.
+
+292
+00:16:13.395 --> 00:16:17.314
+There are different ways CPUs fit on motherboards using different sockets.
+
+293
+00:16:17.314 --> 00:16:20.895
+Your CPU might have lots of tiny pins that either stick out,
+
+294
+00:16:20.915 --> 00:16:24.035
+or have contact points that look like dots.
+
+295
+00:16:24.035 --> 00:16:25.295
+Depending on your motherboard,
+
+296
+00:16:25.295 --> 00:16:28.714
+you'll need to make sure these CPUs fit correctly in the socket.
+
+297
+00:16:28.714 --> 00:16:31.755
+There are currently two major types of CPU sockets,
+
+298
+00:16:31.755 --> 00:16:34.475
+land grid array, also known as LGA,
+
+299
+00:16:34.475 --> 00:16:38.115
+and PIN grid array, also known as PGA.
+
+300
+00:16:38.115 --> 00:16:40.635
+In an LGA socket like this one,
+
+301
+00:16:40.635 --> 00:16:43.415
+there are pins that stick out of the motherboard.
+
+302
+00:16:43.415 --> 00:16:45.175
+The socket size may vary,
+
+303
+00:16:45.175 --> 00:16:47.555
+so always make sure your CPU and socket
+
+304
+00:16:47.555 --> 00:16:49.755
+are compatible beforehand.
+
+305
+00:16:49.755 --> 00:16:51.995
+When you purchase a CPU or motherboard,
+
+306
+00:16:51.995 --> 00:16:55.295
+it'll tell you right on the box what type of socket it has.
+
+307
+00:16:55.295 --> 00:16:59.295
+Make sure your CPU and motherboard socket also both match.
+
+308
+00:16:59.295 --> 00:17:00.934
+If it's not listed on the box,
+
+309
+00:17:00.934 --> 00:17:02.895
+you can go to the manufacturer's website,
+
+310
+00:17:02.895 --> 00:17:05.294
+where it usually list what types of CPUs
+
+311
+00:17:05.294 --> 00:17:07.434
+are compatible with the motherboard.
+
+312
+00:17:07.434 --> 00:17:10.835
+The other type of socket is the PGA socket,
+
+313
+00:17:10.835 --> 00:17:13.675
+where the pins are located on the processor itself.
+
+314
+00:17:13.675 --> 00:17:15.534
+When we install our CPU,
+
+315
+00:17:15.534 --> 00:17:19.095
+we need to do a few things to it to keep it cool.
+
+316
+00:17:19.095 --> 00:17:22.575
+Since it does a lot of work, it's prone to overheating.
+
+317
+00:17:22.575 --> 00:17:25.415
+We have to make sure to include a heat sink too,
+
+318
+00:17:25.415 --> 00:17:28.115
+which takes the heat from our CPU and dispates it
+
+319
+00:17:28.115 --> 00:17:29.895
+through a fan or another medium.
+
+320
+00:17:32.934 --> 00:17:36.115
+There's one last thing I want to call out about CPUs.
+
+321
+00:17:36.115 --> 00:17:39.075
+If you purchase a CPU, you'll see that it has either
+
+322
+00:17:39.075 --> 00:17:42.955
+a 32-bit or a 64-bit architecture.
+
+323
+00:17:42.955 --> 00:17:43.875
+What does that mean?
+
+324
+00:17:43.875 --> 00:17:46.975
+Well, we know we can process 8 bits in binary.
+
+325
+00:17:46.975 --> 00:17:49.075
+Now, imagine how we can process
+
+326
+00:17:49.095 --> 00:17:51.534
+with 32 or even 64 bits.
+
+327
+00:17:51.534 --> 00:17:55.195
+CPUs that have 32-bit or 64-bit architecture
+
+328
+00:17:55.195 --> 00:17:59.434
+are just specifying how much data it can efficiently handle.
+
+329
+00:17:59.434 --> 00:18:00.915
+You can read more about the differences
+
+330
+00:18:00.915 --> 00:18:05.375
+between 32-bit and 64-bit architecture in the next reading.
+
+331
+00:18:05.375 --> 00:18:07.934
+For now, the main takeaway is that the CPU
+
+332
+00:18:07.934 --> 00:18:10.895
+is one of the most important parts of a computer.
+
+333
+00:18:10.895 --> 00:18:12.595
+So we have to make sure it's compatible
+
+334
+00:18:12.595 --> 00:18:15.294
+with all other components and can perform well
+
+335
+00:18:15.294 --> 00:18:16.534
+for our computing needs.
+
+336
+00:18:19.095 --> 00:18:25.595
+Let's talk about RAM, our computer's short-term memory.
+
+337
+00:18:25.595 --> 00:18:29.075
+We use RAM to store data that we want to access quickly.
+
+338
+00:18:29.075 --> 00:18:32.934
+This data changes all the time, so it isn't permanent.
+
+339
+00:18:32.934 --> 00:18:37.534
+Almost all RAM is volatile, which means that once we power off our machines, the data stored
+
+340
+00:18:37.534 --> 00:18:39.495
+in RAM is cleared.
+
+341
+00:18:39.495 --> 00:18:43.235
+Remember that our computer is comprised of programs.
+
+342
+00:18:43.235 --> 00:18:48.215
+To run a program, we need to make a copy of it in RAM so our CPU can process it.
+
+343
+00:18:49.095 --> 00:18:52.735
+When you see a new phone or laptop that says it has 16 gig of RAM,
+
+344
+00:18:52.735 --> 00:18:56.175
+that means it can run up to 16 gigs of programs,
+
+345
+00:18:56.175 --> 00:18:59.095
+meaning you can run lots of programs at the same time.
+
+346
+00:18:59.095 --> 00:19:01.934
+When you type in a document, you're using RAM.
+
+347
+00:19:01.934 --> 00:19:04.054
+If you've ever had the misfortune of working
+
+348
+00:19:04.054 --> 00:19:07.335
+on an important presentation or paper and losing power,
+
+349
+00:19:07.335 --> 00:19:11.115
+you know the feeling you get when all of the work you've done is lost.
+
+350
+00:19:11.115 --> 00:19:12.475
+It's a total bummer.
+
+351
+00:19:12.475 --> 00:19:15.835
+This happens to anything with RAM, even video games.
+
+352
+00:19:15.835 --> 00:19:18.855
+Have you ever gone on a long campaign without saving,
+
+353
+00:19:18.855 --> 00:19:20.815
+then right as you get to a save point,
+
+354
+00:19:20.815 --> 00:19:22.995
+the power goes off on the console
+
+355
+00:19:22.995 --> 00:19:25.774
+and all the progress you've made is lost forever.
+
+356
+00:19:25.774 --> 00:19:27.075
+It's not fun at all.
+
+357
+00:19:27.075 --> 00:19:29.415
+You spend the next hour or so deciding whether or not
+
+358
+00:19:29.415 --> 00:19:31.294
+just to rage quit the game completely
+
+359
+00:19:31.294 --> 00:19:33.054
+and start all over from scratch.
+
+360
+00:19:33.054 --> 00:19:34.995
+Not that this happened to me or anything,
+
+361
+00:19:34.995 --> 00:19:36.495
+that was just a friend.
+
+362
+00:19:36.495 --> 00:19:39.315
+Anyway, all of this happens because RAM clears its data
+
+363
+00:19:39.315 --> 00:19:40.514
+when powered off.
+
+364
+00:19:40.514 --> 00:19:42.215
+There are lots of types of RAM.
+
+365
+00:19:42.215 --> 00:19:44.054
+And the one that's commonly found in computers
+
+366
+00:19:44.054 --> 00:19:48.095
+is DRAM or dynamic random access memory.
+
+367
+00:19:48.095 --> 00:19:53.635
+When a 1 or 0 is sent to DRAM, it stores each bit in a microscopic capacitor.
+
+368
+00:19:53.635 --> 00:19:57.995
+This is either charged or discharged represented by 1 or a 0.
+
+369
+00:19:57.995 --> 00:20:02.955
+These semiconductors are put into chips that are on the RAM and store our data.
+
+370
+00:20:02.955 --> 00:20:06.935
+There are also different types of memory sticks that DRAM chips can be put on.
+
+371
+00:20:06.935 --> 00:20:12.155
+The more modern dim sticks, which usually stands for dual inline memory module,
+
+372
+00:20:12.155 --> 00:20:14.575
+have different sizes of pins on them.
+
+373
+00:20:14.575 --> 00:20:18.075
+I should call out we don't really buy RAM based on the number of DRAM.
+
+374
+00:20:18.095 --> 00:20:19.755
+RAM chips they have.
+
+375
+00:20:19.755 --> 00:20:22.215
+They're labeled by the capacity of RAM on a stick,
+
+376
+00:20:22.215 --> 00:20:24.135
+like an 8 gig stick of RAM.
+
+377
+00:20:24.135 --> 00:20:25.755
+After DRAM was created,
+
+378
+00:20:25.755 --> 00:20:28.995
+RAM manufacturers built something called SD RAM,
+
+379
+00:20:28.995 --> 00:20:31.495
+which stands for synchronous DRAM.
+
+380
+00:20:31.495 --> 00:20:34.395
+This type of RAM is synchronized to our system's clock speed,
+
+381
+00:20:34.395 --> 00:20:36.475
+allowing quicker processing of data.
+
+382
+00:20:36.475 --> 00:20:38.975
+In today's system, we use another type of RAM
+
+383
+00:20:38.975 --> 00:20:45.335
+called double data rate SD RAM, or DDR SD RAM for short.
+
+384
+00:20:45.335 --> 00:20:47.655
+Most people refer to this RAM as DDR.
+
+385
+00:20:47.655 --> 00:20:49.655
+DDR even shorter.
+
+386
+00:20:49.655 --> 00:20:57.655
+There are lots of iterations of DDR from DDR1, DDR2, DDR3, and now DDR4.
+
+387
+00:20:57.655 --> 00:21:02.655
+DDR is faster, takes up less power, and has a larger capacity than earlier SD RAM versions.
+
+388
+00:21:02.655 --> 00:21:19.809
+The latest version DDR4 is the fastest type of short memory currently available for your computer And faster RAM means that programs can be run faster and that more programs can run at the same time Keep in mind that any RAM sticks you use need a compatible motherboard with a different number
+
+389
+00:21:19.809 --> 00:21:26.929
+of pins align with the motherboard RAM slots.
+
+390
+00:21:26.929 --> 00:21:33.710
+Just like with the CPU, make sure that your motherboard is compatible with any RAM sticks
+
+391
+00:21:33.710 --> 00:21:34.909
+that you buy.
+
+392
+00:21:34.909 --> 00:21:37.510
+Up next, we'll take a deep dive into motherboards.
+
+393
+00:21:37.710 --> 00:21:47.669
+Ah, the motherboard, the foundation that holds our computer together.
+
+394
+00:21:47.669 --> 00:21:51.750
+It lets us expand our computer's functionality by adding expansion cards.
+
+395
+00:21:51.750 --> 00:21:55.710
+It routes power from the power supply, and it allows the different parts of the computer
+
+396
+00:21:55.710 --> 00:21:57.750
+to communicate with each other.
+
+397
+00:21:57.750 --> 00:22:01.429
+In short, it's a total boss.
+
+398
+00:22:01.429 --> 00:22:04.429
+Every motherboard has a few key characteristics.
+
+399
+00:22:04.429 --> 00:22:07.690
+First is the chipset, which decides how components totally
+
+400
+00:22:07.710 --> 00:22:09.470
+to each other on our machine.
+
+401
+00:22:09.470 --> 00:22:12.669
+The chips set on motherboards is made up of two chips.
+
+402
+00:22:12.669 --> 00:22:18.110
+One is called the North Bridge that interconnects stuff like RAM and video cards.
+
+403
+00:22:18.110 --> 00:22:22.270
+The other chip is the South Bridge, which maintains our I.O.
+
+404
+00:22:22.270 --> 00:22:29.470
+Or input output controllers, like hard drives and USB devices that input and output data.
+
+405
+00:22:29.470 --> 00:22:34.510
+In some modern CPUs, the North Bridge has been directly integrated into the CPU,
+
+406
+00:22:34.510 --> 00:22:37.070
+so there isn't a separate Northbridge chipset.
+
+407
+00:22:37.070 --> 00:22:40.190
+The chipset is a key component of our motherboard
+
+408
+00:22:40.190 --> 00:22:45.070
+that allows us to manage data between our CPU, RAM, and peripherals.
+
+409
+00:22:45.070 --> 00:22:48.190
+Peripherals are the external devices we connect to our computer,
+
+410
+00:22:48.190 --> 00:22:51.390
+like a mouse, keyboard, and a monitor.
+
+411
+00:22:51.390 --> 00:22:54.830
+You will learn more about peripherals in an upcoming lesson.
+
+412
+00:22:54.830 --> 00:22:56.270
+In addition to the chipsets,
+
+413
+00:22:56.270 --> 00:22:58.429
+motherboards have another key characteristic,
+
+414
+00:22:58.429 --> 00:23:01.630
+which allows the use of expansion slots.
+
+415
+00:23:01.630 --> 00:23:06.510
+Expansion slots also give us the ability to increase the functionality of our computer.
+
+416
+00:23:06.510 --> 00:23:12.270
+If you wanted to upgrade your graphics card, you could purchase one and just install it on your motherboard through the expansion slot.
+
+417
+00:23:12.270 --> 00:23:19.950
+The standard for an expansion bus today is the PCI Express or peripheral component interconnect express.
+
+418
+00:23:19.950 --> 00:23:27.470
+A PCIE bus looks like a slot on the motherboard and a PCIE base expansion card looks like a smaller circuit board.
+
+419
+00:23:28.429 --> 00:23:32.590
+The last component of motherboards that we'll discuss is form factor.
+
+420
+00:23:32.590 --> 00:23:35.870
+There are different sizes of motherboards that are available today.
+
+421
+00:23:35.870 --> 00:23:40.510
+These sizes or form factors determine the amount of stuff we can put in it,
+
+422
+00:23:40.510 --> 00:23:42.110
+and the amount of space will have.
+
+423
+00:23:42.110 --> 00:23:45.549
+The most common form factor for motherboards is ATX,
+
+424
+00:23:45.549 --> 00:23:48.830
+which stands for advanced technology extended.
+
+425
+00:23:48.830 --> 00:23:52.030
+ATX actually comes in different sizes too.
+
+426
+00:23:52.030 --> 00:23:55.470
+In desktops, you'll commonly see four-sized ATXs.
+
+427
+00:23:55.470 --> 00:23:58.190
+If you don't want to use an ATX form factor,
+
+428
+00:23:58.190 --> 00:24:03.789
+you could use an ITX or information technology extended form factor.
+
+429
+00:24:03.789 --> 00:24:05.710
+These are much smaller than ATX boards.
+
+430
+00:24:05.710 --> 00:24:11.149
+boards. For example, the Intel Nook uses a variation of the ITX board, which comes in three
+
+431
+00:24:11.149 --> 00:24:18.630
+board sizes, Mini-ItX, Nano-ItX, and PICO ITX. When building your computer, you will need to
+
+432
+00:24:18.630 --> 00:24:22.649
+keep in mind what type of form factor you want. Do you want to build something small that
+
+433
+00:24:22.649 --> 00:24:28.250
+can't handle as much workload? Or do you want a powerhouse workstation that you can add
+
+434
+00:24:28.250 --> 00:24:33.830
+lots of functionality to? The form factor will also play a role into what expansion slots you
+
+435
+00:24:33.830 --> 00:24:34.830
+might want to use.
+
+436
+00:24:35.710 --> 00:24:40.350
+Underselling motherboards and their characteristics can be a big plus when fixing hardware issues,
+
+437
+00:24:40.350 --> 00:24:46.950
+since things like the type of RAM module or processor socket are dependent on the kind of motherboard they need to fit into.
+
+438
+00:24:46.950 --> 00:24:50.710
+Let's say you're responding to a ticket for a user who's having video problems.
+
+439
+00:24:50.710 --> 00:24:58.710
+You don't want to make it all the way to their desk only to realize the graphics card you bought as a replacement doesn't fit the motherboard their computer users.
+
+440
+00:24:58.710 --> 00:25:03.710
+You will learn more about customer service and troubleshooting tactics later on in this course.
+
+441
+00:25:03.710 --> 00:25:05.690
+But for now, make sure that your mother's
+
+442
+00:25:05.710 --> 00:25:08.950
+board can fit any replacement or upgrade that you want to implement.
+
+443
+00:25:12.950 --> 00:25:18.030
+So before we get into computer storage, we need to fill in some gaps.
+
+444
+00:25:18.030 --> 00:25:21.470
+I'm referring to things like gigabytes, bits, etc.
+
+445
+00:25:21.470 --> 00:25:25.470
+But we actually haven't talked at all about what those metrics mean.
+
+446
+00:25:25.470 --> 00:25:28.350
+Sorry, I couldn't dig a bit ahead of myself.
+
+447
+00:25:28.350 --> 00:25:31.950
+As you might have guessed, these terms refer to data sizes.
+
+448
+00:25:31.950 --> 00:25:34.590
+The smallest unit of a data storage is a bit.
+
+449
+00:25:34.590 --> 00:25:39.990
+A bit can store one binary digit so it can store a 1 or 0.
+
+450
+00:25:39.990 --> 00:25:45.350
+The next largest unit of storage is called a byte, which is comprised of 8 bits.
+
+451
+00:25:45.350 --> 00:25:48.929
+A single byte can hold a letter, number, or symbol.
+
+452
+00:25:48.929 --> 00:25:55.830
+The next largest unit is referred to as a kibby byte, but we typically use the term kilobite.
+
+453
+00:25:55.830 --> 00:26:00.090
+A kilobite is made up of 1,024 bytes.
+
+454
+00:26:00.090 --> 00:26:04.570
+If you're curious why 1 kilobite refers to 1,024 bytes and not 1,000 bytes,
+
+455
+00:26:04.590 --> 00:26:07.590
+You can read more about that in the next supplemental reading.
+
+456
+00:26:07.590 --> 00:26:10.590
+For now, here's a quick data conversion chart.
+
+457
+00:26:12.590 --> 00:26:15.590
+How much does 500 gigabytes even mean?
+
+458
+00:26:15.590 --> 00:26:17.590
+Let's take a look at the size of an average music file,
+
+459
+00:26:17.590 --> 00:26:19.590
+which is about 3 megabytes.
+
+460
+00:26:19.590 --> 00:26:21.590
+On a 500 gigabyte machine,
+
+461
+00:26:21.590 --> 00:26:25.590
+that's approximately 165,000 music files.
+
+462
+00:26:25.590 --> 00:26:26.590
+That's a lot of music.
+
+463
+00:26:26.590 --> 00:26:29.590
+We saw all of our computer's data on our hard drive,
+
+464
+00:26:29.590 --> 00:26:33.590
+which allows us to store our programs, music, pictures, etc.
+
+465
+00:26:33.590 --> 00:26:38.789
+etc. Have you ever had an issue with your computer and lost all the data that was on your hard
+
+466
+00:26:38.789 --> 00:26:43.809
+drive? Yeah, me too. It was the worst. This actually happens a lot and you'll probably
+
+467
+00:26:43.809 --> 00:26:50.190
+encounter it as an IT support specialist. Make sure you back up your data to be safe. This means you
+
+468
+00:26:50.190 --> 00:26:54.789
+should copy or save your data somewhere else just in case something goes wrong and your hard drive
+
+469
+00:26:54.789 --> 00:27:00.669
+crashes. That way, you won't lose all your data. There are two basic hard drive types used today.
+
+470
+00:27:00.669 --> 00:27:06.669
+harddes describes or HDDs use a spinning platter and a mechanical arm to read and write information.
+
+471
+00:27:06.669 --> 00:27:11.669
+The speed that the platter rotate allows you to read and ride data faster.
+
+472
+00:27:11.669 --> 00:27:16.669
+This is commonly referred to as RPM or revolution per minute.
+
+473
+00:27:16.669 --> 00:27:21.669
+A hard drive with a higher RPM is faster, so if you go out and buy a hard drive today,
+
+474
+00:27:21.669 --> 00:27:26.669
+you might see something like a 500 gigabyte with 5,400 RPM.
+
+475
+00:27:26.669 --> 00:27:30.669
+HDDs are prone to a lot more damage because there are a lot of movement.
+
+476
+00:27:30.669 --> 00:27:36.270
+moving parts. This susceptibility to damage went away with a new type of storage called
+
+477
+00:27:36.270 --> 00:27:43.309
+Solid Stake Drive or SSD. SSDs have no moving parts. Are you familiar with a USB stick?
+
+478
+00:27:44.110 --> 00:27:49.470
+SSDs operate in a similar way. The information is stored on microchips and data travels
+
+479
+00:27:49.470 --> 00:27:56.909
+a lot faster than HDDs. The form factor for SSDs is also slimmer compared to their HD cousins.
+
+480
+00:27:56.909 --> 00:28:00.649
+Sounds great, doesn't it? So why doesn't everyone use SSDs?
+
+481
+00:28:00.669 --> 00:28:02.909
+Well, both have their pros and cons.
+
+482
+00:28:03.549 --> 00:28:07.350
+HDDs are more affordable, but they're more prone to damage.
+
+483
+00:28:07.929 --> 00:28:11.990
+SSDs are less risky when it comes to losing data, but they're also more expensive.
+
+484
+00:28:13.030 --> 00:28:18.169
+So you may not buy as much memory storage in SSDs than what you can get in HDDs.
+
+485
+00:28:18.490 --> 00:28:22.570
+Believe it or not, there are even hybrid SSD and HD drives out there.
+
+486
+00:28:23.070 --> 00:28:26.570
+They offer SSD performance where you need it for things like system performance,
+
+487
+00:28:26.730 --> 00:28:29.389
+such as booting your computer along with hard disk drives,
+
+488
+00:28:29.690 --> 00:28:30.649
+but less important stuff.
+
+489
+00:28:30.669 --> 00:28:32.429
+like basic file storage.
+
+490
+00:28:32.429 --> 00:28:35.909
+There are a few interfaces that hard drives use to connect our system.
+
+491
+00:28:35.909 --> 00:28:39.169
+ATA interfaces are the most common ones.
+
+492
+00:28:39.169 --> 00:28:44.169
+The most popular ATA drive is a serial ATA or SATA,
+
+493
+00:28:44.169 --> 00:28:47.169
+which uses one cable for data transfers.
+
+494
+00:28:47.169 --> 00:28:48.870
+Satter drives are hot-swappable.
+
+495
+00:28:48.870 --> 00:28:50.070
+Great term, don't you think?
+
+496
+00:28:50.070 --> 00:28:53.570
+It means you don't have to turn off your machine to plug in a SATA drive.
+
+497
+00:28:53.570 --> 00:28:57.669
+Sata drives move data faster and use a more efficient cable like this one
+
+498
+00:28:57.669 --> 00:28:59.169
+than its predecessors.
+
+499
+00:28:59.169 --> 00:29:00.610
+Sata has been the de-factor
+
+500
+00:29:00.669 --> 00:29:02.669
+to interface for HDDs today,
+
+501
+00:29:02.669 --> 00:29:05.669
+but people quickly found that using the SATA cable
+
+502
+00:29:05.669 --> 00:29:08.669
+wasn't good enough for some of the blazing fast SSDs
+
+503
+00:29:08.669 --> 00:29:10.669
+that were coming on the market.
+
+504
+00:29:10.669 --> 00:29:14.669
+The interface couldn't keep up with the speeds of the newest SSDs,
+
+505
+00:29:14.669 --> 00:29:18.669
+so another interface standard was created called NVM Express
+
+506
+00:29:18.669 --> 00:29:20.669
+or NVME.
+
+507
+00:29:20.669 --> 00:29:23.669
+Instead of using a cable to connect your drive to your machine,
+
+508
+00:29:23.669 --> 00:29:25.669
+the drive was added as an expansion slot,
+
+509
+00:29:25.669 --> 00:29:29.669
+which allows for greater throughput of data and increased efficiency.
+
+510
+00:29:29.669 --> 00:29:37.429
+In order to get our computer to work, let's give it some power.
+
+511
+00:29:37.429 --> 00:29:41.790
+Computers have a power supply that converts electricity from your wall to something usable.
+
+512
+00:29:41.790 --> 00:29:47.869
+There are two types of electricity, DC or direct current which flows in one direction, and AC
+
+513
+00:29:47.869 --> 00:29:51.750
+or alternating current which changes directions constantly.
+
+514
+00:29:51.750 --> 00:29:59.070
+Our computers use DC voltage, so we have to have a way to convert the AC voltage from our power company to something we can use.
+
+515
+00:29:59.070 --> 00:30:01.510
+That's what our power supply does.
+
+516
+00:30:01.510 --> 00:30:08.070
+It converts the AC we get from the wall into low voltage DC power that we can use and transmit throughout our computer.
+
+517
+00:30:08.070 --> 00:30:10.070
+So let's talk about power supplies.
+
+518
+00:30:10.070 --> 00:30:13.070
+I actually have one right here. Let me show you how one looks like.
+
+519
+00:30:13.070 --> 00:30:15.070
+Take it out right here.
+
+520
+00:30:15.070 --> 00:30:19.070
+So most power supply units have a fan which is right in here.
+
+521
+00:30:19.070 --> 00:30:25.070
+They also have voltage information, which is normally listed underneath or on the side.
+
+522
+00:30:25.070 --> 00:30:29.070
+And cables like this one to power, um,
+
+523
+00:30:29.070 --> 00:30:34.070
+your motherboard and a power cable.
+
+524
+00:30:37.470 --> 00:30:40.850
+Have you ever plugged one of your devices into the water outlet and fried your device?
+
+525
+00:30:40.850 --> 00:30:42.850
+If you haven't, you're really lucky.
+
+526
+00:30:42.850 --> 00:30:46.850
+After completing this lesson, hopefully you'll know how to avoid that situation.
+
+527
+00:30:46.850 --> 00:30:51.169
+To understand electricity, let's use the example of water pipes.
+
+528
+00:30:51.169 --> 00:30:54.850
+Our sinks have a faucet that's connected to a pressurized water tank.
+
+529
+00:30:54.850 --> 00:30:57.389
+When we turn on the faucet, water comes out.
+
+530
+00:30:57.389 --> 00:30:59.050
+This is sort of like how electricity works.
+
+531
+00:30:59.070 --> 00:31:02.309
+When we plug in appliance into a wall outlet and turn it on,
+
+532
+00:31:02.309 --> 00:31:04.309
+a flow electricity comes out.
+
+533
+00:31:04.309 --> 00:31:06.710
+If we added more pressure to our water tank,
+
+534
+00:31:06.710 --> 00:31:08.909
+would water come out of it?
+
+535
+00:31:08.909 --> 00:31:12.309
+The higher the pressure, the more water there will be.
+
+536
+00:31:12.309 --> 00:31:13.830
+When it comes to electricity,
+
+537
+00:31:13.830 --> 00:31:16.510
+we refer to the pressure as voltage.
+
+538
+00:31:16.510 --> 00:31:19.309
+So when I was on vacation, to my surprise,
+
+539
+00:31:19.309 --> 00:31:23.710
+when I plugged in the 120-volt appliance into a 220-volt outlet,
+
+540
+00:31:23.710 --> 00:31:26.830
+the power came bursting through and fried my charger.
+
+541
+00:31:26.830 --> 00:31:29.050
+If it was the other way around, and the 220-volt.
+
+542
+00:31:29.070 --> 00:31:34.070
+120 volt appliance was plugged into 120 volt outlet, I wouldn't have seen the same outcome.
+
+543
+00:31:34.070 --> 00:31:38.070
+I'll still be able to get electricity, but slowly.
+
+544
+00:31:38.070 --> 00:31:42.070
+This would be similar to if a water tank was only half pressurized.
+
+545
+00:31:42.070 --> 00:31:54.225
+It draw water but slowly In some cases though this can deteriorate the performance of the device and cause damage in the long term As a general rule be sure to use the proper voltage for your electronics
+
+546
+00:31:54.225 --> 00:31:59.225
+We refer to the amount of electricity coming out as current or amperage, and it's measured
+
+547
+00:31:59.225 --> 00:32:00.365
+in amps.
+
+548
+00:32:00.365 --> 00:32:05.884
+We can think of amps as pulling electricity as opposed to voltage, which pushes electricity.
+
+549
+00:32:05.884 --> 00:32:11.544
+Amps will pull as much electricity needed, but voltage will just give you everything.
+
+550
+00:32:11.544 --> 00:32:13.644
+Look on the back of one of your device charges.
+
+551
+00:32:13.644 --> 00:32:17.144
+You might see something like 1 or 2.1A.
+
+552
+00:32:17.144 --> 00:32:21.804
+Charging a device with 2.1 amps will actually charge your device faster because it's
+
+553
+00:32:21.804 --> 00:32:26.884
+able to pull more current from a 2.1 amp than a 1 amp charger.
+
+554
+00:32:26.884 --> 00:32:32.024
+Finally, the other important part of the electricity that you'll need to know is the wattage.
+
+555
+00:32:32.024 --> 00:32:35.965
+Wattage is the amount of volts and amps that a device needs.
+
+556
+00:32:35.965 --> 00:32:41.585
+If your power supply has too low of a wattage, you won't be able to power your computer,
+
+557
+00:32:41.585 --> 00:32:43.745
+to make sure you have enough.
+
+558
+00:32:43.745 --> 00:32:46.085
+This doesn't mean that if you have a large power supply,
+
+559
+00:32:46.085 --> 00:32:47.705
+you'll overpower your computer.
+
+560
+00:32:47.705 --> 00:32:49.345
+Power supplies just give you the amount
+
+561
+00:32:49.345 --> 00:32:51.424
+that your system needs.
+
+562
+00:32:51.424 --> 00:32:54.245
+It's best to err on the side of large power supplies.
+
+563
+00:32:54.245 --> 00:32:56.085
+You can power most basic desktops
+
+564
+00:32:56.085 --> 00:32:57.845
+with a 500 watt power supply.
+
+565
+00:32:57.845 --> 00:32:59.825
+But if you're doing something more demanding
+
+566
+00:32:59.825 --> 00:33:02.424
+on your computer, like playing a high resolution video game
+
+567
+00:33:02.424 --> 00:33:04.965
+or doing a lot of video production and rendering,
+
+568
+00:33:04.965 --> 00:33:08.205
+you'll likely need a bigger power supply for your computer.
+
+569
+00:33:08.205 --> 00:33:10.065
+On the other hand, if all you're doing
+
+570
+00:33:10.065 --> 00:33:11.524
+is just browsing the web, the power
+
+571
+00:33:11.585 --> 00:33:14.125
+supply that comes with your computer should be fine.
+
+572
+00:33:14.125 --> 00:33:17.424
+All kinds of issues are caused by a bad power supply.
+
+573
+00:33:17.424 --> 00:33:20.384
+Sometimes the computer doesn't even turn on at all.
+
+574
+00:33:20.384 --> 00:33:26.524
+Since power supplies can fail for lots of reasons like burnouts, power searches, or even lightning strikes,
+
+575
+00:33:26.524 --> 00:33:31.644
+knowing how to diagnose power issues and replace a failed power supply to skill every IT support
+
+576
+00:33:31.644 --> 00:33:34.884
+specialists should have in their toolbox.
+
+577
+00:33:38.945 --> 00:33:41.565
+So let's take a look at the back of our computer again.
+
+578
+00:33:41.585 --> 00:33:48.585
+Here you'll see lots of connectors or ports we can plug in different objects, like a mouse,
+
+579
+00:33:48.585 --> 00:33:52.385
+keyboard, and a monitor.
+
+580
+00:33:52.385 --> 00:33:54.485
+These are known as peripherals.
+
+581
+00:33:54.485 --> 00:34:00.325
+A peripheral is basically anything that you connect your computer externally that adds functionality.
+
+582
+00:34:00.325 --> 00:34:03.085
+You probably used USB devices before.
+
+583
+00:34:03.085 --> 00:34:10.484
+USB, also known as Universal Serial Bus devices, are the most popular connections for our gadgets.
+
+584
+00:34:10.484 --> 00:34:12.724
+has gone through lots of changes since inception.
+
+585
+00:34:13.724 --> 00:34:19.204
+You'll most commonly encounter USB 2.0, USB 3.0, and 3.1 in today's system.
+
+586
+00:34:19.625 --> 00:34:21.984
+Here's a quick rundown of the different versions.
+
+587
+00:34:23.105 --> 00:34:27.145
+USB 2.0, transfer speeds of 480 megabytes per second.
+
+588
+00:34:27.964 --> 00:34:31.885
+USB 3.0 transfer speeds of 5 gigabytes per second.
+
+589
+00:34:32.525 --> 00:34:36.545
+USB 3.1 transfer speeds of 10 gigabytes per second.
+
+590
+00:34:37.204 --> 00:34:40.085
+In the chart, let's pay attention to the details.
+
+591
+00:34:40.484 --> 00:34:49.864
+Using capital M, lowercase B, forward slash S, instead of using capital M, capital B to reference transfer speed.
+
+592
+00:34:50.185 --> 00:34:51.925
+These are actually different units.
+
+593
+00:34:52.224 --> 00:35:02.944
+MB is megabyte or unit of data storage, while capital M, lowercase B, 4 slash S is a megabit per second,
+
+594
+00:35:02.944 --> 00:35:05.385
+which is a unit of data transfer rate.
+
+595
+00:35:06.165 --> 00:35:10.464
+People often mistake speeds of 40 megabit per second to,
+
+596
+00:35:10.484 --> 00:35:14.885
+to mean that you can transfer 40 megabytes of data per second.
+
+597
+00:35:14.885 --> 00:35:18.724
+Remember, that one byte is 8 bits.
+
+598
+00:35:18.724 --> 00:35:22.365
+So to transfer a 1 megabyte file in a second,
+
+599
+00:35:22.365 --> 00:35:26.964
+you will need an 8 megabits per second connection speed.
+
+600
+00:35:26.964 --> 00:35:31.045
+So to transfer 40 megabytes of data in a second,
+
+601
+00:35:31.045 --> 00:35:35.765
+you will need a transfer speed of 240 megabits per second.
+
+602
+00:35:35.765 --> 00:35:40.005
+You'll also need compatible USB ports to go with your devices.
+
+603
+00:35:40.005 --> 00:35:47.685
+If you connect a USB 2.0 device into a USB 3.0 port, you won't get 3.0 transfer speeds.
+
+604
+00:35:47.685 --> 00:35:54.285
+But you can still use the port since it's backward compatible, meaning older hardware will work with newer hardware.
+
+605
+00:35:54.285 --> 00:35:56.125
+The ports are easy to differentiate.
+
+606
+00:35:56.125 --> 00:35:57.425
+Let me show you.
+
+607
+00:35:57.425 --> 00:36:05.185
+In general, USB 2.0 are black and USB 3.0 are blue and 3.1 ports are teal.
+
+608
+00:36:05.185 --> 00:36:09.165
+This may change depending on manufacturers.
+
+609
+00:36:09.165 --> 00:36:11.565
+There are lots of types of USB connectors,
+
+610
+00:36:11.565 --> 00:36:13.305
+and you can read about all of them
+
+611
+00:36:13.305 --> 00:36:15.605
+in the supplemental reading right after this video.
+
+612
+00:36:15.605 --> 00:36:16.905
+Check it out.
+
+613
+00:36:16.905 --> 00:36:18.464
+Back to USB connectors.
+
+614
+00:36:18.464 --> 00:36:21.744
+The most recent one is the Type C connector,
+
+615
+00:36:21.744 --> 00:36:25.444
+which is meant to replace many peripheral connections.
+
+616
+00:36:25.444 --> 00:36:27.625
+It's quickly becoming a universal standard
+
+617
+00:36:27.625 --> 00:36:30.285
+for display and data transfer.
+
+618
+00:36:30.285 --> 00:36:31.984
+In addition to USB peripherals,
+
+619
+00:36:31.984 --> 00:36:34.924
+you should also be aware of display peripherals.
+
+620
+00:36:34.924 --> 00:36:37.305
+There are some common input standards to know.
+
+621
+00:36:37.305 --> 00:36:39.145
+Most computer monitors will have
+
+622
+00:36:39.165 --> 00:36:41.005
+one or more of these connections,
+
+623
+00:36:41.005 --> 00:36:43.464
+but you might encounter some older standards too.
+
+624
+00:36:43.464 --> 00:36:44.405
+DVI.
+
+625
+00:36:44.405 --> 00:36:47.805
+DVI cables generally just output video.
+
+626
+00:36:47.805 --> 00:36:49.924
+If you need to hook up a monitor or projector
+
+627
+00:36:49.924 --> 00:36:52.685
+for a slide presentation and you want audio too,
+
+628
+00:36:52.685 --> 00:36:54.045
+you may be out of luck.
+
+629
+00:36:54.045 --> 00:36:57.785
+Instead, you want to look at one of the following cables.
+
+630
+00:36:57.785 --> 00:37:00.185
+HTML, this has become a standard
+
+631
+00:37:00.185 --> 00:37:02.525
+in lots of televisions and computers nowadays.
+
+632
+00:37:02.525 --> 00:37:05.724
+It outputs both video and audio.
+
+633
+00:37:05.724 --> 00:37:08.484
+Another standard that's become popular among manufacturers
+
+634
+00:37:08.484 --> 00:37:13.045
+is a display port, which also outputs audio and video.
+
+635
+00:37:13.045 --> 00:37:15.964
+In addition to audio and video, USB type C
+
+636
+00:37:15.964 --> 00:37:19.405
+can also do data transfer and power.
+
+637
+00:37:19.405 --> 00:37:21.205
+As an IT support specialist,
+
+638
+00:37:21.205 --> 00:37:23.525
+you'll work with peripherals like USB devices
+
+639
+00:37:23.525 --> 00:37:25.825
+and display devices a lot.
+
+640
+00:37:25.825 --> 00:37:28.645
+Now, you'll be able to distinguish between the major types.
+
+641
+00:37:32.805 --> 00:37:35.444
+OK, now we've seen all the key components
+
+642
+00:37:35.444 --> 00:37:37.224
+to get our computer running.
+
+643
+00:37:37.224 --> 00:37:38.464
+The last thing we'll go over is,
+
+644
+00:37:38.484 --> 00:37:40.525
+how our devices talk to each other.
+
+645
+00:37:40.525 --> 00:37:44.025
+We know how programs execute from our hard drive to our CPU,
+
+646
+00:37:44.025 --> 00:37:46.285
+but how do other things like a mouse click
+
+647
+00:37:46.285 --> 00:37:49.765
+or a keyboard press get sent to our CPU for processing?
+
+648
+00:37:49.765 --> 00:37:51.365
+These are fairly basic devices.
+
+649
+00:37:51.365 --> 00:37:52.805
+They don't contain any instructions
+
+650
+00:37:52.805 --> 00:37:55.365
+that our CPU knows how to read.
+
+651
+00:37:55.365 --> 00:37:57.305
+If you just clicked on a key from your keyboard,
+
+652
+00:37:57.305 --> 00:38:00.065
+you'd only be sending a byte to the CPU.
+
+653
+00:38:00.065 --> 00:38:01.984
+The CPU doesn't know what this is
+
+654
+00:38:01.984 --> 00:38:05.025
+because it doesn't have instructions on how to deal with it.
+
+655
+00:38:05.025 --> 00:38:07.545
+Turns out our devices also use programs
+
+656
+00:38:07.545 --> 00:38:09.385
+to tell the CPU how to run them.
+
+657
+00:38:09.385 --> 00:38:12.424
+These programs are called services or drivers.
+
+658
+00:38:12.424 --> 00:38:15.025
+The drivers contain the instructions our CPU needs
+
+659
+00:38:15.025 --> 00:38:19.825
+to understand external devices like keyboards, webcams, printers.
+
+660
+00:38:19.825 --> 00:38:23.224
+Our CPU doesn't know that there is a device that I can talk to,
+
+661
+00:38:23.224 --> 00:38:26.145
+so it has to connect to something called the BIOS
+
+662
+00:38:26.145 --> 00:38:29.424
+or basic input output services.
+
+663
+00:38:29.424 --> 00:38:33.325
+The BIOS is software that helps initialize the hardware in our computer
+
+664
+00:38:33.325 --> 00:38:36.665
+and gets our operating system up and running.
+
+665
+00:38:36.665 --> 00:38:41.565
+Unlike the programs, you're probably used to running like a web browser or operating system.
+
+666
+00:38:41.565 --> 00:38:44.105
+The BIOS isn't stored on a hard drive.
+
+667
+00:38:44.105 --> 00:38:51.984
+Our motherboard stores the BIOS in a special type of memory called the read-only memory chip or ROM chip.
+
+668
+00:38:51.984 --> 00:38:58.705
+Unlike RAM, ROM is non-volatile, meaning it won't erase the data if the computer is turned off.
+
+669
+00:38:58.705 --> 00:39:04.825
+Once the operating system loads, we're able to load drivers from non-essential devices directly from the hard drive.
+
+670
+00:39:04.825 --> 00:39:06.545
+In today's system, there's a number of the system.
+
+671
+00:39:06.545 --> 00:39:14.045
+Another player for BIOS called UEFI, which stands for Unified Extensible Frameware Interface.
+
+672
+00:39:14.045 --> 00:39:20.145
+UEFI performs the same function of starting your computer as a traditional BIOS,
+
+673
+00:39:20.145 --> 00:39:25.085
+but it's more modern and has better compatibility and support for newer hardware.
+
+674
+00:39:25.085 --> 00:39:28.785
+Most hardware out there today comes with UEFI built in.
+
+675
+00:39:28.785 --> 00:39:33.025
+Eventually, UEFI will become the predominant BIOS.
+
+676
+00:39:33.025 --> 00:39:36.525
+When you turn on a computer, you might notice a beeping from time to time.
+
+677
+00:39:36.545 --> 00:39:40.545
+Our computers run a test to make sure all the hardware is working correctly.
+
+678
+00:39:40.545 --> 00:39:44.545
+This is called a power on self-test or post,
+
+679
+00:39:44.545 --> 00:39:48.545
+and the BIOS runs it when you boot up your computer.
+
+680
+00:39:48.545 --> 00:39:51.545
+The Post figures out what hardware is on the computer,
+
+681
+00:39:51.545 --> 00:39:54.545
+so it happens before the BIOS initializes any hardware
+
+682
+00:39:54.545 --> 00:39:56.545
+or loads up essential drivers.
+
+683
+00:39:56.545 --> 00:39:59.545
+If there's an issue with anything at that point,
+
+684
+00:39:59.545 --> 00:40:01.545
+there's no way to display it on the screen,
+
+685
+00:40:01.545 --> 00:40:03.545
+since things like the video driver haven't been loaded.
+
+686
+00:40:03.545 --> 00:40:05.545
+Instead, the computer can usually produce a software
+
+687
+00:40:05.545 --> 00:40:11.224
+usually produce a series of beeps almost like Morris code which will help identify the problem
+
+688
+00:40:12.025 --> 00:40:17.705
+different manufacturers have different beep codes so if your computer successfully boots up you may
+
+689
+00:40:17.705 --> 00:40:26.424
+hear a single beep if you hear two beeps it could mean a post error it's best to refer to your
+
+690
+00:40:26.424 --> 00:40:32.665
+motherboard manual to find out what each code means also you should know that not all machines
+
+691
+00:40:32.665 --> 00:40:35.385
+have built-in speakers so don't want to
+
+692
+00:40:35.545 --> 00:40:38.665
+Don't worry if your computer boots without a beep.
+
+693
+00:40:38.665 --> 00:40:40.744
+If it does have a built-in speaker,
+
+694
+00:40:40.744 --> 00:40:43.505
+being able to distinguish what the beep codes mean
+
+695
+00:40:43.505 --> 00:40:47.265
+is an extremely helpful tool when troubleshooting boot issues.
+
+696
+00:40:47.265 --> 00:40:50.744
+One last thing we'll discuss our bio settings.
+
+697
+00:40:50.744 --> 00:40:55.424
+There's a special chip on our motherboard called the Seimos chip.
+
+698
+00:40:55.424 --> 00:40:58.464
+It stores basic data about booting your computer,
+
+699
+00:40:58.464 --> 00:41:01.545
+like the date, time, and how you want it to start up.
+
+700
+00:41:01.545 --> 00:41:05.424
+You can change these settings by booting into Seimos or BioS
+
+701
+00:41:05.424 --> 00:41:10.464
+settings menu. It varies on different computers, but usually when you boot the computer,
+
+702
+00:41:10.464 --> 00:41:14.484
+there'll be a quick screen that tells you what button to push to get into the settings.
+
+703
+00:41:15.305 --> 00:41:22.345
+From there, you can change the basic bio settings of your machine. In an IT support role, you might
+
+704
+00:41:22.345 --> 00:41:27.205
+interact with the BIOS more often than you think. Bio settings control which devices to boot
+
+705
+00:41:27.205 --> 00:41:32.484
+to, and in an IT role, you might need to change the settings more often than not. A frequently
+
+706
+00:41:32.484 --> 00:41:35.405
+performed IT task is the re-imaging of a computer.
+
+707
+00:41:35.424 --> 00:41:40.924
+The term refers to a disk image, which is a copy of an operating system.
+
+708
+00:41:40.924 --> 00:41:46.424
+So the process of reimaging involves wiping and reinstalling an operating system.
+
+709
+00:41:46.424 --> 00:41:51.424
+This procedure is typically performed using a program that's stored on some external device,
+
+710
+00:41:51.424 --> 00:41:57.424
+like a USB memory stick, or a CD-ROM, or even a server accessible through the network.
+
+711
+00:41:57.424 --> 00:42:04.424
+To access these programs and perform the re-image, you'll need to use the BIOS to tell the computer to boot up from that external device.
+
+712
+00:42:04.424 --> 00:42:10.125
+Congratulations on finishing this lesson from the Google IT Support Certificate.
+
+713
+00:42:10.724 --> 00:42:17.025
+Access to full experience including job search help and get the official certificate by clicking the icon or the link in the description.
+
+714
+00:42:17.905 --> 00:42:20.244
+Watch the next lesson in the course by clicking here.
+
+715
+00:42:20.484 --> 00:42:24.625
+And subscribe to our channel for more lessons from upcoming Google Career Certificates.

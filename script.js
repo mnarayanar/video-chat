@@ -7,6 +7,7 @@ import { gemini } from "https://cdn.jsdelivr.net/npm/asyncllm@2/dist/gemini.js";
 import { parse } from "https://cdn.jsdelivr.net/npm/partial-json@0.1.7/+esm";
 import { marked } from "https://cdn.jsdelivr.net/npm/marked@13/+esm";
 
+const $demos = document.querySelector("#demos");
 const $login = document.getElementById("login");
 const $transcriptForm = document.getElementById("transcript-form");
 const $resultsPage = document.getElementById("results-page");
@@ -31,16 +32,39 @@ const loading = (message) =>
     <div class="ms-3 h4">${message}</div>
   </div>`;
 
+render(loading("Loading demos..."), $demos);
+fetch("config.json")
+  .then((res) => res.json())
+  .then(({ demos }) =>
+    render(
+      [
+        demos.map(
+          ({ title, body, transcripts }) => html`
+            <div class="col py-3">
+              <a class="demo card h-100 text-decoration-none" href="#" data-transcripts=${JSON.stringify(transcripts)}>
+                <div class="card-body">
+                  <h5 class="card-title">${title}</h5>
+                  <p class="card-text">${body}</p>
+                </div>
+              </a>
+            </div>
+          `
+        ),
+      ],
+      $demos
+    )
+  );
+
 /**
  * Extracts YouTube video ID from filename
  * @param {string} filename - Name of file to extract ID from
  * @returns {string|null} - Extracted YouTube video ID or null if not found
  */
 function extractYouTubeVideoID(filename) {
-  // YouTube video IDs are 11 characters alphanumeric + - _
-  const videoIDPattern = /\b[A-Za-z0-9_-]{11}\b/g;
+  // YouTube video IDs are 11 characters alphanumeric + - _ enclosed in square brackets
+  const videoIDPattern = /\[[A-Za-z0-9_-]{11}\]/g;
   const matches = filename.match(videoIDPattern);
-  return matches && matches.length > 0 ? matches[0] : null;
+  return matches && matches.length > 0 ? matches[0].slice(1, -1) : null;
 }
 
 /**
@@ -104,6 +128,7 @@ const renderForm = () => {
           `
         : ""}
     </div>
+    <div class="form-text mt-2">The filename must have the YouTube video ID in square brackets, e.g. [abcdef12345]</div>
 
     <ul class="list-group">
       ${Object.keys(transcripts).map(
@@ -233,7 +258,6 @@ const pollingText = ["A few more seconds...", "Almost there...", "Just a moment.
  */
 const useOriginalAudio = () => {
   const result = $results.querySelector("#original-audio")?.matches?.(".active");
-  console.log("useOriginalAudio", result);
   return result;
 };
 
@@ -484,3 +508,25 @@ $answersPage.querySelector(".btn-close").addEventListener("click", () => {
 
 // Initial render
 renderForm();
+
+$demos.addEventListener("click", async (e) => {
+  const files = e.target.closest(".demo")?.dataset.transcripts;
+  if (!files) return;
+
+  e.preventDefault();
+  render(loading("Loading transcripts..."), $transcriptForm);
+
+  try {
+    await Promise.all(
+      JSON.parse(files).map(async (file) => {
+        const res = await fetch(file);
+        if (!res.ok) throw new Error(`Failed to load ${file}`);
+        transcripts[file] = await res.text();
+      })
+    );
+    // showPage('setup');
+    renderOverview();
+  } catch (err) {
+    render(html`<div class="alert alert-danger">Failed to load: ${err.message}</div>`, $transcriptForm);
+  }
+});
