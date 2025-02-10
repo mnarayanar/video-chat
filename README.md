@@ -1,4 +1,4 @@
-# Incident Analysis Dashboard
+# Video Chat k12
 
 Video Chat transforms long-form video content into an interactive knowledge base. Users upload video transcripts and engage in natural conversations with an AI that provides precise answers while citing relevant video segments. This is particularly valuable for businesses
 
