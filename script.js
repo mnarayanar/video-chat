@@ -213,24 +213,178 @@ Pick from different parts of the video.
             </button>
           </div>
         </form>
-
-        ${questions?.length > 0
-          ? html`<div class="list-group my-3">
-              ${questions.map(
-                (question) =>
-                  html`<button
-                    type="button"
-                    class="list-group-item list-group-item-action question"
-                    @click=${() => answerQuestion(question)}
-                  >
-                    ${unsafeHTML(marked.parse(question))}
-                  </button>`
-              )}
-            </div>`
-          : null}
+        <div id="faq-container"></div>
+       
+       
       `,
       $results
     );
+    const ques = {
+      "faq1": {
+          "Connect for World Languages: Complete Homework": "L1",
+          "Connect for World Languages: Getting Started": "L2",
+          "Connect for World Languages: How To Audio Record": "L3",
+          "Connect: How to View Your Grades": "L4",
+          "Connect: Re-Using Your Course": "L5",
+          "How to Register for a ConnectMath Course": "L6",
+          "How To: McGraw Hill Connect for Anatomy and Physiology": "L7",
+          "Connect | Completing Assignments": "L8",
+          "Connect | Student Support": "L9",
+          "Connect for World Languages: Adaptive Learning Assignments": "L10",
+          "Do College Smarter with Connect": "L11",
+          "McGraw Hill Connect | Best Practices for Students": "L12",
+          "McGraw Hill Connect | How to Navigate Connect": "L13",
+          "McGraw Hill Connect Math | Student Account": "L14",
+          "What is Connect Master?": "L15"
+      },
+      "L1": {
+          "What information is displayed on the main screen after logging into the Connect course?": null,
+          "How can a student check their answers and receive feedback when completing homework assignments?": null,
+          "What should a student do if they need to use an accented letter while completing an activity?": null,
+          "What types of activities may require students to record their voice or listen to the target language?": null,
+          "What is the final suggestion given to students for completing their homework successfully?": null
+      },
+      "L2": {
+          "How can students access their to-do list with assignments and due dates in Connect?": null,
+          "What information is displayed when selecting a specific assignment from the assignment section?": null,
+          "How does the adaptive learning assignment adapt to a student's performance?": null,
+          "What features are available in the Connect ebook for navigation and note-taking?": null,
+          "How does Connect help improve students' learning performance beyond just homework assignments?": null
+      },
+      "L3": {
+          "What devices are compatible for completing recording activities in the Connect course?": null,
+          "Which web browsers are recommended for completing activities on a PC or tablet?": null,
+          "What steps should a student follow when starting their first recording exercise?": null,
+          "What options are available after completing a recording for a speaking activity?": null,
+          "How can students get support if they encounter issues with recording exercises?": null
+      },
+      "L4": {
+          "How can students access their graded assignments and scores in Connect?": null,
+          "What information is available for each assignment attempt on the Course Results page?": null,
+          "How can students use assignment feedback as a study tool?": null,
+          "What steps are required to navigate through assignment feedback and view correct answers?": null,
+          "What insights can students gain from the Insight tool, and how can they track their progress?": null
+      },
+      "L5": {
+          "What steps are involved in adding a blank section to a course in Connect?": null,
+          "How can instructors copy assignments from a previous section to a new blank section?": null,
+          "What is the process for updating due dates for assignments in a new term?": null,
+          "How can instructors adjust registration dates to align with a new course section in Connect?": null
+      },
+      "L6": {
+          "What website should you visit to register for the Connect Math course?": null,
+          "What must you enter to enroll in the course after clicking 'Sign Up Now'?": null,
+          "What should you do if the information displayed doesn't match the course you're trying to enroll in?": null,
+          "How can you recover your login information if you've used Connect Math before but can't remember your details?": null,
+          "Where can you manage all the classes you are enrolled in on Connect Math after completing the registration?": null
+      },
+      "L7": {
+          "What tools are available to help students succeed in the Anatomy and Physiology course?": null,
+          "How does LearnSmart Prep assist students in preparing for the Anatomy and Physiology course?": null,
+          "What is Anatomy and Physiology Revealed (APR), and how can students use it?": null,
+          "What can students do in Anatomy and Physiology Revealed (APR) once they access the application?": null,
+          "Where can students find help videos if they get stuck while using Anatomy and Physiology Revealed?": null
+      },
+      "L8": {
+          "What is the central topic or theme discussed in the video?": null,
+          "How does the speaker explain the importance of completing assignments?": null,
+          "What examples or case studies are provided to support the speaker's arguments?": null,
+          "What are the key takeaways or lessons shared by the speaker?": null,
+          "Did the speaker mention any tools, methods, or strategies? If so, what are they?": null
+      },
+      "L9": {
+          "What is the primary topic discussed in the video?": null,
+          "How does the speaker define or explain the key concept?": null,
+          "What examples or real-life scenarios are mentioned?": null,
+          "What challenges or common misconceptions are highlighted?": null,
+          "What are the actionable tips or recommendations provided?": null
+      },
+      "L10": {
+          "What is the key topic or subject covered in the video?": null,
+          "What step-by-step process does the speaker explain?": null,
+          "What examples are provided to support the main points?": null,
+          "How does the speaker address potential challenges or issues?": null,
+          "What are the main takeaways or actionable insights from the video?": null
+      },
+      "L11": {
+          "What is the main focus of the 'Do College Smarter with Connect' YouTube video?": null,
+          "How does the video suggest students can improve their college experience?": null,
+          "What specific tools or strategies are highlighted in the video for academic success?": null,
+          "Are there any testimonials or success stories shared in the video?": null,
+          "What is the intended audience for the 'Do College Smarter with Connect' video?": null
+      },
+      "L12": {
+          "What is Connect, and how does it help students improve their grades?": null,
+          "How can students register for Connect using their course syllabus?": null,
+          "What are the different purchase options available for Connect?": null,
+          "What is a recommended best practice for using Connect effectively according to the speaker?": null,
+          "Who should students contact for tech support if they encounter issues with Connect?": null
+      },
+      "L13": {
+          "What does the course menu in Connect provide access to?": null,
+          "How can you access your e-book on Connect?": null,
+          "What is the Sharpen tool, and how is it related to Connect?": null,
+          "What is the ReadAnywhere app, and what functionality does it provide?": null,
+          "Where can students find additional tutorials on using Connect?": null
+      },
+      "L14": {
+          "What options are available in the menu bar on the Connect math home page?": null,
+          "How can you access your gradebook in Connect?": null,
+          "What is SmartBook, and how does it help students in their course?": null,
+          "Where can you purchase a loose-leaf version of your e-book?": null,
+          "How can you update your account profile information in Connect?": null
+      },
+      "L15": {
+          "What is the purpose of the adaptive learning program in Connect?": null,
+          "How does the adaptive program provide additional resources to help students?": null,
+          "How can you start an assignment in Connect, and what are the two options for beginning?": null,
+          "Why is it important to be honest in your responses during the adaptive assignments?": null,
+          "What are the two types of additional assignments mentioned, and how do they differ?": null
+      }
+    };
+    
+          function FaqAccordion(uid, level = 1) {
+              let accordion = '';
+    
+              if (uid) {
+                  if (uid in ques) {
+                      let item = '';
+    
+                      for (let i in ques[uid]) {
+                          if (ques[uid][i]) {
+                              let accordionBody = FaqAccordion(ques[uid][i], level + 1);
+    
+                              if (level === 1) {
+                                  item += `<div class="accordion-item">`;
+                                  item += `<h2 class="accordion-header"><button class="accordion-button h${level}" type="button" data-bs-toggle="collapse" data-bs-target="#${ques[uid][i]}" aria-expanded="false" aria-controls="${ques[uid][i]}">${i}</button></h2>`;
+                                  item += `<div id="${ques[uid][i]}" class="accordion-collapse collapse" data-bs-parent="#${uid}"><div><ol>${accordionBody}</ol></div></div>`;
+                                  item += `</div>`;
+                              } else {
+                                  item += `<div class="sub-heading">${i}</div>`;
+                                  item += accordionBody;
+                              }
+                          } else {
+                              const a = document.createElement('span');
+                              a.setAttribute("class", `faq ${uid}`);
+                              a.innerText = i;
+    
+                              item += `<li>${a.outerHTML}</li>`;
+                          }
+                      }
+    
+                      if (item !== '')
+                          accordion += item;
+                  }
+              }
+    
+              if (level === 1 && accordion !== '')
+                  return `<div class="accordion accordion-flush" id="${uid}">${accordion}</div>`;
+              else
+                  return accordion;
+          }
+    
+          // Render the FAQ accordion
+          document.getElementById('faq-container').innerHTML = FaqAccordion('faq1', 1);
   }
 }
 
@@ -530,3 +684,4 @@ $demos.addEventListener("click", async (e) => {
     render(html`<div class="alert alert-danger">Failed to load: ${err.message}</div>`, $transcriptForm);
   }
 });
+
