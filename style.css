@@ -51,3 +51,18 @@
     transform: none !important;
   }
 }
+
+#faq-container {
+  display: block;
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  max-height: 100%;
+}
+
+.faq{
+  cursor: pointer;
+}
+
+.faq:hover {
+  background-color: rgb(221, 237, 250);
+}
