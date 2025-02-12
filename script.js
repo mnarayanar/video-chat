@@ -194,28 +194,30 @@ Pick from different parts of the video.
     const { overview, questions } = parse(content);
     render(
       html`
-        ${overview ? html`<blockquote class="blockquote">${unsafeHTML(marked.parse(overview))}</blockquote>` : null}
-
-        <form class="my-3" @submit=${answerQuestion}>
-          <div class="d-flex gap-2">
-            <div class="input-group">
-              <input
-                type="text"
-                name="question"
-                class="form-control"
-                placeholder="Ask a question about the video"
-                required
-              />
-              <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
-            </div>
-            <button id="original-audio" class="btn btn-outline-primary flex-shrink-0" data-bs-toggle="button">
-              Original audio
-            </button>
+        <div class="d-flex gap-3">
+          
+          <div id="faq-container" class="flex-grow-1"></div>
+          <div class="blockquote-container d-flex flex-column justify-content-end">
+            ${overview ? html`<blockquote class="blockquote">${unsafeHTML(marked.parse(overview))}</blockquote>` : null}
+            <form class="my-3" @submit=${answerQuestion}>
+              <div class="d-flex gap-1">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    name="question"
+                    class="form-control"
+                    placeholder="Ask a question about the video"
+                    required
+                  />
+                  <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
+                </div>
+                <button id="original-audio" class="btn btn-outline-primary flex-shrink-0" data-bs-toggle="button">
+                  Original audio
+                </button>
+              </div>
+            </form>
           </div>
-        </form>
-        <div id="faq-container"></div>
-       
-       
+        </div>
       `,
       $results
     );
@@ -343,48 +345,61 @@ Pick from different parts of the video.
       }
     };
     
-          function FaqAccordion(uid, level = 1) {
-              let accordion = '';
-    
-              if (uid) {
-                  if (uid in ques) {
-                      let item = '';
-    
-                      for (let i in ques[uid]) {
-                          if (ques[uid][i]) {
-                              let accordionBody = FaqAccordion(ques[uid][i], level + 1);
-    
-                              if (level === 1) {
-                                  item += `<div class="accordion-item">`;
-                                  item += `<h2 class="accordion-header"><button class="accordion-button h${level}" type="button" data-bs-toggle="collapse" data-bs-target="#${ques[uid][i]}" aria-expanded="false" aria-controls="${ques[uid][i]}">${i}</button></h2>`;
-                                  item += `<div id="${ques[uid][i]}" class="accordion-collapse collapse" data-bs-parent="#${uid}"><div><ol>${accordionBody}</ol></div></div>`;
-                                  item += `</div>`;
-                              } else {
-                                  item += `<div class="sub-heading">${i}</div>`;
-                                  item += accordionBody;
-                              }
-                          } else {
-                              const a = document.createElement('span');
-                              a.setAttribute("class", `faq ${uid}`);
-                              a.innerText = i;
-    
-                              item += `<li>${a.outerHTML}</li>`;
-                          }
-                      }
-    
-                      if (item !== '')
-                          accordion += item;
+    function FaqAccordion(uid, level = 1) {
+      let accordion = '';
+  
+      if (uid && ques[uid]) {
+          let item = '';
+  
+          for (let i in ques[uid]) {
+              if (ques[uid][i]) {
+                  let accordionBody = FaqAccordion(ques[uid][i], level + 1);
+  
+                  if (level === 1) {
+                      item += `<div class="accordion-item">`;
+                      item += `<h2 class="accordion-header">
+                                  <button class="accordion-button h${level}" type="button" data-bs-toggle="collapse" data-bs-target="#${ques[uid][i]}" aria-expanded="false" aria-controls="${ques[uid][i]}">${i}</button>
+                               </h2>`;
+                      item += `<div id="${ques[uid][i]}" class="accordion-collapse collapse" data-bs-parent="#${uid}">
+                                  <div><ol>${accordionBody}</ol></div>
+                               </div>`;
+                      item += `</div>`;
+                  } else {
+                      item += `<div class="sub-heading">${i}</div>`;
+                      item += accordionBody;
                   }
+              } else {
+                  // Add `data-question` to store the question text
+                  item += `<li><span class="faq" data-question="${i}">${i}</span></li>`;
               }
-    
-              if (level === 1 && accordion !== '')
-                  return `<div class="accordion accordion-flush" id="${uid}">${accordion}</div>`;
-              else
-                  return accordion;
           }
-    
-          // Render the FAQ accordion
-          document.getElementById('faq-container').innerHTML = FaqAccordion('faq1', 1);
+  
+          if (item !== '') accordion += item;
+      }
+  
+      if (level === 1 && accordion !== '')
+          return `<div class="accordion accordion-flush" id="${uid}">${accordion}</div>`;
+      else return accordion;
+  }
+  
+  // Function to attach event listeners to FAQ elements
+  function attachFaqEventListeners() {
+      document.querySelectorAll(".faq").forEach(faq => {
+          faq.addEventListener("click", function () {
+              let question = this.getAttribute("data-question");
+              if (question) {
+                  answerQuestion(question);
+              }
+          });
+      });
+  }
+  
+  // Render the FAQ accordion
+  document.getElementById('faq-container').innerHTML = FaqAccordion('faq1', 1);
+  
+  // Attach event listeners AFTER rendering
+  attachFaqEventListeners();
+  
   }
 }
 
