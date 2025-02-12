@@ -1,5 +1,5 @@
 .narrative {
-  max-width: 40rem;
+  max-width: 100rem;
 }
 
 .answer.active {
@@ -56,7 +56,8 @@
   display: block;
   scrollbar-width: thin;
   overflow-y: scroll;
-  max-height: 100%;
+  max-height: 45rem;
+  max-width: 50 rem;
 }
 
 .faq{
@@ -66,3 +67,8 @@
 .faq:hover {
   background-color: rgb(221, 237, 250);
 }
+
+.blockquote {
+  max-width: 60rem;
+}
+
