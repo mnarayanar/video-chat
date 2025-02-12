@@ -550,23 +550,23 @@ function timeToSeconds(time) {
 function renderAnswers(question, isLoading) {
   const totalSeconds = playlist.reduce((acc, { duration }) => acc + duration, 0);
   render(
-    html`<h1 class="display-6 my-5">
+    html`<h3 class="display-8 my-4">
         ${question} <small class="duration">${Math.floor(totalSeconds / 60)}m ${Math.round(totalSeconds % 60)}s</small>
-      </h1>
+      </h3>
       <div class="list-group">
         ${playlist.map(
           ({ answer, videoId, start, startSeconds, endSeconds }, index) =>
             html`<button
               type="button"
               data-index="${index}"
-              class="answer list-group-item list-group-item-action fw-light h4 mb-0 py-3"
+              class="answer list-group-item list-group-item-action display-8 my-2 fw-light  mb-0 py-2"
               @click="${() => playVideo(index)}"
             >
               ${answer}
               <small class="duration">${videoId} ${start} +${Math.round(endSeconds - startSeconds, 0)}s</small>
             </button>`
         )}
-        ${isLoading ? html`<div class="list-group-item">${loading("Creating videos...")}</div>` : null}
+        ${isLoading ? html`<div class="list-group-item ">${loading("Creating videos...")}</div>` : null}
       </div> `,
     $answers
   );
