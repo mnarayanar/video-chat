@@ -3,7 +3,7 @@
 }
 
 .answer.active {
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
 
 .duration {
@@ -51,6 +51,27 @@
     transform: none !important;
   }
 }
+.answer{
+  font-size: 1rem;
+}
+
+
+
+
+
+#youtube-player-container {
+  background-color: rgb(46, 44, 44);
+  display: flex;           /* Use flexbox for centering */
+  flex-direction: column;  /* Stack children vertically */
+  align-items: center;     /* Center items horizontally */
+  justify-content: center;  /* Center items vertically */
+             /* Full viewport height */
+}
+
+.list-group {
+  width:  fit-content;
+
+}
 
 #faq-container {
   display: block;
@@ -71,4 +92,3 @@
 .blockquote {
   max-width: 60rem;
 }
-
