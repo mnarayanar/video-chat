@@ -14,21 +14,29 @@ const $resultsPage = document.getElementById("results-page");
 const $results = document.getElementById("results");
 const $answersPage = document.getElementById("answers-page");
 const $answers = document.getElementById("answers");
-const $youtubePlayerContainer = document.getElementById("youtube-player-container");
+const $youtubePlayerContainer = document.getElementById(
+  "youtube-player-container"
+);
 const $ttsAudio = document.getElementById("tts-audio");
 const transcripts = {};
 let player;
 let playlist;
 
-const { token } = await fetch("https://llmfoundry.straive.com/token", { credentials: "include" }).then((r) => r.json());
+const { token } = await fetch("https://llmfoundry.straive.com/token", {
+  credentials: "include",
+}).then((r) => r.json());
 if (!token) {
-  $login.href = "https://llmfoundry.straive.com/login?" + new URLSearchParams({ next: window.location.href });
+  $login.href =
+    "https://llmfoundry.straive.com/login?" +
+    new URLSearchParams({ next: window.location.href });
   $login.classList.remove("d-none");
 }
 
 const loading = (message) =>
   html`<div class="d-flex justify-content-center align-items-center my-5">
-    <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
     <div class="ms-3 h4">${message}</div>
   </div>`;
 
@@ -41,7 +49,11 @@ fetch("config.json")
         demos.map(
           ({ title, body, transcripts }) => html`
             <div class="col py-3">
-              <a class="demo card h-100 text-decoration-none" href="#" data-transcripts=${JSON.stringify(transcripts)}>
+              <a
+                class="demo card h-100 text-decoration-none"
+                href="#"
+                data-transcripts=${JSON.stringify(transcripts)}
+              >
                 <div class="card-body">
                   <h5 class="card-title">${title}</h5>
                   <p class="card-text">${body}</p>
@@ -122,20 +134,38 @@ const renderForm = () => {
 
       ${Object.keys(transcripts).length > 0
         ? html`
-            <button type="button" class="btn btn-success" @click=${renderOverview}>
+            <button
+              type="button"
+              class="btn btn-success"
+              @click=${renderOverview}
+            >
               <i class="bi bi-chat-text me-2"></i>Chat with Video
             </button>
           `
         : ""}
     </div>
-    <div class="form-text mt-2">The filename must have the YouTube video ID in square brackets, e.g. [abcdef12345]</div>
+    <div class="form-text mt-2">
+      The filename must have the YouTube video ID in square brackets, e.g.
+      [abcdef12345]
+    </div>
 
     <ul class="list-group">
       ${Object.keys(transcripts).map(
         (filename) => html`
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <a href="https://www.youtube.com/watch?v=${extractYouTubeVideoID(filename)}">${filename}</a>
-            <button type="button" class="btn btn-link text-danger" @click=${() => deleteTranscript(filename)}>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            <a
+              href="https://www.youtube.com/watch?v=${extractYouTubeVideoID(
+                filename
+              )}"
+              >${filename}</a
+            >
+            <button
+              type="button"
+              class="btn btn-link text-danger"
+              @click=${() => deleteTranscript(filename)}
+            >
               <i class="bi bi-trash"></i>
             </button>
           </li>
@@ -151,13 +181,20 @@ const renderForm = () => {
  * Summarizes transcripts, identifies questions, and renders them
  */
 async function renderOverview() {
-  const url = "https://llmfoundry.straive.com/gemini/v1beta/models/gemini-1.5-flash:streamGenerateContent?alt=sse";
+  const url =
+    "https://llmfoundry.straive.com/gemini/v1beta/models/gemini-1.5-flash:streamGenerateContent?alt=sse";
   showPage("results");
-  render(html`<div class="my-5">${loading("Summarizing videos...")}</div>`, $results);
+  render(
+    html`<div class="my-5">${loading("Summarizing videos...")}</div>`,
+    $results
+  );
 
   for await (const { content } of asyncLLM(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}:videochat` },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}:videochat`,
+    },
     body: JSON.stringify(
       gemini({
         model: "gemini-1.5-flash-latest",
@@ -193,213 +230,271 @@ Pick from different parts of the video.
     if (!content) continue;
     const { overview, questions } = parse(content);
     render(
-      html`
-        <div class="d-flex gap-3">
-          
-          <div id="faq-container" class="flex-grow-1"></div>
-          <div class="blockquote-container d-flex flex-column ">
-            ${overview ? html`<blockquote class="blockquote">${unsafeHTML(marked.parse(overview))}</blockquote>` : null}
-            <form class="my-3" @submit=${answerQuestion}>
-              <div class="d-flex gap-1">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    name="question"
-                    class="form-control"
-                    placeholder="Ask a question about the video"
-                    required
-                  />
-                  <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
+      html`<div class="d-flex gap-3">
+    <div id="faq-container" class="flex-grow-1"></div>
+    <div class="d-flex flex-column align-items-center"> <!-- Center align items -->
+        <h1 class="text-center mb-4">Let's Get Started</h1> <!-- Centered with margin-bottom -->
+        <div class="blockquote-container d-flex flex-column justify-content-end">
+            ${
+              overview
+                ? html`<blockquote class="blockquote">
+                    ${unsafeHTML(marked.parse(overview))}
+                  </blockquote>`
+                : null
+            }
+            <form class="my-10 d-flex flex-column" @submit=${answerQuestion}>
+                <div class="input-group mb-3">
+                    <input
+                        type="text"
+                        name="question"
+                        class="form-control"
+                        placeholder="Ask a question about the video" required/>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
                 </div>
-                <button id="original-audio" class="btn btn-outline-primary flex-shrink-0" data-bs-toggle="button">
-                  Original audio
+                <button id="original-audio" class="btn btn-outline-primary mt-auto" data-bs-toggle="button">
+                    Original audio
                 </button>
-              </div>
             </form>
-          </div>
         </div>
-      `,
+    </div>
+</div>`,
       $results
     );
     const ques = {
-      "faq1": {
-          "Connect for World Languages: Complete Homework": "L1",
-          "Connect for World Languages: Getting Started": "L2",
-          "Connect for World Languages: How To Audio Record": "L3",
-          "Connect: How to View Your Grades": "L4",
-          "Connect: Re-Using Your Course": "L5",
-          "How to Register for a ConnectMath Course": "L6",
-          "How To: McGraw Hill Connect for Anatomy and Physiology": "L7",
-          "Connect | Completing Assignments": "L8",
-          "Connect | Student Support": "L9",
-          "Connect for World Languages: Adaptive Learning Assignments": "L10",
-          "Do College Smarter with Connect": "L11",
-          "McGraw Hill Connect | Best Practices for Students": "L12",
-          "McGraw Hill Connect | How to Navigate Connect": "L13",
-          "McGraw Hill Connect Math | Student Account": "L14",
-          "What is Connect Master?": "L15"
+      faq1: {
+        "Connect for World Languages: Complete Homework": "L1",
+        "Connect for World Languages: Getting Started": "L2",
+        "Connect for World Languages: How To Audio Record": "L3",
+        "Connect: How to View Your Grades": "L4",
+        "Connect: Re-Using Your Course": "L5",
+        "How to Register for a ConnectMath Course": "L6",
+        "How To: McGraw Hill Connect for Anatomy and Physiology": "L7",
+        "Connect | Completing Assignments": "L8",
+        "Connect | Student Support": "L9",
+        "Connect for World Languages: Adaptive Learning Assignments": "L10",
+        "Do College Smarter with Connect": "L11",
+        "McGraw Hill Connect | Best Practices for Students": "L12",
+        "McGraw Hill Connect | How to Navigate Connect": "L13",
+        "McGraw Hill Connect Math | Student Account": "L14",
+        "What is Connect Master?": "L15",
       },
-      "L1": {
-          "What information is displayed on the main screen after logging into the Connect course?": null,
-          "How can a student check their answers and receive feedback when completing homework assignments?": null,
-          "What should a student do if they need to use an accented letter while completing an activity?": null,
-          "What types of activities may require students to record their voice or listen to the target language?": null,
-          "What is the final suggestion given to students for completing their homework successfully?": null
+      L1: {
+        "What information is displayed on the main screen after logging into the Connect course?":
+          null,
+        "How can a student check their answers and receive feedback when completing homework assignments?":
+          null,
+        "What should a student do if they need to use an accented letter while completing an activity?":
+          null,
+        "What types of activities may require students to record their voice or listen to the target language?":
+          null,
+        "What is the final suggestion given to students for completing their homework successfully?":
+          null,
       },
-      "L2": {
-          "How can students access their to-do list with assignments and due dates in Connect?": null,
-          "What information is displayed when selecting a specific assignment from the assignment section?": null,
-          "How does the adaptive learning assignment adapt to a student's performance?": null,
-          "What features are available in the Connect ebook for navigation and note-taking?": null,
-          "How does Connect help improve students' learning performance beyond just homework assignments?": null
+      L2: {
+        "How can students access their to-do list with assignments and due dates in Connect?":
+          null,
+        "What information is displayed when selecting a specific assignment from the assignment section?":
+          null,
+        "How does the adaptive learning assignment adapt to a student's performance?":
+          null,
+        "What features are available in the Connect ebook for navigation and note-taking?":
+          null,
+        "How does Connect help improve students' learning performance beyond just homework assignments?":
+          null,
       },
-      "L3": {
-          "What devices are compatible for completing recording activities in the Connect course?": null,
-          "Which web browsers are recommended for completing activities on a PC or tablet?": null,
-          "What steps should a student follow when starting their first recording exercise?": null,
-          "What options are available after completing a recording for a speaking activity?": null,
-          "How can students get support if they encounter issues with recording exercises?": null
+      L3: {
+        "What devices are compatible for completing recording activities in the Connect course?":
+          null,
+        "Which web browsers are recommended for completing activities on a PC or tablet?":
+          null,
+        "What steps should a student follow when starting their first recording exercise?":
+          null,
+        "What options are available after completing a recording for a speaking activity?":
+          null,
+        "How can students get support if they encounter issues with recording exercises?":
+          null,
       },
-      "L4": {
-          "How can students access their graded assignments and scores in Connect?": null,
-          "What information is available for each assignment attempt on the Course Results page?": null,
-          "How can students use assignment feedback as a study tool?": null,
-          "What steps are required to navigate through assignment feedback and view correct answers?": null,
-          "What insights can students gain from the Insight tool, and how can they track their progress?": null
+      L4: {
+        "How can students access their graded assignments and scores in Connect?":
+          null,
+        "What information is available for each assignment attempt on the Course Results page?":
+          null,
+        "How can students use assignment feedback as a study tool?": null,
+        "What steps are required to navigate through assignment feedback and view correct answers?":
+          null,
+        "What insights can students gain from the Insight tool, and how can they track their progress?":
+          null,
       },
-      "L5": {
-          "What steps are involved in adding a blank section to a course in Connect?": null,
-          "How can instructors copy assignments from a previous section to a new blank section?": null,
-          "What is the process for updating due dates for assignments in a new term?": null,
-          "How can instructors adjust registration dates to align with a new course section in Connect?": null
+      L5: {
+        "What steps are involved in adding a blank section to a course in Connect?":
+          null,
+        "How can instructors copy assignments from a previous section to a new blank section?":
+          null,
+        "What is the process for updating due dates for assignments in a new term?":
+          null,
+        "How can instructors adjust registration dates to align with a new course section in Connect?":
+          null,
       },
-      "L6": {
-          "What website should you visit to register for the Connect Math course?": null,
-          "What must you enter to enroll in the course after clicking 'Sign Up Now'?": null,
-          "What should you do if the information displayed doesn't match the course you're trying to enroll in?": null,
-          "How can you recover your login information if you've used Connect Math before but can't remember your details?": null,
-          "Where can you manage all the classes you are enrolled in on Connect Math after completing the registration?": null
+      L6: {
+        "What website should you visit to register for the Connect Math course?":
+          null,
+        "What must you enter to enroll in the course after clicking 'Sign Up Now'?":
+          null,
+        "What should you do if the information displayed doesn't match the course you're trying to enroll in?":
+          null,
+        "How can you recover your login information if you've used Connect Math before but can't remember your details?":
+          null,
+        "Where can you manage all the classes you are enrolled in on Connect Math after completing the registration?":
+          null,
       },
-      "L7": {
-          "What tools are available to help students succeed in the Anatomy and Physiology course?": null,
-          "How does LearnSmart Prep assist students in preparing for the Anatomy and Physiology course?": null,
-          "What is Anatomy and Physiology Revealed (APR), and how can students use it?": null,
-          "What can students do in Anatomy and Physiology Revealed (APR) once they access the application?": null,
-          "Where can students find help videos if they get stuck while using Anatomy and Physiology Revealed?": null
+      L7: {
+        "What tools are available to help students succeed in the Anatomy and Physiology course?":
+          null,
+        "How does LearnSmart Prep assist students in preparing for the Anatomy and Physiology course?":
+          null,
+        "What is Anatomy and Physiology Revealed (APR), and how can students use it?":
+          null,
+        "What can students do in Anatomy and Physiology Revealed (APR) once they access the application?":
+          null,
+        "Where can students find help videos if they get stuck while using Anatomy and Physiology Revealed?":
+          null,
       },
-      "L8": {
-          "What is the central topic or theme discussed in the video?": null,
-          "How does the speaker explain the importance of completing assignments?": null,
-          "What examples or case studies are provided to support the speaker's arguments?": null,
-          "What are the key takeaways or lessons shared by the speaker?": null,
-          "Did the speaker mention any tools, methods, or strategies? If so, what are they?": null
+      L8: {
+        "What is the central topic or theme discussed in the video?": null,
+        "How does the speaker explain the importance of completing assignments?":
+          null,
+        "What examples or case studies are provided to support the speaker's arguments?":
+          null,
+        "What are the key takeaways or lessons shared by the speaker?": null,
+        "Did the speaker mention any tools, methods, or strategies? If so, what are they?":
+          null,
       },
-      "L9": {
-          "What is the primary topic discussed in the video?": null,
-          "How does the speaker define or explain the key concept?": null,
-          "What examples or real-life scenarios are mentioned?": null,
-          "What challenges or common misconceptions are highlighted?": null,
-          "What are the actionable tips or recommendations provided?": null
+      L9: {
+        "What is the primary topic discussed in the video?": null,
+        "How does the speaker define or explain the key concept?": null,
+        "What examples or real-life scenarios are mentioned?": null,
+        "What challenges or common misconceptions are highlighted?": null,
+        "What are the actionable tips or recommendations provided?": null,
       },
-      "L10": {
-          "What is the key topic or subject covered in the video?": null,
-          "What step-by-step process does the speaker explain?": null,
-          "What examples are provided to support the main points?": null,
-          "How does the speaker address potential challenges or issues?": null,
-          "What are the main takeaways or actionable insights from the video?": null
+      L10: {
+        "What is the key topic or subject covered in the video?": null,
+        "What step-by-step process does the speaker explain?": null,
+        "What examples are provided to support the main points?": null,
+        "How does the speaker address potential challenges or issues?": null,
+        "What are the main takeaways or actionable insights from the video?":
+          null,
       },
-      "L11": {
-          "What is the main focus of the 'Do College Smarter with Connect' YouTube video?": null,
-          "How does the video suggest students can improve their college experience?": null,
-          "What specific tools or strategies are highlighted in the video for academic success?": null,
-          "Are there any testimonials or success stories shared in the video?": null,
-          "What is the intended audience for the 'Do College Smarter with Connect' video?": null
+      L11: {
+        "What is the main focus of the 'Do College Smarter with Connect' YouTube video?":
+          null,
+        "How does the video suggest students can improve their college experience?":
+          null,
+        "What specific tools or strategies are highlighted in the video for academic success?":
+          null,
+        "Are there any testimonials or success stories shared in the video?":
+          null,
+        "What is the intended audience for the 'Do College Smarter with Connect' video?":
+          null,
       },
-      "L12": {
-          "What is Connect, and how does it help students improve their grades?": null,
-          "How can students register for Connect using their course syllabus?": null,
-          "What are the different purchase options available for Connect?": null,
-          "What is a recommended best practice for using Connect effectively according to the speaker?": null,
-          "Who should students contact for tech support if they encounter issues with Connect?": null
+      L12: {
+        "What is Connect, and how does it help students improve their grades?":
+          null,
+        "How can students register for Connect using their course syllabus?":
+          null,
+        "What are the different purchase options available for Connect?": null,
+        "What is a recommended best practice for using Connect effectively according to the speaker?":
+          null,
+        "Who should students contact for tech support if they encounter issues with Connect?":
+          null,
       },
-      "L13": {
-          "What does the course menu in Connect provide access to?": null,
-          "How can you access your e-book on Connect?": null,
-          "What is the Sharpen tool, and how is it related to Connect?": null,
-          "What is the ReadAnywhere app, and what functionality does it provide?": null,
-          "Where can students find additional tutorials on using Connect?": null
+      L13: {
+        "What does the course menu in Connect provide access to?": null,
+        "How can you access your e-book on Connect?": null,
+        "What is the Sharpen tool, and how is it related to Connect?": null,
+        "What is the ReadAnywhere app, and what functionality does it provide?":
+          null,
+        "Where can students find additional tutorials on using Connect?": null,
       },
-      "L14": {
-          "What options are available in the menu bar on the Connect math home page?": null,
-          "How can you access your gradebook in Connect?": null,
-          "What is SmartBook, and how does it help students in their course?": null,
-          "Where can you purchase a loose-leaf version of your e-book?": null,
-          "How can you update your account profile information in Connect?": null
+      L14: {
+        "What options are available in the menu bar on the Connect math home page?":
+          null,
+        "How can you access your gradebook in Connect?": null,
+        "What is SmartBook, and how does it help students in their course?":
+          null,
+        "Where can you purchase a loose-leaf version of your e-book?": null,
+        "How can you update your account profile information in Connect?": null,
       },
-      "L15": {
-          "What is the purpose of the adaptive learning program in Connect?": null,
-          "How does the adaptive program provide additional resources to help students?": null,
-          "How can you start an assignment in Connect, and what are the two options for beginning?": null,
-          "Why is it important to be honest in your responses during the adaptive assignments?": null,
-          "What are the two types of additional assignments mentioned, and how do they differ?": null
-      }
+      L15: {
+        "What is the purpose of the adaptive learning program in Connect?":
+          null,
+        "How does the adaptive program provide additional resources to help students?":
+          null,
+        "How can you start an assignment in Connect, and what are the two options for beginning?":
+          null,
+        "Why is it important to be honest in your responses during the adaptive assignments?":
+          null,
+        "What are the two types of additional assignments mentioned, and how do they differ?":
+          null,
+      },
     };
-    
+
     function FaqAccordion(uid, level = 1) {
-      let accordion = '';
-       
+      let accordion = "";
+
       if (uid && ques[uid]) {
-          let item = '';
-  
-          for (let i in ques[uid]) {
-              if (ques[uid][i]) {
-                  let accordionBody = FaqAccordion(ques[uid][i], level + 1);
-  
-                  if (level === 1) {
-                      item += `<div class="accordion-item">`;
-                      item += `<h2 class="accordion-header">
+        let item = "";
+
+        for (let i in ques[uid]) {
+          if (ques[uid][i]) {
+            let accordionBody = FaqAccordion(ques[uid][i], level + 1);
+
+            if (level === 1) {
+              item += `<div class="accordion-item">`;
+              item += `<h2 class="accordion-header">
                                   <button class="accordion-button h${level}" type="button" data-bs-toggle="collapse" data-bs-target="#${ques[uid][i]}" aria-expanded="false" aria-controls="${ques[uid][i]}">${i}</button>
                                </h2>`;
-                      item += `<div id="${ques[uid][i]}" class="accordion-collapse collapse" data-bs-parent="#${uid}">
+              item += `<div id="${ques[uid][i]}" class="accordion-collapse collapse" data-bs-parent="#${uid}">
                                   <div><ol>${accordionBody}</ol></div>
                                </div>`;
-                      item += `</div>`;
-                  } else {
-                      item += `<div class="sub-heading">${i}</div>`;
-                      item += accordionBody;
-                  }
-              } else {
-                  // Add `data-question` to store the question text
-                  item += `<li><span class="faq" data-question="${i}">${i}</span></li>`;
-              }
+              item += `</div>`;
+            } else {
+              item += `<div class="sub-heading">${i}</div>`;
+              item += accordionBody;
+            }
+          } else {
+            // Add `data-question` to store the question text
+            item += `<li><span class="faq" data-question="${i}">${i}</span></li>`;
           }
-  
-          if (item !== '') accordion += item;
+        }
+
+        if (item !== "") accordion += item;
       }
-  
-      if (level === 1 && accordion !== '')
-          return `<div class="accordion accordion-flush" id="${uid}">${accordion}</div>`;
+
+      if (level === 1 && accordion !== "")
+        return `<div class="accordion accordion-flush" id="${uid}">${accordion}</div>`;
       else return accordion;
-  }
-  
-  // Function to attach event listeners to FAQ elements
-  function attachFaqEventListeners() {
-      document.querySelectorAll(".faq").forEach(faq => {
-          faq.addEventListener("click", function () {
-              let question = this.getAttribute("data-question");
-              if (question) {
-                  answerQuestion(question);
-              }
-          });
+    }
+
+    // Function to attach event listeners to FAQ elements
+    function attachFaqEventListeners() {
+      document.querySelectorAll(".faq").forEach((faq) => {
+        faq.addEventListener("click", function () {
+          let question = this.getAttribute("data-question");
+          if (question) {
+            answerQuestion(question);
+          }
+        });
       });
-  }
-  
-  // Render the FAQ accordion
-  document.getElementById('faq-container').innerHTML = FaqAccordion('faq1', 1);
-  
-  // Attach event listeners AFTER rendering
-  attachFaqEventListeners();
-  
+    }
+
+    // Render the FAQ accordion
+    document.getElementById("faq-container").innerHTML = FaqAccordion(
+      "faq1",
+      1
+    );
+
+    // Attach event listeners AFTER rendering
+    attachFaqEventListeners();
   }
 }
 
@@ -419,14 +514,20 @@ Your sentences will be read out. Keep the tone simple and conversational. You MU
 };
 
 const startingText = ["Let me check...", "I'll take a look...", "I'm on it..."];
-const pollingText = ["A few more seconds...", "Almost there...", "Just a moment..."];
+const pollingText = [
+  "A few more seconds...",
+  "Almost there...",
+  "Just a moment...",
+];
 
 /**
  * Returns true if the original audio button is active
  * @returns {boolean}
  */
 const useOriginalAudio = () => {
-  const result = $results.querySelector("#original-audio")?.matches?.(".active");
+  const result = $results
+    .querySelector("#original-audio")
+    ?.matches?.(".active");
   return result;
 };
 
@@ -457,13 +558,18 @@ const answerQuestion = async (questionOrEvent) => {
   playAudio(startingText[Math.floor(Math.random() * startingText.length)]);
   let polling = setInterval(() => {
     if (startedPlaying) return clearInterval(polling);
-    if ($ttsAudio.ended) playAudio(pollingText[Math.floor(Math.random() * pollingText.length)]);
+    if ($ttsAudio.ended)
+      playAudio(pollingText[Math.floor(Math.random() * pollingText.length)]);
   }, 3000);
 
-  const url = "https://llmfoundry.straive.com/gemini/v1beta/models/gemini-1.5-flash:streamGenerateContent?alt=sse";
+  const url =
+    "https://llmfoundry.straive.com/gemini/v1beta/models/gemini-1.5-flash:streamGenerateContent?alt=sse";
   for await (const { content } of asyncLLM(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}:videochat` },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}:videochat`,
+    },
     body: JSON.stringify(
       gemini({
         model: "gemini-1.5-flash-latest",
@@ -471,7 +577,9 @@ const answerQuestion = async (questionOrEvent) => {
         messages: [
           {
             role: "system",
-            content: useOriginalAudio() ? prompts.originalAudio : prompts.summaryAudio,
+            content: useOriginalAudio()
+              ? prompts.originalAudio
+              : prompts.summaryAudio,
           },
           { role: "user", content: allTranscriptText() },
           { role: "user", content: question },
@@ -487,8 +595,14 @@ const answerQuestion = async (questionOrEvent) => {
                   items: {
                     type: "object",
                     properties: {
-                      answer: { type: "string", description: "A sentence that is part of the answer." },
-                      videoId: { type: "string", description: "YouTube Video ID" },
+                      answer: {
+                        type: "string",
+                        description: "A sentence that is part of the answer.",
+                      },
+                      videoId: {
+                        type: "string",
+                        description: "YouTube Video ID",
+                      },
                       start: { type: "string", description: "HH:MM:SS" },
                       end: { type: "string", description: "HH:MM:SS" },
                     },
@@ -515,7 +629,10 @@ const answerQuestion = async (questionOrEvent) => {
 
     playlist = answers;
     // Filter out answers that are too short or too long if we're using original audio
-    if (useOriginalAudio()) playlist = playlist.filter(({ duration }) => duration > 0 && duration < 600);
+    if (useOriginalAudio())
+      playlist = playlist.filter(
+        ({ duration }) => duration > 0 && duration < 600
+      );
     renderAnswers(question, true);
 
     // Start playing once the first video is complete and the second one has started - only if the TTS audio has ended
@@ -538,7 +655,10 @@ const answerQuestion = async (questionOrEvent) => {
  * @returns {number} Total seconds or NaN if invalid
  */
 function timeToSeconds(time) {
-  const [h = 0, m = 0, s = 0] = ("00:00:" + time).split(":").map(Number).slice(-3);
+  const [h = 0, m = 0, s = 0] = ("00:00:" + time)
+    .split(":")
+    .map(Number)
+    .slice(-3);
   // It's unlikely that the video is longer than 3 hours. Treat it as minutes and seconds if so.
   return h < 3 ? h * 3600 + m * 60 + s : h * 60 + m + s / 1000;
 }
@@ -548,10 +668,17 @@ function timeToSeconds(time) {
  * @param {Array<{answer: string, videoId: string, start: string, end: string}>} answers
  */
 function renderAnswers(question, isLoading) {
-  const totalSeconds = playlist.reduce((acc, { duration }) => acc + duration, 0);
+  const totalSeconds = playlist.reduce(
+    (acc, { duration }) => acc + duration,
+    0
+  );
   render(
     html`<h3 class="display-8 my-4">
-        ${question} <small class="duration">${Math.floor(totalSeconds / 60)}m ${Math.round(totalSeconds % 60)}s</small>
+        ${question}
+        <small class="duration"
+          >${Math.floor(totalSeconds / 60)}m
+          ${Math.round(totalSeconds % 60)}s</small
+        >
       </h3>
       <div class="list-group">
         ${playlist.map(
@@ -563,10 +690,17 @@ function renderAnswers(question, isLoading) {
               @click="${() => playVideo(index)}"
             >
               ${answer}
-              <small class="duration">${videoId} ${start} +${Math.round(endSeconds - startSeconds, 0)}s</small>
+              <small class="duration"
+                >${videoId} ${start}
+                +${Math.round(endSeconds - startSeconds, 0)}s</small
+              >
             </button>`
         )}
-        ${isLoading ? html`<div class="list-group-item ">${loading("Creating videos...")}</div>` : null}
+        ${isLoading
+          ? html`<div class="list-group-item ">
+              ${loading("Creating videos...")}
+            </div>`
+          : null}
       </div> `,
     $answers
   );
@@ -622,13 +756,20 @@ function playVideo(index) {
   $youtubePlayerContainer.classList.remove("d-none");
 
   // Highlight the answer and unhighlight the rest
-  $answers.querySelectorAll(".answer").forEach((el) => el.classList.toggle("active", +el.dataset.index === index));
+  $answers
+    .querySelectorAll(".answer")
+    .forEach((el) =>
+      el.classList.toggle("active", +el.dataset.index === index)
+    );
 
   // Scroll active answer to center of viewport
   const activeAnswer = $answers.querySelector(".answer.active");
   if (activeAnswer) {
     const answerRect = activeAnswer.getBoundingClientRect();
-    const scrollTop = window.scrollY + answerRect.top - (window.innerHeight - answerRect.height) / 2;
+    const scrollTop =
+      window.scrollY +
+      answerRect.top -
+      (window.innerHeight - answerRect.height) / 2;
     $answers.scrollTo({ top: 0, behavior: "smooth" });
     window.scrollTo({ top: scrollTop, behavior: "smooth" });
   }
@@ -643,7 +784,12 @@ function playVideo(index) {
 }
 
 function playAudio(text) {
-  const params = new URLSearchParams({ model: "tts-1", voice: "onyx", format: "mp3", input: text });
+  const params = new URLSearchParams({
+    model: "tts-1",
+    voice: "onyx",
+    format: "mp3",
+    input: text,
+  });
   $ttsAudio.src = `https://llmfoundry.straive.com/openai/v1/audio/speech?${params.toString()}`;
   $ttsAudio.play();
 }
@@ -667,7 +813,9 @@ function showPage(page) {
 }
 
 // Add event listener near the initial DOM queries
-$resultsPage.querySelector(".btn-close").addEventListener("click", () => showPage("setup"));
+$resultsPage
+  .querySelector(".btn-close")
+  .addEventListener("click", () => showPage("setup"));
 $answersPage.querySelector(".btn-close").addEventListener("click", () => {
   showPage("results");
   $ttsAudio.pause();
@@ -696,7 +844,11 @@ $demos.addEventListener("click", async (e) => {
     // showPage('setup');
     renderOverview();
   } catch (err) {
-    render(html`<div class="alert alert-danger">Failed to load: ${err.message}</div>`, $transcriptForm);
+    render(
+      html`<div class="alert alert-danger">
+        Failed to load: ${err.message}
+      </div>`,
+      $transcriptForm
+    );
   }
 });
-
