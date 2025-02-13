@@ -197,7 +197,7 @@ Pick from different parts of the video.
         <div class="d-flex gap-3">
           
           <div id="faq-container" class="flex-grow-1"></div>
-          <div class="blockquote-container d-flex flex-column justify-content-end">
+          <div class="blockquote-container d-flex flex-column ">
             ${overview ? html`<blockquote class="blockquote">${unsafeHTML(marked.parse(overview))}</blockquote>` : null}
             <form class="my-3" @submit=${answerQuestion}>
               <div class="d-flex gap-1">
@@ -347,7 +347,7 @@ Pick from different parts of the video.
     
     function FaqAccordion(uid, level = 1) {
       let accordion = '';
-  
+       
       if (uid && ques[uid]) {
           let item = '';
   
