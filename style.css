@@ -93,3 +93,13 @@
   max-width: 60rem;
   flex-grow: initial;
 }
+.text-center.mb-4{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.mx-auto my-3 narrative{
+  align-items: center;
+}
+
+
