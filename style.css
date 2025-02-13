@@ -91,4 +91,5 @@
 
 .blockquote {
   max-width: 60rem;
+  flex-grow: initial;
 }
