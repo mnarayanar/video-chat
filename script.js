@@ -148,7 +148,7 @@ const renderForm = () => {
       The filename must have the YouTube video ID in square brackets, e.g.
       [abcdef12345]
     </div>
-
+     
     <ul class="list-group">
       ${Object.keys(transcripts).map(
         (filename) => html`
@@ -169,9 +169,11 @@ const renderForm = () => {
               <i class="bi bi-trash"></i>
             </button>
           </li>
+          
         `
       )}
     </ul>
+       
   `;
 
   render(template, $transcriptForm);
@@ -300,7 +302,11 @@ Pick from different parts of the video.
           </div>
         </div>
       </div>
-    </div>`,
+    </div>
+    <footer class="my-5 vh-80 d-flex align-items-center justify-content-center">
+            <h1 class="display-4">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
+          </footer>
+     `,
     
       $results
     );
@@ -766,17 +772,21 @@ function renderAnswers(question, isLoading) {
             >
               ${answer}
               <small class="duration"
-                >${videoId} ${start}
-                +${Math.round(endSeconds - startSeconds, 0)}s</small
+                ></small
               >
-            </button>`
+            </button>
+            `
+            
         )}
         ${isLoading
           ? html`<div class="list-group-item ">
               ${loading("Creating videos...")}
             </div>`
           : null}
-      </div> `,
+      </div>
+      <footer class="my-5 vh-50 d-flex align-items-center justify-content-center">
+            <h1 class="display-4">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
+          </footer> `,
     $answers
   );
 }
