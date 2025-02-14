@@ -242,7 +242,7 @@ Pick from different parts of the video.
              alt="Video 1 Thumbnail" 
              class="thumbnail" 
              style="cursor: pointer;" 
-             @click=${() => openModal('w5Iq-bQCvJ8')} />
+             @click=${() => attachThumbnailEventListeners()} />
         <p class="video-title">Complete Homework</p>
     </div>
     <div class="video-thumbnail">
@@ -250,7 +250,7 @@ Pick from different parts of the video.
              alt="Video 2 Thumbnail" 
              class="thumbnail" 
              style="cursor: pointer;" 
-             @click=${() => openModal('nOrMB6IdXrw')} />    
+             @click=${() => attachThumbnailEventListeners()} />    
         <p class="video-title">Getting Started</p>
        </div>
        <div class="video-thumbnail">
@@ -258,7 +258,7 @@ Pick from different parts of the video.
              alt="Video 1 Thumbnail" 
              class="thumbnail" 
              style="cursor: pointer;" 
-             @click=${() => openModal('nOrMB6IdXrw')} />
+             @click=${() => attachThumbnailEventListeners()} />
         <p class="video-title">How To Audio Record</p>
     </div>
        
@@ -307,6 +307,23 @@ Pick from different parts of the video.
       $results
     );
     
+
+    //function to open video in next page from thumbnail
+    function attachThumbnailEventListeners() {
+      const thumbnails = document.querySelectorAll(".video-thumbnail");
+    
+      thumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener("click", function() {
+          const videoTitleElement = this.querySelector(".video-title");
+          if (videoTitleElement) {
+            const videoTitle = videoTitleElement.textContent.trim(); // Get the title
+            answerQuestion(videoTitle);
+          } else {
+            console.error("Video title element not found within the thumbnail.");
+          }
+        });
+      });
+    }
     // Function to open the modal and set the video source
     function openModal(videoId) {
       const videoFrame = document.getElementById('videoFrame');
