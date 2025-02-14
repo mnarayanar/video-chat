@@ -148,3 +148,9 @@
   font-weight: bold; /* Make the title bold */
 }
 
+.footer {
+  position: relative;
+  bottom: 0; /* Ensures it's at the very bottom */
+  width: 100%; /* Ensures it takes full width */
+  margin-top: auto; /* Pushes content above it down */
+}
