@@ -238,7 +238,7 @@ Pick from different parts of the video.
             <!-- Thumbnails for YouTube videos -->
             <div class="d-flex gap-3 mb-4">
     <div class="video-thumbnail">
-        <img src="https://img.youtube.com/vi/w5Iq-bQCvJ8/hqdefault.jpg" 
+        <img src="https://img.youtube.com/vi/BMsttQajzQ0/hqdefault.jpg" 
              alt="Video 1 Thumbnail" 
              class="thumbnail" 
              style="cursor: pointer;" 
@@ -246,15 +246,15 @@ Pick from different parts of the video.
         <p class="video-title">Complete Homework</p>
     </div>
     <div class="video-thumbnail">
-        <img src="https://img.youtube.com/vi/nOrMB6IdXrw/hqdefault.jpg" 
+        <img src="https://img.youtube.com/vi/w5Iq-bQCvJ8/hqdefault.jpg" 
              alt="Video 2 Thumbnail" 
              class="thumbnail" 
              style="cursor: pointer;" 
              @click=${() => attachThumbnailEventListeners()} />    
-        <p class="video-title">Getting Started</p>
+        <p class="video-title">How to View Your Grades</p>
        </div>
        <div class="video-thumbnail">
-        <img src="https://img.youtube.com/vi/nOrMB6IdXrw/hqdefault.jpg" 
+        <img src="https://img.youtube.com/vi/0vA3OSbgrcU/hqdefault.jpg" 
              alt="Video 1 Thumbnail" 
              class="thumbnail" 
              style="cursor: pointer;" 
@@ -281,9 +281,7 @@ Pick from different parts of the video.
                             placeholder="Ask a question about the video" required/>
                         <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
                     </div>
-                    <button id="original-audio" class="btn btn-outline-primary mt-auto" data-bs-toggle="button">
-                        Original audio
-                    </button>
+                    
                 </form>
             </div>
         </div>
@@ -324,14 +322,14 @@ Pick from different parts of the video.
         });
       });
     }
-    // Function to open the modal and set the video source
+    /*// Function to open the modal and set the video source
     function openModal(videoId) {
       const videoFrame = document.getElementById('videoFrame');
       videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
       const videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
       videoModal.show();
     }
-    
+    */
     // Function to reset the video source when the modal is closed
     document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
       const videoFrame = document.getElementById('videoFrame');
