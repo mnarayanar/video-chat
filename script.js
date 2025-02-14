@@ -231,35 +231,95 @@ Pick from different parts of the video.
     const { overview, questions } = parse(content);
     render(
       html`<div class="d-flex gap-3">
-    <div id="faq-container" class="flex-grow-1"></div>
-    <div class="d-flex flex-column align-items-center"> <!-- Center align items -->
-        <h1 class="text-center mb-4">Let's Get Started</h1> <!-- Centered with margin-bottom -->
-        <div class="blockquote-container d-flex flex-column justify-content-end">
-            ${
-              overview
-                ? html`<blockquote class="blockquote">
-                    ${unsafeHTML(marked.parse(overview))}
-                  </blockquote>`
-                : null
-            }
-            <form class="my-10 d-flex flex-column" @submit=${answerQuestion}>
-                <div class="input-group mb-3">
-                    <input
-                        type="text"
-                        name="question"
-                        class="form-control"
-                        placeholder="Ask a question about the video" required/>
-                    <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
-                </div>
-                <button id="original-audio" class="btn btn-outline-primary mt-auto" data-bs-toggle="button">
-                    Original audio
-                </button>
-            </form>
+        <div id="faq-container" class="flex-grow-1"></div>
+        <div class="d-flex flex-column align-items-center"> <!-- Center align items -->
+            <h1 class="text-center mb-4">Let's Get Started</h1> <!-- Centered with margin-bottom -->
+            
+            <!-- Thumbnails for YouTube videos -->
+            <div class="d-flex gap-3 mb-4">
+    <div class="video-thumbnail">
+        <img src="https://img.youtube.com/vi/w5Iq-bQCvJ8/hqdefault.jpg" 
+             alt="Video 1 Thumbnail" 
+             class="thumbnail" 
+             style="cursor: pointer;" 
+             @click=${() => openModal('w5Iq-bQCvJ8')} />
+        <p class="video-title">Complete Homework</p>
+    </div>
+    <div class="video-thumbnail">
+        <img src="https://img.youtube.com/vi/nOrMB6IdXrw/hqdefault.jpg" 
+             alt="Video 2 Thumbnail" 
+             class="thumbnail" 
+             style="cursor: pointer;" 
+             @click=${() => openModal('nOrMB6IdXrw')} />    
+        <p class="video-title">Getting Started</p>
+       </div>
+       <div class="video-thumbnail">
+        <img src="https://img.youtube.com/vi/nOrMB6IdXrw/hqdefault.jpg" 
+             alt="Video 1 Thumbnail" 
+             class="thumbnail" 
+             style="cursor: pointer;" 
+             @click=${() => openModal('nOrMB6IdXrw')} />
+        <p class="video-title">How To Audio Record</p>
+    </div>
+       
+</div>
+    
+            <div class="blockquote-container d-flex flex-column justify-content-end">
+                ${
+                  overview
+                    ? html`<blockquote class="blockquote">
+                        ${unsafeHTML(marked.parse(overview))}
+                      </blockquote>`
+                    : null
+                }
+                <form class="my-10 d-flex flex-column" @submit=${answerQuestion}>
+                    <div class="input-group mb-3">
+                        <input
+                            type="text"
+                            name="question"
+                            class="form-control"
+                            placeholder="Ask a question about the video" required/>
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-2"></i>Ask</button>
+                    </div>
+                    <button id="original-audio" class="btn btn-outline-primary mt-auto" data-bs-toggle="button">
+                        Original audio
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
-</div>`,
+    
+    <!-- Modal for YouTube Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="videoModalLabel">Video</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe id="videoFrame" width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>`,
+    
       $results
     );
+    
+    // Function to open the modal and set the video source
+    function openModal(videoId) {
+      const videoFrame = document.getElementById('videoFrame');
+      videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      const videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+      videoModal.show();
+    }
+    
+    // Function to reset the video source when the modal is closed
+    document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+      const videoFrame = document.getElementById('videoFrame');
+      videoFrame.src = '';
+    });
     const ques = {
       faq1: {
         "Connect for World Languages: Complete Homework": "L1",
