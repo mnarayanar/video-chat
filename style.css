@@ -94,12 +94,57 @@
   flex-grow: initial;
 }
 .text-center.mb-4{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .mx-auto my-3 narrative{
   align-items: center;
 }
 
+/*thumbnail css*/
+.thumbnail-container {
+  position: relative; /* Positioning context for the overlay */
+  display: inline-block; /* Allows the container to wrap around the image */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding-bottom: 5rem;
+}
+
+.thumbnail {
+  width: 225px; /* Adjust as needed */
+  height: 135px; /* Adjust as needed */
+  object-fit: cover; /* Ensures the image fills the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.video-thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the text horizontally */
+  text-align: center; /* Center the text */
+}
+.thumbnail:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.title-overlay {
+  position: absolute; /* Positioning relative to the container */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Stretch to the right */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white; /* Text color */
+  padding: 10px; /* Padding around the text */
+  text-align: center; /* Center the text */
+  border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+  font-size: 16px; /* Font size */
+}
+.video-title {
+  margin-top: 8px; /* Space between the thumbnail and the title */
+  font-size: 16px; /* Font size for the title */
+  color: #333; /* Color for the title text */
+  font-weight: bold; /* Make the title bold */
+}
 
