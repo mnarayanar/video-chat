@@ -246,7 +246,7 @@ Pick from different parts of the video.
             <!-- Thumbnails for YouTube videos -->
              <div class="container mt-5">
     <div class="carousel-container">
-        <span class="carousel-buttons" id="prevBtn">&lt;</span>
+        <button class="carousel-button prev" id="prevBtn">&#10094;</button>
         <div class="d-flex gap-3 mb-4" id="videoCarousel">
             <!-- Video Thumbnails -->
             <div class="video-thumbnail">
@@ -356,6 +356,7 @@ Pick from different parts of the video.
             </div>
         </div>
         <span class="carousel-buttons" id="nextBtn">&gt;</span>
+        <button class="carousel-button next" id="nextBtn">&#10095;</button>
     </div>
 </div>
 
@@ -465,7 +466,7 @@ Pick from different parts of the video.
       faq1: {
         
         "Connect for World Languages: Getting Started": "L1",
-        "Connect | Student Support": "L2",
+        "McGraw Hill Connect | Best Practices for Students": "L2",
         "Connect for World Languages: How To Audio Record": "L3",
         "Connect: How to View Your Grades": "L4",
         "Connect: Re-Using Your Course": "L5",
@@ -475,7 +476,7 @@ Pick from different parts of the video.
         "Connect for World Languages: Complete Homework": "L9",
         "Connect for World Languages: Adaptive Learning Assignments": "L10",
         "Do College Smarter with Connect": "L11",
-        "McGraw Hill Connect | Best Practices for Students": "L12",
+        "Connect | Student Support": "L12",
         "McGraw Hill Connect | How to Navigate Connect": "L13",
         "McGraw Hill Connect Math | Student Account": "L14",
         "What is Connect Master?": "L15",
@@ -494,11 +495,15 @@ Pick from different parts of the video.
           
       },
       L2: {
-            "What is the primary topic discussed in the video?": null,
-        "How does the speaker define or explain the key concept?": null,
-        "What examples or real-life scenarios are mentioned?": null,
-        "What challenges or common misconceptions are highlighted?": null,
-        "What are the actionable tips or recommendations provided?": null,
+        "What is Connect, and how does it help students improve their grades?":
+          null,
+        "How can students register for Connect using their course syllabus?":
+          null,
+        "What are the different purchase options available for Connect?": null,
+        "What is a recommended best practice for using Connect effectively according to the speaker?":
+          null,
+        "Who should students contact for tech support if they encounter issues with Connect?":
+          null,
         
       
       },
@@ -528,8 +533,7 @@ Pick from different parts of the video.
       L5: {
         "What steps are involved in adding a blank section to a course in Connect?":
           null,
-        "How can instructors copy assignments from a previous section to a new blank section?":
-          null,
+        
         "What is the process for updating due dates for assignments in a new term?":
           null,
         "How can instructors adjust registration dates to align with a new course section in Connect?":
@@ -575,12 +579,6 @@ Pick from different parts of the video.
         null,
       "How can a student check their answers and receive feedback when completing homework assignments?":
         null,
-      "What should a student do if they need to use an accented letter while completing an activity?":
-        null,
-      "What types of activities may require students to record their voice or listen to the target language?":
-        null,
-      "What is the final suggestion given to students for completing their homework successfully?":
-        null,
       },
       L10: {
         "What is the key topic or subject covered in the video?": null,
@@ -603,15 +601,11 @@ Pick from different parts of the video.
           null,
       },
       L12: {
-        "What is Connect, and how does it help students improve their grades?":
-          null,
-        "How can students register for Connect using their course syllabus?":
-          null,
-        "What are the different purchase options available for Connect?": null,
-        "What is a recommended best practice for using Connect effectively according to the speaker?":
-          null,
-        "Who should students contact for tech support if they encounter issues with Connect?":
-          null,
+        "What is the primary topic discussed in the video?": null,
+        "How does the speaker define or explain the key concept?": null,
+        "What examples or real-life scenarios are mentioned?": null,
+        "What challenges or common misconceptions are highlighted?": null,
+        "What are the actionable tips or recommendations provided?": null,
       },
       L13: {
         "What does the course menu in Connect provide access to?": null,
