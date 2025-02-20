@@ -236,44 +236,133 @@ Pick from different parts of the video.
         <div id="faq-container" class="flex-grow-1"></div>
         <div class="d-flex flex-column align-items-center"> <!-- Center align items -->
             <h1 class="text-center mb-4">Let's Get Started</h1> <!-- Centered with margin-bottom -->
-            
+            ${
+              overview
+                ? html`<blockquote class="blockquote">
+                    ${unsafeHTML(marked.parse(overview))}
+                  </blockquote>`
+                : null
+            }
             <!-- Thumbnails for YouTube videos -->
-            <div class="d-flex gap-3 mb-4">
-    <div class="video-thumbnail">
-        <img src="https://img.youtube.com/vi/BMsttQajzQ0/hqdefault.jpg" 
-             alt="Video 1 Thumbnail" 
-             class="thumbnail" 
-             style="cursor: pointer;" 
-             @click=${() => attachThumbnailEventListeners()} />
-        <p class="video-title">Complete Homework</p>
+             <div class="container mt-5">
+    <div class="carousel-container">
+        <span class="carousel-buttons" id="prevBtn">&lt;</span>
+        <div class="d-flex gap-3 mb-4" id="videoCarousel">
+            <!-- Video Thumbnails -->
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/BMsttQajzQ0/hqdefault.jpg" 
+                     alt="Video 1 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()}/>
+                <p class="video-title">Getting Started</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/BMsttQajzQ0/hqdefault.jpg" 
+                     alt="Video 1 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()}/>
+                <p class="video-title">Complete Homewrork</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/w5Iq-bQCvJ8/hqdefault.jpg" 
+                     alt="Video 2 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()}/>    
+                <p class="video-title">How to View Your Grades</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/0vA3OSbgrcU/hqdefault.jpg" 
+                     alt="Video 3 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">How To Audio Record</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/U54kUt3xn4g/hqdefault.jpg" 
+                     alt="Video 4 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()}/>
+                <p class="video-title">How to Re-Use Your Course</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/pDrCABXiA7Y/hqdefault.jpg" 
+                     alt="Video 5 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">How to Register for a ConnectMath Course</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/qaSLdOaJ6YU/hqdefault.jpg" 
+                     alt="Video 6 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">How To: McGraw Hill Connect for Anatomy and Physiology</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/wyzxADSTYoM/hqdefault.jpg" 
+                     alt="Video 7 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">How to Connect | Complete Assignments</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/22ms4fjkYNo/hqdefault.jpg" 
+                     alt="Video 8 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">How to Connect | Student Support</p>
+            </div>
+             <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/YPVQYteywJ8/hqdefault.jpg" 
+                     alt="Video 9 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">How to Connect for World Languages: Adaptive Learning Assignments</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/JP3HP29Z0Yo/hqdefault.jpg" 
+                     alt="Video 10 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">Do College Smarter with Connect</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/q0r6DwVhm9Y/hqdefault.jpg" 
+                     alt="Video 11 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">McGraw Hill Connect | Best Practices for Students</p>
+            </div>
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/Vhu2WYfBssM/hqdefault.jpg" 
+                     alt="Video 12 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">McGraw Hill Connect | How to Navigate Connect</p>
+            </div>
+                <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/xZYE37Jetjk/hqdefault.jpg" 
+                     alt="Video 13 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">McGraw Hill Connect Math | Student Account</p>
+            </div>
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/59hhh0FtmqY/hqdefault.jpg" 
+                     alt="Video 14 Thumbnail" 
+                     class="thumbnail" 
+                      @click=${() => attachThumbnailEventListeners()} />
+                <p class="video-title">What is Connect Master?</p>
+            </div>
+        </div>
+        <span class="carousel-buttons" id="nextBtn">&gt;</span>
     </div>
-    <div class="video-thumbnail">
-        <img src="https://img.youtube.com/vi/w5Iq-bQCvJ8/hqdefault.jpg" 
-             alt="Video 2 Thumbnail" 
-             class="thumbnail" 
-             style="cursor: pointer;" 
-             @click=${() => attachThumbnailEventListeners()} />    
-        <p class="video-title">How to View Your Grades</p>
-       </div>
-       <div class="video-thumbnail">
-        <img src="https://img.youtube.com/vi/0vA3OSbgrcU/hqdefault.jpg" 
-             alt="Video 1 Thumbnail" 
-             class="thumbnail" 
-             style="cursor: pointer;" 
-             @click=${() => attachThumbnailEventListeners()} />
-        <p class="video-title">How To Audio Record</p>
-    </div>
-       
 </div>
+
+
     
             <div class="blockquote-container d-flex flex-column justify-content-end">
-                ${
-                  overview
-                    ? html`<blockquote class="blockquote">
-                        ${unsafeHTML(marked.parse(overview))}
-                      </blockquote>`
-                    : null
-                }
+                
                 <form class="my-10 d-flex flex-column" @submit=${answerQuestion}>
                     <div class="input-group mb-3">
                         <input
@@ -303,14 +392,45 @@ Pick from different parts of the video.
         </div>
       </div>
     </div>
-    <footer class="my-5 vh-80 d-flex align-items-center justify-content-center">
-            <h1 class="display-4">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
+    <footer class="my-3 vh-50 d-flex align-items-center justify-content-center">
+            <h1 class="display-6">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
           </footer>
      `,
     
       $results
     );
     
+    //youtube video crousal
+    const videoCarousel = document.getElementById('videoCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+    const videosToShow = 4;
+    const totalVideos = videoCarousel.children.length;
+
+    function updateCarousel() {
+        for (let i = 0; i < totalVideos; i++) {
+            videoCarousel.children[i].style.display = (i >= currentIndex && i < currentIndex + videosToShow) ? 'block' : 'none';
+        }
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < totalVideos - videosToShow) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    updateCarousel(); // Initial call to display the first set of videos
+
+   
 
     //function to open video in next page from thumbnail
     function attachThumbnailEventListeners() {
@@ -343,15 +463,16 @@ Pick from different parts of the video.
     });
     const ques = {
       faq1: {
-        "Connect for World Languages: Complete Homework": "L1",
-        "Connect for World Languages: Getting Started": "L2",
+        
+        "Connect for World Languages: Getting Started": "L1",
+        "Connect | Student Support": "L2",
         "Connect for World Languages: How To Audio Record": "L3",
         "Connect: How to View Your Grades": "L4",
         "Connect: Re-Using Your Course": "L5",
         "How to Register for a ConnectMath Course": "L6",
         "How To: McGraw Hill Connect for Anatomy and Physiology": "L7",
         "Connect | Completing Assignments": "L8",
-        "Connect | Student Support": "L9",
+        "Connect for World Languages: Complete Homework": "L9",
         "Connect for World Languages: Adaptive Learning Assignments": "L10",
         "Do College Smarter with Connect": "L11",
         "McGraw Hill Connect | Best Practices for Students": "L12",
@@ -360,18 +481,6 @@ Pick from different parts of the video.
         "What is Connect Master?": "L15",
       },
       L1: {
-        "What information is displayed on the main screen after logging into the Connect course?":
-          null,
-        "How can a student check their answers and receive feedback when completing homework assignments?":
-          null,
-        "What should a student do if they need to use an accented letter while completing an activity?":
-          null,
-        "What types of activities may require students to record their voice or listen to the target language?":
-          null,
-        "What is the final suggestion given to students for completing their homework successfully?":
-          null,
-      },
-      L2: {
         "How can students access their to-do list with assignments and due dates in Connect?":
           null,
         "What information is displayed when selecting a specific assignment from the assignment section?":
@@ -382,6 +491,16 @@ Pick from different parts of the video.
           null,
         "How does Connect help improve students' learning performance beyond just homework assignments?":
           null,
+          
+      },
+      L2: {
+            "What is the primary topic discussed in the video?": null,
+        "How does the speaker define or explain the key concept?": null,
+        "What examples or real-life scenarios are mentioned?": null,
+        "What challenges or common misconceptions are highlighted?": null,
+        "What are the actionable tips or recommendations provided?": null,
+        
+      
       },
       L3: {
         "What devices are compatible for completing recording activities in the Connect course?":
@@ -451,11 +570,17 @@ Pick from different parts of the video.
           null,
       },
       L9: {
-        "What is the primary topic discussed in the video?": null,
-        "How does the speaker define or explain the key concept?": null,
-        "What examples or real-life scenarios are mentioned?": null,
-        "What challenges or common misconceptions are highlighted?": null,
-        "What are the actionable tips or recommendations provided?": null,
+        
+        "What information is displayed on the main screen after logging into the Connect course?":
+        null,
+      "How can a student check their answers and receive feedback when completing homework assignments?":
+        null,
+      "What should a student do if they need to use an accented letter while completing an activity?":
+        null,
+      "What types of activities may require students to record their voice or listen to the target language?":
+        null,
+      "What is the final suggestion given to students for completing their homework successfully?":
+        null,
       },
       L10: {
         "What is the key topic or subject covered in the video?": null,
@@ -590,7 +715,7 @@ Answer very crisply. Keep each video clip to less than 4 lines (30 seconds).
 Answer as a series of very crisp sentences.
 Cite the associated video ID, start and end times ONLY in the JSON fields, not in the answer. Convert start and end times to HH:MM:SS format.
 Keep it to 3-5 sentences unless shorter or longer answers will be more appropriate.
-Your sentences will be read out. Keep the tone simple and conversational. You MUST add "uh..."s and "um..."s to be realistic.
+Your sentences will be read out. Keep the tone simple and conversational. 
 `,
 };
 
@@ -785,7 +910,7 @@ function renderAnswers(question, isLoading) {
           : null}
       </div>
       <footer class="my-5 vh-50 d-flex align-items-center justify-content-center">
-            <h1 class="display-4">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
+            <h1 class="display-6">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
           </footer> `,
     $answers
   );
