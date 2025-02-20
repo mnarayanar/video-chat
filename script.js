@@ -355,7 +355,6 @@ Pick from different parts of the video.
                 <p class="video-title">What is Connect Master?</p>
             </div>
         </div>
-        
         <button class="carousel-button next" id="nextBtn">&#10095;</button>
     </div>
 </div>
