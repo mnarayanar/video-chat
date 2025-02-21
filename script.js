@@ -694,8 +694,7 @@ Pick from different parts of the video.
     // Attach event listeners AFTER rendering
     attachFaqEventListeners();
   }
-}
-const prompts = {
+}const prompts = {
   originalAudio: `Answer the user question with engaging insights from these transcripts.
 Frame the answer as logically sequenced sentences with video citations.
 Each sentence should make full sense if read independently.
@@ -872,8 +871,6 @@ function renderAnswers(question, isLoading) {
   render(
     html`<h3 class="display-8 my-4">
         ${question}
-        
-        
       </h3>
       <div class="list-group">
         ${playlist.map(
@@ -885,12 +882,8 @@ function renderAnswers(question, isLoading) {
               @click="${() => playVideo(index)}"
             >
               ${answer}
-              <small class="duration"
-                ></small
-              >
-            </button>
-            `
-            
+              <small class="duration"></small>
+            </button>`
         )}
         ${isLoading
           ? html`<div class="list-group-item ">
@@ -898,11 +891,17 @@ function renderAnswers(question, isLoading) {
             </div>`
           : null}
       </div>
+      <button class="btn btn-primary mt-3" id="full-video-btn">Full Video</button>
       <footer class="my-5 vh-50 d-flex align-items-center justify-content-center">
-            <h1 class="display-6">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
-          </footer> `,
+        <h1 class="display-6">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
+      </footer>`,
     $answers
   );
+
+  // Add event listener for the "Full Video" button
+  document.getElementById("full-video-btn").addEventListener("click", () => {
+    playFullVideo();
+  });
 }
 
 /**
@@ -961,8 +960,6 @@ function playVideo(index) {
       el.classList.toggle("active", +el.dataset.index === index)
     );
 
-
-
   // Play the video
   const { answer, videoId, startSeconds, endSeconds } = playlist[index];
   player.loadVideoById({ videoId, startSeconds, endSeconds });
@@ -989,7 +986,13 @@ $ttsAudio.addEventListener("ended", () => {
 
 function playNextVideo() {
   if (currentIndex < playlist.length - 1) playVideo(currentIndex + 1);
-  else setTimeout(() => $answersPage.querySelector(".btn-close").click(), 2000);
+  // Removed the automatic close logic
+}
+
+function playFullVideo() {
+  const { videoId } = playlist[0]; // Assuming all answers are from the same video
+  const fullVideoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+  window.open(fullVideoUrl, "_blank", "width=800,height=600");
 }
 
 /**
