@@ -235,7 +235,7 @@ Pick from different parts of the video.
       html`<div class="d-flex gap-3">
         <div id="faq-container" class="flex-grow-1"></div>
         <div class="d-flex flex-column align-items-center"> <!-- Center align items -->
-            <h1 class="text-center mb-4">Let's Get Started</h1> <!-- Centered with margin-bottom -->
+            <h4 class="text-center mb-4">"Choose questions from the options on the left or select the videos below to obtain your results."</h4> <!-- Centered with margin-bottom -->
             ${
               overview
                 ? html`<blockquote class="blockquote">
@@ -461,6 +461,7 @@ Pick from different parts of the video.
       const videoFrame = document.getElementById('videoFrame');
       videoFrame.src = '';
     });
+    
     const ques = {
       faq1: {
         
@@ -563,29 +564,26 @@ Pick from different parts of the video.
           null,
       },
       L8: {
-        "What is the central topic or theme discussed in the video?": null,
-        "How does the speaker explain the importance of completing assignments?":
-          null,
-        "What examples or case studies are provided to support the speaker's arguments?":
-          null,
-        "What are the key takeaways or lessons shared by the speaker?": null,
-        "Did the speaker mention any tools, methods, or strategies? If so, what are they?":
-          null,
+        "What can you find in the middle of your course homepage?   ":null,
+        "What should you do before starting an assignment?":null,
+        "How can you save your work if the assignment is not timed?":null,
+        "What is the purpose of SmartBook in Connect?":null,
+        "Can you complete SmartBook assignments offline?":null,
       },
       L9: {
         
-        "What information is displayed on the main screen after logging into the Connect course?":
-        null,
-      "How can a student check their answers and receive feedback when completing homework assignments?":
-        null,
+        "What is the first step to start a homework assignment in the Connect course?      ":null,
+        "How can students check their answers before submitting for a grade?":null,
+        "What should students do if they need to take a break during an assignment?":null,
+        "What type of activities may require students to record their voice?":null,
+        "Why is it important to read the directions for each question in the activity?":null,
       },
       L10: {
-        "What is the key topic or subject covered in the video?": null,
-        "What step-by-step process does the speaker explain?": null,
-        "What examples are provided to support the main points?": null,
-        "How does the speaker address potential challenges or issues?": null,
-        "What are the main takeaways or actionable insights from the video?":
-          null,
+      "What is the purpose of McGraw-Hill's adaptive learning assignment in the Connect course?":null,
+      "How can students access the adaptive learning assignment after logging into Connect?":null,
+      "What should students do if they need to take a break during the assignment?":null,
+      "What happens after a student completes an adaptive learning activity?":null,
+      "How can students view their progress and performance on assignments?":null,
       },
       L11: {
         "What is the main focus of the 'Do College Smarter with Connect' YouTube video?":
@@ -600,11 +598,11 @@ Pick from different parts of the video.
           null,
       },
       L12: {
-        "What is the primary topic discussed in the video?": null,
-        "How does the speaker define or explain the key concept?": null,
-        "What examples or real-life scenarios are mentioned?": null,
-        "What challenges or common misconceptions are highlighted?": null,
-        "What are the actionable tips or recommendations provided?": null,
+        "What should a student do if they experience difficulty before entering their Connect course?":null,
+        "How can a student find help from within their Connect course?":null,
+        "What options are available for contacting customer support?":null,
+        "What will a student receive when they contact a support agent?":null,
+        "What are the support hours for the digital technical support team?":null,
       },
       L13: {
         "What does the course menu in Connect provide access to?": null,
@@ -637,6 +635,7 @@ Pick from different parts of the video.
       },
     };
 
+  
     function FaqAccordion(uid, level = 1) {
       let accordion = "";
 
@@ -696,18 +695,17 @@ Pick from different parts of the video.
     attachFaqEventListeners();
   }
 }
-
 const prompts = {
   originalAudio: `Answer the user question with engaging insights from these transcripts.
 Frame the answer as logically sequenced sentences with video citations.
 Each sentence should make full sense if read independently.
 Cite the associated video ID, start and end times ONLY in the JSON fields, not in the answer. Convert start and end times to HH:MM:SS format.
-Answer very crisply. Keep each video clip to less than 4 lines (30 seconds).
+ Keep each video clip to less than 6 lines (60 seconds).
 `,
   summaryAudio: `Answer the user question with engaging insights from these transcripts.
-Answer as a series of very crisp sentences.
+Answer as a series of  sentences.
 Cite the associated video ID, start and end times ONLY in the JSON fields, not in the answer. Convert start and end times to HH:MM:SS format.
-Keep it to 3-5 sentences unless shorter or longer answers will be more appropriate.
+Keep it to 8-10 sentences unless shorter or longer answers will be more appropriate.
 Your sentences will be read out. Keep the tone simple and conversational. 
 `,
 };
@@ -874,10 +872,8 @@ function renderAnswers(question, isLoading) {
   render(
     html`<h3 class="display-8 my-4">
         ${question}
-        <small class="duration"
-          >${Math.floor(totalSeconds / 60)}m
-          ${Math.round(totalSeconds % 60)}s</small
-        >
+        
+        
       </h3>
       <div class="list-group">
         ${playlist.map(
@@ -965,17 +961,7 @@ function playVideo(index) {
       el.classList.toggle("active", +el.dataset.index === index)
     );
 
-  // Scroll active answer to center of viewport
-  const activeAnswer = $answers.querySelector(".answer.active");
-  if (activeAnswer) {
-    const answerRect = activeAnswer.getBoundingClientRect();
-    const scrollTop =
-      window.scrollY +
-      answerRect.top -
-      (window.innerHeight - answerRect.height) / 2;
-    $answers.scrollTo({ top: 0, behavior: "smooth" });
-    window.scrollTo({ top: scrollTop, behavior: "smooth" });
-  }
+
 
   // Play the video
   const { answer, videoId, startSeconds, endSeconds } = playlist[index];
